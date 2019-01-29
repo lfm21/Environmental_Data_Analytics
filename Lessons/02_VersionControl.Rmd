@@ -85,6 +85,7 @@ The commit command records the changes you've made to files in your project. Com
 Commits and pushes can also be done in the Terminal by typing commands (i.e., the command line). Navigating to the Terminal tab will allow you to type these commands. The relevant commands are: 
 
 `git commit`
+
 `git push`
 
 Note: files must be staged in order to use the command `git commit`, and a commit message must still be used.
@@ -111,9 +112,16 @@ If there are changes in your remote repository that you want to incorporate into
 Your instructors will regularly update the course repository. However, this will not update the repository that you've forked into your own user account (i.e., remote) unless you tell it to do so. 
 
 Type the following commands into the Terminal window in RStudio (bottom left)
+
 `git remote add upstream https://github.com/KateriSalk/Environmental_Data_Analytics`
-`git fetch upstream`
+
 `git pull upstream`
+
+An alternate to pull is fetch + merge: 
+
+`git fetch upstream`
+
+`git merge upstream`
 
 Note: these steps will update your local repository, but will not update your remote. To bring your remote up to date, you will need to push your changes. 
 

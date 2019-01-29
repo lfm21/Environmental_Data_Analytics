@@ -1,7 +1,9 @@
 ---
-title: "Assignment 2: Coding Basics"
+title: 'Assignment 2: Coding Basics'
 author: "Laurie F Muzzy"
-output: pdf_document
+output:
+  pdf_document: default
+  word_document: default
 geometry: margin=2.54cm
 ---
 
@@ -66,7 +68,7 @@ vectorc <- c(TRUE, TRUE, FALSE, TRUE) #passing = TRUE is a logical vector
 vectorc
 four_student_scores_dataframe <- data.frame(vectora, vectorb, vectorc)
 names(four_student_scores_dataframe) <- c("nicknames", "scores", "passed")
-View(four_student_scores_dataframe)
+
 ```
 
 9. QUESTION: How is this data frame different from a matrix?
@@ -93,10 +95,6 @@ pass_with_50 <- function(x) {
  
 pass_with_50(four_student_scores_dataframe$scores)
 ```
-```{r}
-
-```
-
 
 ```{r function to determine which students have passed}
 higherthan_50 <- function(x) {
