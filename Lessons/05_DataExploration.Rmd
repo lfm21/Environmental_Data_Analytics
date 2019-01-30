@@ -64,7 +64,7 @@ You may also import datasets from the Files tab, but this is not recommended sin
 Note: In the Knit menu in the Editor, you will need to specify whether your knit directory should be the document directory or the project directory. For class today, we will need the directory to be set to the project directory so that we can access relative file paths correctly. However, if you are knitting your document into a PDF, it may be desirable to set your knit directory back to the document directory so that the RMarkdown file and the PDF are saved in the same place.
 
 ```{r}
-# Absolute file path (not recommended)
+# Absolute file path (not recommended, because...? you want other users to be able to get to it..?)
 #read.csv("/Users/katerisalk/Documents/Duke/Courses/Environmental_Data_Analytics/Data/Raw/USGS_Site02085000_Flow_Raw.csv")
 
 # Relative file path (friendly for users regardless of machine)
@@ -85,6 +85,7 @@ USGS.flow.data <- read.csv("./Data/Raw/USGS_Site02085000_Flow_Raw.csv")
 
 Take a moment to read through the README file associated with the USGS dataset on discharge at the Eno River. Where can you find this file? How does the placement and information found in this file relate to the best practices for reproducible data analysis?
 > ANSWER: 
+naming conventions, assembler, type, what it is, etc.
 
 ```{r}
 View(USGS.flow.data)
@@ -93,7 +94,7 @@ View(USGS.flow.data)
 class(USGS.flow.data)
 colnames(USGS.flow.data)
 
-# Rename columns
+# Rename columns (gotta figure out what to rename )
 colnames(USGS.flow.data) <- c("agency_cd", "site_no", "datetime", 
                               "discharge.max", "discharge.max.approval", 
                               "discharge.min", "discharge.min.approval", 
@@ -101,22 +102,25 @@ colnames(USGS.flow.data) <- c("agency_cd", "site_no", "datetime",
                               "gage.height.max", "gage.height.max.approval", 
                               "gage.height.min", "gage.height.min.approval", 
                               "gage.height.mean", "gage.height.mean.approval")
-str(USGS.flow.data)
-dim(USGS.flow.data)
-length(USGS.flow.data)
+str(USGS.flow.data) #structure (like integer or numerical)
+dim(USGS.flow.data) #dimensions, that there's 33,216 entries, 40 pages, etc
+length(USGS.flow.data) #
 
-head(USGS.flow.data)
+head(USGS.flow.data) 
 head(USGS.flow.data, 10)
-tail(USGS.flow.data, 5)
-USGS.flow.data[30000:30005, c(3, 8, 14)]
+tail(USGS.flow.data, 5) #last five columns
+USGS.flow.data[30000:30005, c(3, 8, 14)] #the range
 
 class(USGS.flow.data$datetime)
 class(USGS.flow.data$discharge.mean)
 class(USGS.flow.data$gage.height.mean)
 
-summary(USGS.flow.data)
-summary(USGS.flow.data$discharge.mean)
+summary(USGS.flow.data) #basic stats about the data
+summary(USGS.flow.data$discharge.mean) #numerical
+summary(USGS.flow.data$discharge.mean.approval) # a factor
 summary(USGS.flow.data$gage.height.mean)
+
+#how to get rid of NAs
 
 ```
 

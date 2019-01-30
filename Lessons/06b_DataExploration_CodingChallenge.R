@@ -5,31 +5,72 @@
 ## Instructions listed in comments throughout the script.
 
 #### Setup ----
-setwd("/Users/katerisalk/Documents/Duke/Courses/Environmental_Data_Analytics")
+```{r}
+getwd()
+# it will automatically got to where the file is; use relative file path: project wd
+```
 
+```{r}
 library("tidyverse")
+```
 
-ecotox.neonic <- read.csv("/Data/Raw/ECOTOX_Neonicotinoids_Mortality_raw.csv")
+```{r}
+ecotox.neonic <- read.csv("../Data/Raw/ECOTOX_Neonicotinoids_Mortality_raw.csv")
+# to go back into folder structure, use ../ then tab (to go forward into folder, use ./ then tab)
+```
 
 #### Basic Data Summaries ----
-head(ecotox.neonic,)
+head(ecotox.neonic, )
 summary(ecotox.neonic%Chemical.Name)
 summary(ecotox.neonic%Pub..Year)
+```{r}
+head(ecotox.neonic, 5) #tell it how many lines to show
+summary(ecotox.neonic$Chemical.Name) #have to use $ not %
+summary(ecotox.neonic$Pub..Year) 
+```
 
 # Fix formatting of column names (spaces originally present were turned to periods upon import)
 colnames(ecotox.neonic)[8:12] <- c(Duration, Conc.Type, Conc.Mean, Conc.Units, Pub.Year)
+```{r}
+#lets look at dimensions first
+dim(ecotox.neonic) #1283observations  13variables
+str(ecotox.neonic) #whoa its a dataframe
+colnames(ecotox.neonic) <- c("CAS.n", "ChemicalName", "SpeciesName",
+                             "CommonName", "Effect", "Measurement",
+                             "Endpoint", "Duration", "Conc.Type", 
+                             "Conc.Mean", "Conc.Units", "Pub.Year",
+                             "Citation") 
+#rename columns, use quotes ; BE CAREFUL, the structure didn't make sense after this command
+#(what if I just wanna show SOME of the columns?)
+```
 
 # Plot histogram of counts of publication years
 ggplot(ecotox.neonic, aes(x = Pub.Year)) 
   geom_histogram()
+```{r}
+ggplot(ecotox.neonic) + #make sure it knows to continue
+  geom_histogram(aes(x = Pub.Year), bins = 50) #the histogram has to have an x-axis
+```
 
 # Plot histogram of counts chemical names
 # hint: what is the class of Chemical.Name? There are two options for a solution.
 ggplot(ecotox.neonic, x = Chemical.Name) +
   geom_histogram()
+```{r}
+ggplot(ecotox.neonic, aes(x = ChemicalName)) +
+  geom_bar() #make sure it's the name that actually is
+#histogram wouldn't work with discrete variable, that deosn't make sense at all; use geom_bar
+```
 
 # Plot frequency polygon of publication years divided by chemical name
 # Define colors as something other than ggplot default 
 ggplot(ecotox.neonic) +
   geom_freqpoly(aes(x = Pub.Year, color = Chemical.Name) +
   theme(legend.position = "right")
+```{r}
+ggplot(ecotox.neonic) +
+  geom_freqpoly(aes(x = Pub.Year, color = ChemicalName), binwidth = 10) +
+  scale_color_manual(values = c("blue", "red", "yellow", "orange", "purple", "pink", "green", "turquoise", "brown"))
+  theme(legend.position = "right")
+```
+

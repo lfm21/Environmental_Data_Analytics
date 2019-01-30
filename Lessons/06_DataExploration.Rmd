@@ -125,9 +125,9 @@ Question: What types of research questions might make it favorable to remove NAs
 > We would want to keep NAs in qualitative data, to know what we don't know (it's also an answer sometimes); and in some datasets NA could translate as undetectable.
 
 ```{r}
-#creating new dataframe for flow data complete, by removing the entire row if there's not observ for every column
+#creating new dataframe for the complete flow data, by removing the entire row if there's not observ for every column
 USGS.flow.data.complete <- na.omit(USGS.flow.data)
-#complete.cases can show which rows are complete
+#complete.cases is another way to show which rows are complete
 dim(USGS.flow.data)
 dim(USGS.flow.data.complete)
 
