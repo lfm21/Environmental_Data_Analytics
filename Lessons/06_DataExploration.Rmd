@@ -8,7 +8,6 @@ fig_width: 5
 fig_height: 2.5
 editor_options: 
   chunk_output_type: console
-
 ---
 
 ## LESSON OBJECTIVES
@@ -49,7 +48,7 @@ colnames(USGS.flow.data) <- c("agency_cd", "site_no", "datetime",
 str(USGS.flow.data)
 dim(USGS.flow.data)
 
-#head(USGS.flow.data)
+head(USGS.flow.data) 
 class(USGS.flow.data$datetime)
 
 ```
@@ -82,27 +81,32 @@ help(as.Date)
 # (code must be uncommented)
 today <- Sys.Date()
 format(today, format = "%B")
-#format(today, format = "")
-#format(today, format = "")
-#format(today, format = "")
+format(today, format = "%y")
+format(today, format = "%Y")
+format(today -1, format = "%A")
+format(today, format = "%a")
+format(today -1, format = "%b")
+class(today)
 
-USGS.flow.data$datetime <- as.Date(USGS.flow.data$datetime, format = "%m/%d/%y") 
+USGS.flow.data$datetime <- as.Date(USGS.flow.data$datetime, format = "%m/%d/%y") #telling it to change the datetime to month/day/year BUT it'll put it in the 2000s, so be careful
 ```
+
 
 Note that for every date prior to 1969, R has assigned the date in the 2000s rather than the 1900s. This can be fixed with an `ifelse` statement inside a function. Run through the code below and write what is happening in the comment above each line.
 
 ```{r}
-# 
+# year (in 2000s) month day format in 6 character string
 USGS.flow.data$datetime <- format(USGS.flow.data$datetime, "%y%m%d")
 
-#
+#creating a code to tell it that if d is greater than 181231 , ie, if its past last day of december, give it 19, and if not, give it 20
+#past0 takes the 2 statements in the function to put them together
 create.early.dates <- (function(d) {
        paste0(ifelse(d > 181231,"19","20"),d)
        })
-#
+#tell it to appky the function we made above to that column
 USGS.flow.data$datetime <- create.early.dates(USGS.flow.data$datetime)
 
-#
+#but it;s character, so we have to change it back to date
 USGS.flow.data$datetime <- as.Date(USGS.flow.data$datetime, format = "%Y%m%d") 
 
 ```
@@ -117,10 +121,13 @@ summary(USGS.flow.data$gage.height.mean)
 ```
 Question: What types of research questions might make it favorable to remove NAs from a dataset, and what types of research questions might make it favorable to retain NAs in the dataset?
 
-> Answer: 
+> Answer: We don't want NAs: in averages, because it could skew results; in some datasets /stat models do not allow NAs.
+> We would want to keep NAs in qualitative data, to know what we don't know (it's also an answer sometimes); and in some datasets NA could translate as undetectable.
 
 ```{r}
+#creating new dataframe for flow data complete, by removing the entire row if there's not observ for every column
 USGS.flow.data.complete <- na.omit(USGS.flow.data)
+#complete.cases can show which rows are complete
 dim(USGS.flow.data)
 dim(USGS.flow.data.complete)
 
@@ -140,7 +147,8 @@ Note: each of these approaches utilize the package "ggplot2". We will be coverin
 
 Visualize count data for categorical variables. 
 
-```{r, fig.height = 3, fig.width = 4}
+```{r, fig.height = 3, fig.width = 4} 
+#taking categorical data to show number of samples; A is approved, P is pending
 ggplot(USGS.flow.data.complete, aes(x = discharge.mean.approval)) +
   geom_bar()
 ```
@@ -150,24 +158,24 @@ ggplot(USGS.flow.data.complete, aes(x = discharge.mean.approval)) +
 Visualize distributions of values for continuous numerical variables. What is happening in each line of code? Insert a comment above each line.
 
 ```{r, fig.height = 3, fig.width = 4}
-#
+#discharge mean on x axis, but it warns us that it's dividing into 30 'bins'. The warning is to tell us that it might not be the best way to display this data
 ggplot(USGS.flow.data.complete) +
   geom_histogram(aes(x = discharge.mean))
 
-#
+#taking discharge mean of ten units (i.e., every 10 units is a bin), so that depends on how mnay observations there are
 ggplot(USGS.flow.data.complete) +
   geom_histogram(aes(x = discharge.mean), binwidth = 10)
 
-#
+#bins just give number of bins
 ggplot(USGS.flow.data.complete) +
   geom_histogram(aes(x = discharge.mean), bins = 20)
 
-#
+#helpful in data exploration, to see in dif ways
 ggplot(USGS.flow.data.complete, aes(x = discharge.mean)) +
   geom_histogram(binwidth = 10) + 
-  scale_x_continuous(limits = c(0, 500))
+  scale_x_continuous(limits = c(0, 500)) #continuous x axis scale from 0 to 500
   
-#
+#fewer values to go across so it looks wider
 ggplot(USGS.flow.data.complete) +
   geom_histogram(aes(x = gage.height.mean))
 
@@ -177,14 +185,15 @@ ggplot(USGS.flow.data.complete) +
 An alternate to a histogram is a frequency polygon graph (distributions of values for continuous numerical variables). Instead of displaying bars,  counts of continuous variables are displayed as lines. This is advantageous if you want to display multiple variables or categories of variables at once.
 
 ```{r, fig.height = 3, fig.width = 4}
-#
+#frequency polygons 
 ggplot(USGS.flow.data.complete) +
   geom_freqpoly(aes(x = gage.height.mean), bins = 50) +
   geom_freqpoly(aes(x = gage.height.min), bins = 50, color = "blue") +
   geom_freqpoly(aes(x = gage.height.max), bins = 50, color = "red") +
   scale_x_continuous(limits = c(0, 10))
 
-#
+#look at how much is pending and how much is approved, but just the mean 
+#color it in aesthetics, and outside of that, color it based on its approval status
 ggplot(USGS.flow.data.complete) +
   geom_freqpoly(aes(x = gage.height.mean, color = gage.height.mean.approval), bins = 50) +
   scale_x_continuous(limits = c(0, 10)) +
@@ -206,28 +215,28 @@ A box-and-whisker plot is yet another alternative to histograms (distributions o
 An alternate option is a violin plot, which displays density distributions, somewhat like a hybrid of the box-and-whiskers and the frequency polygon plot.
 
 ```{r, fig.height = 3, fig.width = 4}
-#
+#make a box and whisker plot
 ggplot(USGS.flow.data.complete) +
   geom_boxplot(aes(x = gage.height.mean.approval, y = gage.height.mean))
 
-#
+#take gage height and show how discharge is related
 ggplot(USGS.flow.data.complete) +
   geom_boxplot(aes(x = gage.height.mean, y = discharge.mean, group = cut_width(gage.height.mean, 1)))
 
-#
+#shows the amount of samples at certain values ; the draw-quantiles shows lines at eah specification
 ggplot(USGS.flow.data.complete) +
   geom_violin(aes(x = gage.height.mean.approval, y = gage.height.mean), draw_quantiles = c(0.25, 0.5, 0.75))
 ```
 
 Question: what are the pros and cons of each type of frequency graph (histogram, frequency polygon, box-and whisker, violin)?
 
-> Answer: 
-
+> Answer: They show different aspects of the data: histogram can show distribution well; freq polygon shows differences in distribution; box-and-whisker shows outliers well; violin shows frequency and can show mean, median, etc.
 
 ### Scatterplot (function: geom_point)
 Visualize relationships between continuous numerical variables.
 
 ```{r, fig.height = 3, fig.width = 4}
+#above after r, this is telling LaTex to make each figure 3x4in.
 ggplot(USGS.flow.data.complete) +
   geom_point(aes(x = discharge.mean, y = gage.height.mean))
 
@@ -237,7 +246,7 @@ ggplot(USGS.flow.data.complete) +
 
 How can multiple options for data exploration inform our understanding of our data? What did you learn about the USGS discharge dataset today?
 
-> ANSWER: 
+> ANSWER: There's a bunch of different ways to view data that emphasize different aspects of it. The relationship btwn discharge and gage height is positive; most of the observations of gage height are around 2.0 to 2.5; there's lots of data pending approval.
 
 This passage from R for Data Science sums up some of the questions we should ask ourselves when initially exploring a dataset. "Patterns in your data provide clues about relationships. If a systematic relationship exists between two variables it will appear as a pattern in the data. If you spot a pattern, ask yourself:
 
@@ -253,7 +262,7 @@ This passage from R for Data Science sums up some of the questions we should ask
 
 Do you see any patterns in the USGS data for the Eno River? What might be responsible for those patterns and/or relationships?
 
-> ANSWER: 
+> ANSWER: We can see that as the discharge mean increases, so does the gage height (this should be fairly intuitive); and that most of the gage heights are around 2to 2.5 ft.
 
 
 ```{r}
