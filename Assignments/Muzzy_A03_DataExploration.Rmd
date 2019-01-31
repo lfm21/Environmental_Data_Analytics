@@ -1,0 +1,154 @@
+---
+title: 'Assignment 3: Data Exploration'
+author: "Laurie F Muzzy"
+output:
+  pdf_document: default
+  word_document: default
+geometry: margin=2.54cm
+---
+
+## OVERVIEW
+
+This exercise accompanies the lessons in Environmental Data Analytics (ENV872L) on data exploration. 
+
+## Directions
+1. Change "Student Name" on line 3 (above) with your name.
+2. Use the lesson as a guide. It contains code that can be modified to complete the assignment.
+3. Work through the steps, **creating code and output** that fulfill each instruction.
+4. Be sure to **answer the questions** in this assignment document.
+Space for your answers is provided in this document and is indicated by the ">" character.
+If you need a second paragraph be sure to start the first line with ">".
+You should notice that the answer is highlighted in green by RStudio. 
+6. When you have completed the assignment, **Knit** the text and code into a single PDF file.
+You will need to have the correct software installed to do this (see Software Installation Guide)
+Press the `Knit` button in the RStudio scripting panel.
+This will save the PDF output in your Assignments folder.
+8. After Knitting, please submit the completed exercise (PDF file) to the dropbox in Sakai. Please add your last name into the file name (e.g., "Salk_A02_DataExploration.pdf") prior to submission.
+
+The completed exercise is due on Thursday, 31 January, 2019 before class begins.
+
+## 1) Set up your R session
+
+Check your working directory, load necessary packages (tidyverse), and upload the North Temperate Lakes long term monitoring dataset for the light, temperature, and oxygen data for three lakes (file name: NTL-LTER_Lake_ChemistryPhysics_Raw.csv). Type your code into the R chunk below.
+```{r setting session}
+getwd()
+library(tidyverse)
+lter.chemphys <- read.csv("../Data/Raw/NTL-LTER_Lake_ChemistryPhysics_Raw.csv") #the data is in the Raw folder, so ../ will take us along the file path up the file structure specified
+```
+
+## 2) Learn about your system
+
+Read about your dataset in the NTL-LTER README file. What are three salient pieces of information you gained from reading this file?
+
+> ANSWER: Data is from 1984-2016; the Physical and Chemical Limnology is mesaured at the deepest location in each of the several lakes; the chemical data is sometimes pool mixed layer sample, sometimes at 3 locations, and sometimes in vertical profiles.
+
+## 3) Obtain basic summaries of your data
+
+Write R commands to display the following information: 
+
+1. dimensions of the dataset
+2. class of the dataset
+3. first 8 rows of the dataset
+4. class of the variables lakename, sampledate, depth, and temperature
+5. summary of lakename, depth, and temperature
+
+```{r basic summaries}
+# 1 dimensions of the dataset
+dim(lter.chemphys)
+# 2
+class(lter.chemphys)
+# 3
+head(lter.chemphys, 8)
+# 4
+class(lter.chemphys$lakename)
+class(lter.chemphys$sampledate)
+class(lter.chemphys$depth)
+class(lter.chemphys$temperature_C)
+# 5
+summary(lter.chemphys$lakename)
+summary(lter.chemphys$depth)
+summary(lter.chemphys$temperature_C)
+```
+
+Change sampledate to class = date. After doing this, write an R command to display that the class of sampledate is indeed date. Write another R command to show the first 10 rows of the date column. 
+
+```{r converting fails are educational}
+#sampledate is in class factor, so we have to convert its class to date and make it year/month/day
+
+#lter.chemphys$sampledate <- class(lter.chemphys$sampledate) This changed all the actual dates to the word character, somehow
+#lter.chemphys$sampledate <- as.Date(lter.chemphys$sampledate, "%y/%m/%d") #This changed all the sampledates to NA
+#lter.chemphys$sampledate <- format(as.Date(lter.chemphys$sampledate, "%y%m%d")) #This ALSO changed all the sampledates to NA
+#lter.chemphys$sampledate <- factor("%m/%d/%y"), as.Date(lter.chemphys$sampledate, format = "%Y/%m/%d") This turned all the entries into %m/%d/%y
+```
+
+```{r converting factor to date}
+lter.chemphys$sampledate <- as.Date(lter.chemphys$sampledate, format = "%m/%d/%y") #telling it to convert the class into date, by instructing it what format to convert
+class(lter.chemphys$sampledate)
+head(lter.chemphys$sampledate, 10)
+```
+
+Question: Do you want to remove NAs from this dataset? Why or why not?
+
+> ANSWER: Yes, probably, depending on how we were displaying the data. We don't want it to skew our displays in any way.
+> but when I used na.omit, all but 149 entries (out of over 38,000) remained.
+
+```{r omitting NAs}
+#complete.cases(lter.chemphys) #this returned a list of all observations as FALSE ...?
+lter.chemphys.complete <- na.omit(lter.chemphys) #but now there's only 149 entries
+```
+
+## 4) Explore your data graphically
+
+Write R commands to display graphs depicting: 
+
+1. Bar chart of temperature counts for each lake
+2. Histogram of count distributions of temperature (all temp measurements together)
+3. Change histogram from 2 to have a different number or width of bins
+4. Frequency polygon of temperature for each lake. Choose different colors for each lake.
+5. Boxplot of temperature for each lake
+6. Boxplot of temperature based on depth, with depth divided into 0.25 m increments
+7. Scatterplot of temperature by depth
+
+```{r graphical displays}
+# 1
+ggplot(lter.chemphys, aes(x = lakename, y = temperature_C)) +
+  geom_col() #can't figure out how to specify according to each lakename
+# 2
+ggplot(lter.chemphys) +
+  geom_histogram(aes(x = temperature_C), bins = 50)
+# 3
+ggplot(lter.chemphys) +
+  geom_histogram(aes(x = temperature_C), bins = 10)
+# 4
+ggplot(lter.chemphys) +
+  geom_freqpoly(aes(x = temperature_C, color = lakename), bins = 20) +
+scale_color_manual(values = c("green", "brown", "yellow", "orange", "pink", "red", "magenta", "tan", "blue"))
+# 5
+ggplot(lter.chemphys) +
+  geom_boxplot(aes(x = lakename, y = temperature_C))
+# 6
+ggplot(lter.chemphys) +
+  geom_boxplot(aes(x = depth, y = temperature_C, group = cut_width(depth, 0.25)))
+
+# 7 
+ggplot(lter.chemphys) +
+  geom_point(aes(x = temperature_C, y = depth))
+```
+## 5) Form questions for further data analysis
+
+What did you find out about your data from the basic summaries and graphs you made? Describe in 4-6 sentences.
+
+> ANSWER: 3,858 rows contain missing values. 
+> Paul Lake and Peter Lake have the highest counts for observations of temperature.
+> The most common temperature is around 5 degreesC.
+> East Long Lake had the highest recorded temperature.
+> The coldest temp was at a depth of about 12m.
+> The scatterplot seemed easier to read the relationship btwn depth and temp.
+
+What are 3 further questions you might ask as you move forward with  analysis of this dataset?
+
+> ANSWER 1: Is there a relationship btwn temperature and sample date?
+
+> ANSWER 2: Can we explore dissolved oxygen and how it might influence irradiance values?
+
+> ANSWER 3: Can we pull out the areas of the lakes that have the highest temperatures and try to find trends ?
