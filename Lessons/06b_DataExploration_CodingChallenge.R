@@ -41,7 +41,7 @@ colnames(ecotox.neonic) <- c("CAS.n", "ChemicalName", "SpeciesName",
                              "Conc.Mean", "Conc.Units", "Pub.Year",
                              "Citation") 
 #rename columns, use quotes ; BE CAREFUL, the structure didn't make sense after this command
-#(what if I just wanna show SOME of the columns?)
+#just wanna show SOME of the columns? [8:12] will show colums 8 thru 12
 ```
 
 # Plot histogram of counts of publication years

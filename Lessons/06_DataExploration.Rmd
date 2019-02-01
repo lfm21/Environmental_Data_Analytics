@@ -103,7 +103,7 @@ USGS.flow.data$datetime <- format(USGS.flow.data$datetime, "%y%m%d")
 create.early.dates <- (function(d) {
        paste0(ifelse(d > 181231,"19","20"),d)
        })
-#tell it to appky the function we made above to that column
+#tell it to apply the function we made above to that column
 USGS.flow.data$datetime <- create.early.dates(USGS.flow.data$datetime)
 
 #but it;s character, so we have to change it back to date
@@ -122,7 +122,7 @@ summary(USGS.flow.data$gage.height.mean)
 Question: What types of research questions might make it favorable to remove NAs from a dataset, and what types of research questions might make it favorable to retain NAs in the dataset?
 
 > Answer: We don't want NAs: in averages, because it could skew results; in some datasets /stat models do not allow NAs.
-> We would want to keep NAs in qualitative data, to know what we don't know (it's also an answer sometimes); and in some datasets NA could translate as undetectable.
+> We would want to keep NAs in qualitative data, to know what we don't know (it's also an answer sometimes); and in some datasets NA could translate as undetectable, which we would want to know.
 
 ```{r}
 #creating new dataframe for the complete flow data, by removing the entire row if there's not observ for every column
@@ -223,7 +223,7 @@ ggplot(USGS.flow.data.complete) +
 ggplot(USGS.flow.data.complete) +
   geom_boxplot(aes(x = gage.height.mean, y = discharge.mean, group = cut_width(gage.height.mean, 1)))
 
-#shows the amount of samples at certain values ; the draw-quantiles shows lines at eah specification
+#shows the amount of samples at certain values ; the draw-quantiles shows lines at each specification
 ggplot(USGS.flow.data.complete) +
   geom_violin(aes(x = gage.height.mean.approval, y = gage.height.mean), draw_quantiles = c(0.25, 0.5, 0.75))
 ```

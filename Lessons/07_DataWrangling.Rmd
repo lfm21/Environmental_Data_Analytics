@@ -28,9 +28,9 @@ getwd()
 library(tidyverse)
 NTL.phys.data <- read.csv("./Data/Raw/NTL-LTER_Lake_ChemistryPhysics_Raw.csv")
 
-head(NTL.phys.data)
-colnames(NTL.phys.data)
-summary(NTL.phys.data)
+head(NTL.phys.data) #just gives fiorst 6 rows unless otherwise specified
+colnames(NTL.phys.data) 
+summary(NTL.phys.data) #count of categorical variables
 dim(NTL.phys.data)
 
 ```
@@ -41,7 +41,7 @@ Data wrangling takes data exploration one step further: it allows you to process
 
 1. Each variable has its own column
 2. Each observation has its own row
-3. Each value has its own cell
+3. Each value has its own cell 
 
 What is the best way to wrangle data? There are multiple ways to arrive at a specific outcome in R, and we will illustrate some of those approaches. Your goal should be to write the simplest and most elegant code that will get you to your desired outcome. However, there is sometimes a trade-off of the opportunity cost to learn a new formulation of code and the time it takes to write complex code that you already know. Remember that the best code is one that is easy to understand for yourself and your collaborators. Remember to comment your code, use informative names for variables and functions, and use reproducible methods to arrive at your output.
 
@@ -50,7 +50,8 @@ What is the best way to wrangle data? There are multiple ways to arrive at a spe
 `dplyr` is a package in R that includes functions for data manipulation (i.e., data wrangling or data munging). `dplyr` is included in the tidyverse package, so you should already have it installed on your machine. The functions act as verbs for data wrangling processes. For more information, run this line of code:
 
 ```{r, results = "hide"}
-vignette("dplyr")
+vignette("dplyr") #like using pliers! ; functions w/in dplyr act as verbs
+#vignette is a way to get an Rmd file about package
 ```
 
 
@@ -69,83 +70,90 @@ A few relevant commands:
 `|`
 
 ```{r}
-class(NTL.phys.data$lakeid)
-class(NTL.phys.data$depth)
+class(NTL.phys.data$lakeid) #factor = categorical variable
+class(NTL.phys.data$depth) #numeric variable
 
-# matrix filtering
-NTL.phys.data.surface1 <- NTL.phys.data[NTL.phys.data$depth == 0,]
+# matrix filtering =taking phys data only from surface depth; take depth equal to 0
+NTL.phys.data.surface1 <- NTL.phys.data[NTL.phys.data$depth == 0,] #the comma after 0 ensures that there's no error; w/ matrix subsetting, it has to know which columns to take (and we told it to take all, and shows up in Environment)
 
-# dplyr filtering
+# dplyr filtering    filter(dataframe, then conditional statement)
 NTL.phys.data.surface2 <- filter(NTL.phys.data, depth == 0)
 NTL.phys.data.surface3 <- filter(NTL.phys.data, depth < 0.25)
 
 # Did the methods arrive at the same result?
-head(NTL.phys.data.surface1)
-dim(NTL.phys.data.surface1)
+head(NTL.phys.data.surface1) #storing as same as in original dataframe
+dim(NTL.phys.data.surface1) #storing as new row numbers than in original dataframe
 head(NTL.phys.data.surface2)
 dim(NTL.phys.data.surface2)
 head(NTL.phys.data.surface3)
 dim(NTL.phys.data.surface3)
 
 # Choose multiple conditions to filter
-summary(NTL.phys.data$lakename)
-NTL.phys.data.PeterPaul1 <- filter(NTL.phys.data, lakename == "Paul Lake" | lakename == "Peter Lake")
+summary(NTL.phys.data$lakename) #(factors must be in quot marks)
+NTL.phys.data.PeterPaul1 <- filter(NTL.phys.data, lakename == "Paul Lake" | lakename == "Peter Lake") #has to be Paul Lk OR Paul Lk (there is nothing that is both Paul and Peter)
 NTL.phys.data.PeterPaul2 <- filter(NTL.phys.data, lakename != "Central Long Lake" & 
                                      lakename != "Crampton Lake" & lakename != "East Long Lake" &
                                      lakename != "Hummingbird Lake" & lakename != "Tuesday Lake" &
                                      lakename != "Ward Lake" & lakename != "West Long Lake")
+#!= to NOT be all of those things; using easy-to-read code on multiple lines
+
+#(%in% is for piping)
 NTL.phys.data.PeterPaul3 <- filter(NTL.phys.data, lakename %in% c("Paul Lake", "Peter Lake"))
 
 # Choose a range of conditions of a numeric or integer variable
-summary(NTL.phys.data$daynum)
+summary(NTL.phys.data$daynum) # Julian 151 = June 1; 305 = Oct 31; telling it to give us between those 2 dates
 NTL.phys.data.JunethruOctober1 <- filter(NTL.phys.data, daynum > 151 & daynum < 305)
-NTL.phys.data.JunethruOctober2 <- filter(NTL.phys.data, daynum > 151, daynum < 305)
+NTL.phys.data.JunethruOctober2 <- filter(NTL.phys.data, daynum > 151, daynum < 305) #comma means 'I'm gonna gove another conditional statement now'
 NTL.phys.data.JunethruOctober3 <- filter(NTL.phys.data, daynum >= 152 & daynum <= 304)
 NTL.phys.data.JunethruOctober4 <- filter(NTL.phys.data, daynum %in% c(152:304))
 
 # Exercise: 
 # filter NTL.phys.data for the year 1999
-# what code do you need to use, based on the class of the variable?
-class(NTL.phys.data$year4)
+# what code do you need to use, based on the class of the variable? # integer, even though it's in a number
+class(NTL.phys.data$year4) 
+NTL.phys.data.1999 <- filter(NTL.phys.data, year4 == 1999)
 
 # Exercise: 
 # filter NTL.phys.data for Tuesday Lake from 1990 through 1999.
-
+NTL.phys.data.1999.Tuesday <- filter(NTL.phys.data, year4 == 1999 & lakename == "Tuesday Lake")
 
 ```
 Question: Why don't we filter using row numbers?
 
-> ANSWER: 
+> ANSWER: Filtering by rows wouldn't be reproducible, it'd only be a snapshot of this particular moment's dataframe. Ex: there might be more data to download from the LTER; we don't want to have to manually inspect the rows; everytime we get the dimensions, the row numbers could be different...
 
 ### Arrange
 
 Arranging allows us to change the order of rows in our dataset. By default, the arrange function will arrange rows in ascending order.
 
 ```{r}
-NTL.phys.data.depth.ascending <- arrange(NTL.phys.data, depth)
-NTL.phys.data.depth.descending <- arrange(NTL.phys.data, desc(depth))
+NTL.phys.data.depth.ascending <- arrange(NTL.phys.data, depth) #ascending order is the default
+NTL.phys.data.depth.descending <- arrange(NTL.phys.data, desc(depth)) #put desc IN the first cond stmt
+# View(NTL.phys.data.depth.descending) will show so you don't have to hover
 
 # Exercise: 
 # Arrange NTL.phys.data by temperature, in descending order. 
 # Which dates, lakes, and depths have the highest temperatures?
 
-
+NTL.phys.data.TempC.desc <- arrange(NTL.phys.data, desc(temperature_C))
+View(NTL.phys.data.TempC.desc)
 ```
 ### Select
 
 Selecting allows us to choose certain columns (variables) in our dataset.
 
 ```{r}
-NTL.phys.data.temps <- select(NTL.phys.data, lakename, sampledate:temperature_C)
-
+NTL.phys.data.temps <- select(NTL.phys.data, lakename, sampledate:temperature_C) #columns everything including sampledate thru temperature; gives us same amount of rows but only those columns
+#NTL.phys.data.temps <- select(NTL.phys.data, "lakename" & "sampledate" & "temperature_C") this won't work because select doesn't allow factors like filter does
 ```
 ### Mutate
 
 Mutating allows us to add new columns that are functions of existing columns. Operations include addition, subtraction, multiplication, division, log, and other functions.
 
 ```{r}
-
-NTL.phys.data.temps <- mutate(NTL.phys.data.temps, temperature_F = (temperature_C*9/5) + 32)
+#to add another column; like to change to F:
+NTL.phys.data.temps <- mutate(NTL.phys.data.temps, temperature_F = (temperature_C*9/5) + 32) #it'll always add to the end unless you code it another way
+#could even take from a different dataset; what would that look like?
 
 ```
 ### Pipes
@@ -156,11 +164,13 @@ Let's say we want to take our raw dataset (NTL.phys.data), *then* filter the dat
 
 ```{r}
 NTL.phys.data.processed <- 
-  NTL.phys.data %>%
+  NTL.phys.data %>% #pipe means "then"
   filter(lakename == "Paul Lake" | lakename == "Peter Lake") %>%
   select(lakename, sampledate:temperature_C) %>%
   mutate(temperature_F = (temperature_C*9/5) + 32)
-  
+View(NTL.phys.data.processed)
+  #all the stuff we already did, but in one line and your Environment stays cleaner; with pipes your dataframe only needs to be mentioned once
+
 ```
 
 Notice that we did not place the dataset name inside the wrangling function but rather at the beginning.
@@ -168,9 +178,11 @@ Notice that we did not place the dataset name inside the wrangling function but 
 ### Saving processed datasets
 
 ```{r}
-write.csv(NTL.phys.data.PeterPaul1, row.names = FALSE, file = "./Data/Processed/NTL-LTER_Lake_ChemistryPhysics_PeterPaul_Processed.csv")
+#write.csv(NTL.phys.data.PeterPaul1, row.names = FALSE, file = "./Data/Processed/NTL-LTER_Lake_ChemistryPhysics_PeterPaul_Processed.csv") 
+
+#this file will automatically overwrite, so be careful; comment out the line of code !
 ```
 
 ## CLOSING DISCUSSION
 How did data wrangling help us to generate a processed dataset? How does this impact our ability to analyze and answer questions about our data?
-
+ > It totally helps. We can organize the data in the way that we want to, and also keep the Environment cleaner if we want.

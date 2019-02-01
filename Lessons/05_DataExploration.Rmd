@@ -120,12 +120,12 @@ summary(USGS.flow.data$discharge.mean) #numerical
 summary(USGS.flow.data$discharge.mean.approval) # a factor
 summary(USGS.flow.data$gage.height.mean)
 
-#how to get rid of NAs
+#how to get rid of NAs?
 
 ```
 
 What happened to blank cells in the spreadsheet when they were imported into R?
-> ANSWER: 
+> ANSWER: they turned into NAs..?
 
 ## TIPS AND TRICKS: SPREADSHEETS
 
