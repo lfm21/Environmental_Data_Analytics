@@ -99,14 +99,14 @@ Note that for every date prior to 1969, R has assigned the date in the 2000s rat
 USGS.flow.data$datetime <- format(USGS.flow.data$datetime, "%y%m%d")
 
 #creating a code to tell it that if d is greater than 181231 , ie, if its past last day of december, give it 19, and if not, give it 20
-#past0 takes the 2 statements in the function to put them together
+#paste0 takes the 2 statements in the function to put them together
 create.early.dates <- (function(d) {
        paste0(ifelse(d > 181231,"19","20"),d)
        })
 #tell it to apply the function we made above to that column
 USGS.flow.data$datetime <- create.early.dates(USGS.flow.data$datetime)
 
-#but it;s character, so we have to change it back to date
+#but it's character, so we have to change it back to date
 USGS.flow.data$datetime <- as.Date(USGS.flow.data$datetime, format = "%Y%m%d") 
 
 ```

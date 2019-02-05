@@ -28,7 +28,7 @@ getwd()
 library(tidyverse)
 NTL.phys.data <- read.csv("./Data/Raw/NTL-LTER_Lake_ChemistryPhysics_Raw.csv")
 
-head(NTL.phys.data) #just gives fiorst 6 rows unless otherwise specified
+head(NTL.phys.data) #just gives first 6 rows unless otherwise specified
 colnames(NTL.phys.data) 
 summary(NTL.phys.data) #count of categorical variables
 dim(NTL.phys.data)
@@ -82,7 +82,7 @@ NTL.phys.data.surface3 <- filter(NTL.phys.data, depth < 0.25)
 
 # Did the methods arrive at the same result?
 head(NTL.phys.data.surface1) #storing as same as in original dataframe
-dim(NTL.phys.data.surface1) #storing as new row numbers than in original dataframe
+dim(NTL.phys.data.surface1) #storing as new row numbers (different than in original dataframe)
 head(NTL.phys.data.surface2)
 dim(NTL.phys.data.surface2)
 head(NTL.phys.data.surface3)
@@ -143,7 +143,7 @@ View(NTL.phys.data.TempC.desc)
 Selecting allows us to choose certain columns (variables) in our dataset.
 
 ```{r}
-NTL.phys.data.temps <- select(NTL.phys.data, lakename, sampledate:temperature_C) #columns everything including sampledate thru temperature; gives us same amount of rows but only those columns
+NTL.phys.data.temps <- select(NTL.phys.data, lakename, sampledate:temperature_C) #columns everything from sampledate thru temperature; gives us same amount of rows but only those columns
 #NTL.phys.data.temps <- select(NTL.phys.data, "lakename" & "sampledate" & "temperature_C") this won't work because select doesn't allow factors like filter does
 ```
 ### Mutate
@@ -180,9 +180,9 @@ Notice that we did not place the dataset name inside the wrangling function but 
 ```{r}
 #write.csv(NTL.phys.data.PeterPaul1, row.names = FALSE, file = "./Data/Processed/NTL-LTER_Lake_ChemistryPhysics_PeterPaul_Processed.csv") 
 
-#this file will automatically overwrite, so be careful; comment out the line of code !
+#this file will automatically overwrite, so be careful; COMMMENT OUT this specific line of code!!
 ```
 
 ## CLOSING DISCUSSION
 How did data wrangling help us to generate a processed dataset? How does this impact our ability to analyze and answer questions about our data?
- > It totally helps. We can organize the data in the way that we want to, and also keep the Environment cleaner if we want.
+ > It totally helps. We can organize the data in the way that we want to, and also keep the Environment cleaner.
