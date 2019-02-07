@@ -103,7 +103,7 @@ NTL.phys.data.PeterPaul3 <- filter(NTL.phys.data, lakename %in% c("Paul Lake", "
 # Choose a range of conditions of a numeric or integer variable
 summary(NTL.phys.data$daynum) # Julian 151 = June 1; 305 = Oct 31; telling it to give us between those 2 dates
 NTL.phys.data.JunethruOctober1 <- filter(NTL.phys.data, daynum > 151 & daynum < 305)
-NTL.phys.data.JunethruOctober2 <- filter(NTL.phys.data, daynum > 151, daynum < 305) #comma means 'I'm gonna gove another conditional statement now'
+NTL.phys.data.JunethruOctober2 <- filter(NTL.phys.data, daynum > 151, daynum < 305) #comma means 'I'm gonna give another conditional statement now'
 NTL.phys.data.JunethruOctober3 <- filter(NTL.phys.data, daynum >= 152 & daynum <= 304)
 NTL.phys.data.JunethruOctober4 <- filter(NTL.phys.data, daynum %in% c(152:304))
 
