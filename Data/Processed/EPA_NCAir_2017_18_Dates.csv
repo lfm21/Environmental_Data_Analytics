@@ -1,0 +1,2987 @@
+"Date","DAILY_AQI_VALUE","Site.Name","AQS_PARAMETER_DESC","COUNTY","SITE_LATITUDE","SITE_LONGITUDE"
+2017-01-01,27,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-01-02,15,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-01-03,15,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-01-04,27,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-01-05,24,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-01-06,23,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-01-07,30,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-01-08,33,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-01-09,31,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-01-10,33,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-01-11,27,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-01-12,37,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-01-13,35,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-01-14,28,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-01-15,23,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-01-16,30,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-01-17,27,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-01-18,37,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-01-19,28,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-01-20,21,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-01-21,8,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-01-22,16,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-01-23,36,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-01-24,30,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-01-25,37,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-01-27,32,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-01-28,39,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-01-29,39,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-01-30,38,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-01-31,46,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-02-01,50,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-02-02,41,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-02-03,32,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-02-04,36,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-02-05,42,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-02-06,44,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-02-07,39,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-02-08,35,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-02-09,39,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-02-10,40,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-02-11,43,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-02-12,41,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-02-13,44,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-02-14,54,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-02-15,40,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-02-16,43,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-02-17,44,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-02-18,47,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-02-19,44,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-02-20,48,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-02-21,44,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-02-22,44,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-02-23,44,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-02-24,41,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-02-25,43,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-02-26,42,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-02-27,45,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-02-28,43,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-03-02,42,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-03-03,43,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-03-04,41,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-03-05,42,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-03-06,44,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-03-07,48,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-03-08,47,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-03-09,50,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-03-10,44,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-03-11,42,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-03-12,40,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-03-13,34,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-03-14,37,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-03-15,43,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-03-16,45,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-03-17,51,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-03-18,42,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-03-19,36,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-03-20,44,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-03-21,54,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-03-22,47,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-03-23,46,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-03-24,47,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-03-25,44,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-03-26,43,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-03-27,42,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-03-28,46,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-03-29,47,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-03-30,43,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-03-31,44,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-04-01,44,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-04-02,41,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-04-03,42,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-04-04,45,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-04-05,32,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-04-06,38,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-04-07,43,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-04-08,51,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-04-09,64,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-04-10,58,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-04-11,47,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-04-12,46,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-04-13,51,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-04-14,45,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-04-15,48,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-04-16,48,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-04-17,46,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-04-18,43,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-04-19,31,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-04-20,41,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-04-21,45,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-04-22,42,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-04-23,23,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-04-24,22,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-04-25,25,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-04-26,36,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-04-27,46,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-04-28,38,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-04-29,31,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-04-30,22,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-05-01,28,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-05-02,48,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-05-03,49,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-05-04,48,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-05-05,39,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-05-06,39,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-05-07,44,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-05-08,64,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-05-09,36,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-05-10,54,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-05-11,46,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-05-12,29,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-05-13,25,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-05-14,51,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-05-15,71,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-05-16,64,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-05-17,58,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-05-18,38,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-05-19,39,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-05-20,38,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-05-21,23,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-05-22,29,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-05-23,26,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-05-24,29,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-05-25,37,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-05-26,61,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-05-27,46,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-05-28,44,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-05-29,44,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-05-30,29,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-05-31,35,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-06-01,44,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-06-02,61,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-06-03,51,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-06-04,37,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-06-05,23,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-06-06,45,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-06-07,40,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-06-08,36,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-06-09,46,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-06-10,61,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-06-11,41,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-06-12,41,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-06-13,44,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-06-14,46,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-06-15,46,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-06-16,43,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-06-17,34,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-06-18,30,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-06-19,28,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-06-20,25,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-06-21,20,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-06-22,16,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-06-23,21,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-06-24,24,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-06-25,33,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-06-26,47,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-06-27,41,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-06-28,46,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-06-29,54,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-06-30,24,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-07-01,22,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-07-02,35,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-07-03,40,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-07-04,28,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-07-05,35,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-07-06,31,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-07-07,42,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-07-08,42,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-07-09,41,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-07-10,38,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-07-11,37,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-07-12,33,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-07-13,33,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-07-14,41,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-07-15,45,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-07-16,37,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-07-17,38,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-07-18,36,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-07-19,64,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-07-20,71,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-07-21,50,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-07-22,45,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-07-23,37,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-07-24,45,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-07-25,64,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-07-26,50,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-07-27,46,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-07-28,39,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-07-29,43,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-07-30,36,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-07-31,50,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-08-01,50,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-08-02,50,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-08-03,45,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-08-04,41,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-08-05,47,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-08-06,47,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-08-07,21,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-08-08,27,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-08-09,44,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-08-10,47,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-08-11,29,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-08-12,23,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-08-13,32,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-08-14,25,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-08-15,36,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-08-16,39,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-08-17,36,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-08-18,31,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-08-19,44,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-08-20,49,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-08-21,42,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-08-22,36,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-08-23,43,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-08-24,41,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-08-25,49,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-08-26,44,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-08-27,46,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-08-28,44,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-08-29,24,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-08-30,38,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-08-31,30,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-09-01,26,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-09-02,32,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-09-03,37,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-09-04,44,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-09-05,34,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-09-06,34,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-09-08,36,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-09-09,41,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-09-10,28,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-09-11,22,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-09-12,20,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-09-13,31,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-09-14,36,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-09-15,38,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-09-16,35,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-09-17,38,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-09-18,39,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-09-19,38,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-09-20,44,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-09-21,50,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-09-22,46,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-09-23,50,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-09-24,43,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-09-25,39,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-09-26,21,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-09-27,39,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-09-28,97,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-09-29,42,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-09-30,44,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-10-01,35,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-10-03,48,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-10-04,43,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-10-05,42,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-10-06,38,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-10-07,20,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-10-08,14,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-10-09,20,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-10-10,18,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-10-11,22,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-10-12,28,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-10-13,25,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-10-14,28,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-10-15,28,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-10-16,24,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-10-17,33,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-10-18,37,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-10-19,36,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-10-20,49,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-10-21,48,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-10-22,44,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-10-24,31,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-10-25,37,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-10-26,36,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-10-27,43,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-10-28,38,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-10-29,19,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-10-30,31,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-10-31,37,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-11-01,44,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-11-02,33,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-11-03,39,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-11-04,18,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-11-05,18,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-11-06,27,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-11-09,12,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-11-10,32,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-11-11,33,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-11-12,27,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-11-13,27,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-11-14,29,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-11-15,30,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-11-16,34,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-11-17,25,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-11-18,40,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-11-19,26,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-11-20,35,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-11-21,31,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-11-22,39,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-11-23,24,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-11-24,31,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-11-25,38,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-11-26,38,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-11-27,36,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-11-28,41,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-11-29,47,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-11-30,44,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-12-01,40,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-12-02,22,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-12-03,38,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-12-04,36,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-12-05,34,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-12-06,28,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-12-07,23,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-12-08,23,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-12-09,25,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-12-10,27,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-12-11,31,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-12-12,31,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-12-13,35,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-12-14,34,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-12-15,19,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-12-16,31,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-12-17,31,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-12-18,37,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-12-19,37,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-12-20,21,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-12-21,26,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-12-22,30,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-12-23,24,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-12-24,19,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-12-25,32,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-12-26,32,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-12-27,31,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-12-28,31,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2017-03-01,34,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-03-02,40,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-03-03,41,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-03-04,43,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-03-05,50,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-03-06,41,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-03-07,33,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-03-08,44,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-03-09,49,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-03-10,44,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-03-11,39,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-03-12,37,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-03-13,42,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-03-14,39,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-03-15,41,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-03-16,46,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-03-17,32,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-03-18,47,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-03-19,36,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-03-20,34,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-03-22,49,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-03-23,48,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-03-24,44,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-03-25,43,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-03-26,43,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-03-27,34,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-03-28,47,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-03-29,47,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-03-30,44,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-03-31,38,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-04-01,42,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-04-02,44,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-04-03,36,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-04-04,47,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-04-05,34,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-04-06,39,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-04-07,45,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-04-08,51,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-04-09,58,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-04-10,71,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-04-11,61,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-04-12,54,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-04-13,61,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-04-14,71,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-04-15,51,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-04-16,44,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-04-17,34,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-04-18,32,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-04-19,35,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-04-20,37,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-04-21,34,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-04-22,42,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-04-23,28,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-04-24,32,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-04-25,33,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-04-26,50,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-04-27,27,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-04-28,44,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-04-29,40,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-04-30,33,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-05-01,58,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-05-02,48,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-05-17,48,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-05-18,37,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-05-19,34,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-05-20,40,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-05-21,29,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-05-22,32,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-05-23,25,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-05-24,33,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-05-25,37,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-05-26,44,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-05-27,35,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-05-28,41,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-05-29,36,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-05-30,39,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-05-31,44,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-06-01,44,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-06-02,46,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-06-03,42,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-06-04,28,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-06-05,20,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-06-06,46,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-06-07,43,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-06-08,43,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-06-09,44,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-06-10,44,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-06-11,41,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-06-12,31,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-06-13,31,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-06-14,31,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-06-15,35,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-06-16,37,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-06-17,36,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-06-18,31,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-06-19,25,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-06-20,31,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-06-21,25,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-06-22,11,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-06-23,22,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-06-24,31,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-06-25,30,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-06-26,42,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-06-27,37,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-06-28,45,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-06-30,17,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-07-01,33,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-07-02,36,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-07-03,25,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-07-04,23,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-07-05,19,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-07-06,21,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-07-07,36,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-07-08,39,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-07-09,36,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-07-10,41,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-07-11,41,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-07-12,40,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-07-13,31,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-07-14,31,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-07-15,30,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-07-16,36,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-07-17,37,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-07-18,31,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-07-19,44,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-07-20,41,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-07-21,37,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-07-22,31,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-07-23,30,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-07-24,36,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-07-25,43,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-07-26,42,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-07-27,36,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-07-28,17,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-07-29,44,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-07-30,36,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-07-31,36,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-08-01,32,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-08-02,37,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-08-03,40,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-08-04,34,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-08-05,36,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-08-06,37,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-08-07,18,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-08-08,34,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-08-09,38,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-08-10,22,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-08-11,23,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-08-12,32,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-08-13,29,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-08-14,34,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-08-15,31,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-08-16,28,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-08-17,22,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-08-18,36,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-08-19,38,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-08-20,34,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-08-21,37,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-08-22,39,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-08-23,42,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-08-24,41,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-08-25,42,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-08-26,44,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-08-27,34,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-08-28,42,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-08-29,37,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-08-30,31,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-08-31,18,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-09-01,34,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-09-02,36,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-09-03,32,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-09-04,28,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-09-05,33,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-09-06,34,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-09-07,31,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-09-14,29,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-09-15,21,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-09-16,31,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-09-17,33,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-09-18,36,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-09-19,37,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-09-20,34,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-09-21,29,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-09-22,37,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-09-23,37,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-09-24,37,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-09-25,31,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-09-26,36,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-09-27,36,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-09-28,45,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-09-29,40,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-09-30,42,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-10-01,36,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-10-02,39,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-10-03,41,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-10-04,37,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-10-05,36,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-10-06,40,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-10-07,23,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-10-08,21,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-10-09,19,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-10-10,19,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-10-11,31,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-10-12,37,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-10-13,31,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-10-14,33,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-10-15,21,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-10-16,29,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-10-17,30,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-10-18,31,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-10-19,32,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-10-20,32,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-10-21,40,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-10-22,34,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-10-23,35,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-10-24,38,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-10-25,31,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-10-26,35,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-10-27,40,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-10-28,24,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-10-29,24,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-10-30,34,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-10-31,39,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-01-04,33,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-01-05,34,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-01-06,33,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-01-07,35,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-01-08,34,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-01-09,37,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-01-10,35,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-01-11,27,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-01-12,36,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-01-13,32,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-01-14,33,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-01-15,32,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-01-16,31,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-01-17,28,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-01-18,36,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-01-19,37,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-01-20,40,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-01-21,38,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-01-22,39,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-01-23,38,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-01-24,33,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-01-25,34,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-01-26,38,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-01-27,38,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-01-28,31,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-01-29,25,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-01-30,33,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-01-31,34,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-02-01,41,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-02-02,35,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-02-03,33,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-02-04,31,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-02-05,33,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-02-06,33,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-02-07,32,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-02-08,35,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-02-09,38,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-02-10,20,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-02-11,24,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-02-12,31,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-02-13,31,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-02-14,26,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-02-15,26,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-02-16,34,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-02-17,28,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-02-18,36,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-02-19,26,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-02-20,23,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-02-21,22,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-02-22,24,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-02-23,27,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-02-24,31,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-02-25,27,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-02-26,33,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-02-27,44,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-02-28,34,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-03-01,36,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-03-02,44,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-03-03,45,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-03-04,45,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-03-05,44,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-03-06,31,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-03-07,34,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-03-08,40,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-03-09,44,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-03-10,44,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-03-11,31,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-03-12,37,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-03-13,44,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-03-14,44,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-03-15,54,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-03-16,67,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-03-17,44,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-03-18,44,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-03-19,44,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-03-20,31,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-03-21,32,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-03-22,44,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-03-23,49,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-03-24,41,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-03-25,44,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-03-26,44,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-03-27,36,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-03-28,43,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-03-29,50,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-03-30,41,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-03-31,46,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-04-01,49,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-04-02,49,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-04-03,41,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-04-04,45,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-04-05,47,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-04-06,61,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-04-07,44,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-04-08,44,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-04-09,43,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-04-10,44,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-04-11,46,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-04-12,61,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-04-13,51,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-04-14,48,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-04-15,35,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-04-16,33,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-04-17,48,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-04-18,71,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-04-19,49,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-04-20,61,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-04-21,58,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-04-22,51,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-04-23,44,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-04-24,37,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-04-25,32,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-04-26,38,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-04-27,44,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-04-28,64,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-04-29,44,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-04-30,54,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-05-01,67,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-05-02,64,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-05-03,47,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-05-04,44,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-05-05,41,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-05-06,40,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-05-07,45,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-05-08,51,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-05-09,64,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-05-10,54,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-05-11,58,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-05-12,58,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-05-13,48,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-05-14,51,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-05-15,23,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-05-16,33,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-05-17,27,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-05-18,26,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-05-19,20,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-05-20,27,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-05-21,36,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-05-22,29,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-05-23,30,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-05-24,44,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-05-25,35,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-05-26,23,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-05-27,24,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-05-28,17,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-05-29,22,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-05-30,21,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-05-31,23,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-06-01,43,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-06-02,44,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-06-03,42,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-06-04,71,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-06-05,48,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-06-06,67,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-06-07,58,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-06-08,50,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-06-09,44,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-06-10,38,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-06-11,39,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-06-12,31,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-06-13,37,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-06-14,47,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-06-15,46,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-06-16,49,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-06-17,44,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-06-18,47,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-06-19,51,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-06-20,42,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-06-21,34,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-06-22,39,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-06-23,41,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-06-24,40,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-06-25,43,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-06-26,28,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-06-27,31,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-06-28,44,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-06-29,54,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-06-30,44,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-07-01,32,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-07-02,32,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-07-03,44,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-07-04,27,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-07-05,30,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-07-06,31,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-07-07,32,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-07-08,37,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-07-09,47,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-07-10,51,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-07-11,77,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-07-12,54,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-07-13,71,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-07-14,49,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-07-15,48,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-07-16,41,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-07-17,44,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-07-18,49,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-07-19,64,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-07-20,39,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-07-21,42,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-07-22,43,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-07-23,39,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-07-24,39,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-07-25,34,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-07-26,40,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-07-27,39,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-07-28,42,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-07-29,37,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-07-30,25,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-07-31,27,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-08-01,29,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-08-02,25,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-08-03,17,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-08-04,26,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-08-05,31,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-08-06,37,"Blackstone","Ozone","Lee",35.4325,-79.2887
+2018-02-15,30,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-02-17,24,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-02-18,34,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-02-19,24,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-02-20,31,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-02-21,29,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-02-22,29,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-02-23,29,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-02-24,33,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-02-25,31,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-02-26,36,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-02-27,42,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-02-28,29,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-03-01,42,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-03-02,44,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-03-03,44,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-03-04,42,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-03-05,44,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-03-06,38,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-03-07,38,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-03-08,39,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-03-09,44,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-03-10,31,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-03-11,33,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-03-12,44,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-03-13,43,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-03-14,44,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-03-15,61,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-03-16,64,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-03-17,44,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-03-18,41,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-03-19,37,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-03-20,36,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-03-21,35,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-03-22,44,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-03-23,43,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-03-24,31,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-03-25,42,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-03-26,44,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-03-27,35,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-03-28,35,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-03-29,44,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-03-30,39,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-03-31,44,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-04-01,44,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-04-02,44,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-04-03,40,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-04-04,43,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-04-05,46,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-04-06,33,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-04-07,33,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-04-08,42,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-04-09,34,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-04-10,44,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-04-11,41,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-04-12,54,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-04-13,64,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-04-14,44,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-04-15,36,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-04-16,40,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-04-17,51,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-04-18,54,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-04-19,41,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-04-20,50,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-04-21,67,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-04-22,44,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-04-23,43,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-04-24,33,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-04-25,37,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-04-26,25,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-04-27,51,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-04-28,64,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-04-29,49,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-04-30,45,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-05-01,71,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-05-02,50,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-05-03,49,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-05-04,42,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-05-05,28,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-05-06,51,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-05-08,46,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-05-09,47,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-05-10,46,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-05-11,49,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-05-12,48,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-05-13,44,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-05-14,39,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-05-15,26,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-05-16,23,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-05-17,22,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-05-18,31,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-05-19,37,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-05-20,32,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-05-21,29,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-05-22,25,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-05-23,36,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-05-24,37,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-05-25,26,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-05-26,29,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-05-27,23,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-05-28,13,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-05-29,19,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-05-30,29,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-05-31,31,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-06-01,44,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-06-02,39,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-06-03,42,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-06-04,58,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-06-05,46,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-06-06,58,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-06-07,61,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-06-08,43,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-06-09,38,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-06-10,41,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-06-11,38,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-06-12,37,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-06-13,29,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-06-14,43,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-06-15,45,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-06-16,40,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-06-17,35,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-06-18,32,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-06-19,39,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-06-20,27,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-06-21,19,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-06-22,38,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-06-23,37,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-06-24,24,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-06-25,25,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-06-26,22,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-06-27,30,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-06-28,31,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-06-29,34,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-06-30,39,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-07-01,27,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-07-02,29,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-07-03,31,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-07-04,40,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-07-05,29,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-07-06,26,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-07-07,28,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-07-08,32,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-07-09,37,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-07-10,38,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-07-11,37,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-07-12,38,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-07-13,37,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-07-14,39,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-07-15,33,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-07-16,30,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-07-17,5,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-07-18,43,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-07-19,37,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-07-20,40,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-07-21,44,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-07-22,37,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-07-23,36,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-07-24,31,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-07-25,35,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-07-26,40,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-07-27,42,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-07-28,40,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-07-29,40,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-07-30,41,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-07-31,31,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-08-01,31,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-08-02,23,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-08-03,25,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-08-04,27,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-08-05,29,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-08-06,24,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-08-07,26,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-08-08,26,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-08-09,32,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-08-10,28,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-08-11,31,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-08-12,36,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-08-13,31,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-08-14,34,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-08-15,28,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-08-16,37,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-08-17,28,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-08-18,27,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-08-19,30,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-08-20,31,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-08-21,31,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-08-22,34,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-08-23,40,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-08-24,36,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-08-25,36,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-08-26,33,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-08-27,30,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-08-28,36,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-08-29,39,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-08-30,29,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-08-31,27,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-09-01,29,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-09-02,24,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-09-03,25,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-09-04,28,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-09-05,25,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-09-06,26,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-09-07,30,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-09-08,28,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-09-09,24,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-09-10,17,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-09-11,24,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-09-12,24,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-09-13,24,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-09-14,23,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-09-15,21,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-09-16,12,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-09-17,21,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-09-18,27,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-09-19,34,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-09-20,35,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-09-21,36,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-09-22,34,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-09-23,31,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-09-24,24,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-09-25,22,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-09-26,16,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-09-27,13,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-09-28,27,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-09-29,29,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-09-30,29,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-10-01,29,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-10-02,32,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-10-03,28,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-10-04,31,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-10-05,28,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-10-06,32,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-10-07,30,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-10-08,32,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-10-12,33,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-10-13,33,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-10-14,30,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-10-15,31,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-10-16,22,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-10-17,31,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-10-18,32,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-10-19,33,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-10-20,37,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-10-21,32,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-10-22,26,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-10-24,32,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-10-25,31,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-10-26,32,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-10-27,31,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-10-28,39,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-10-29,38,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-10-30,31,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-10-31,35,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-11-01,35,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-11-02,27,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-11-03,33,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-11-04,39,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-11-05,29,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-11-06,36,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-11-07,29,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-11-08,25,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-11-09,23,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-11-10,35,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-11-11,32,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-11-12,21,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-11-13,18,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-11-14,31,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-11-15,28,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-11-16,38,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-11-17,25,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-11-18,27,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-11-19,32,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-11-20,30,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-11-21,28,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-11-22,31,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-11-23,34,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-11-24,30,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-11-25,27,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-11-26,24,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-11-27,31,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-11-28,30,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-11-29,13,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-11-30,5,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-12-01,27,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-12-02,39,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-12-03,37,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-12-04,25,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-12-05,28,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-12-06,23,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-12-07,29,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-12-08,32,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2018-12-09,34,"Bryson City","Ozone","Swain",35.434767,-83.442133
+2017-01-01,25,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-01-02,7,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-01-03,10,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-01-04,14,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-01-05,25,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-01-06,25,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-01-07,30,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-01-08,41,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-01-09,38,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-01-10,34,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-01-11,20,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-01-12,13,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-01-13,32,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-01-14,28,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-01-15,40,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-01-16,34,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-01-17,51,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-01-18,31,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-01-19,18,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-01-20,41,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-01-21,30,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-01-22,11,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-01-23,6,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-01-24,12,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-01-25,16,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-01-27,15,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-01-28,22,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-01-29,23,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-01-30,17,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-01-31,36,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-02-01,54,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-02-02,50,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-02-03,32,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-02-04,83,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-02-05,55,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-02-06,59,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-02-07,57,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-02-08,28,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-02-09,15,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-02-10,30,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-02-11,41,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-02-12,54,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-02-13,12,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-02-14,56,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-02-15,50,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-02-17,31,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-02-18,52,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-02-19,37,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-02-20,48,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-02-21,48,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-02-22,45,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-02-23,38,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-02-24,45,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-02-25,21,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-02-26,25,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-02-27,29,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-02-28,39,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-03-01,45,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-03-02,18,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-03-03,29,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-03-04,31,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-03-05,51,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-03-06,52,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-03-07,35,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-03-08,18,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-03-09,23,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-03-10,41,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-03-11,32,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-03-12,31,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-03-13,50,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-03-14,19,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-03-15,33,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-03-16,54,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-03-17,44,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-03-18,66,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-03-19,11,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-03-20,42,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-03-21,55,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-03-22,25,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-03-23,33,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-03-24,55,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-03-25,42,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-03-26,28,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-03-27,27,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-03-28,18,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-03-29,30,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-03-30,36,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-03-31,14,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-04-01,8,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-04-02,15,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-04-03,29,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-04-04,16,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-04-05,40,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-04-06,10,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-04-07,11,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-04-08,18,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-04-09,33,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-04-10,30,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-04-11,31,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-04-12,26,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-04-19,34,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-04-20,40,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-04-21,42,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-04-22,39,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-04-23,20,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-04-24,5,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-04-25,3,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-04-26,20,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-04-27,41,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-04-28,48,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-04-29,45,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-04-30,21,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-05-01,15,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-05-02,27,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-05-03,32,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-05-04,25,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-05-05,13,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-05-06,24,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-05-07,34,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-05-08,51,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-05-09,43,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-05-10,53,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-05-11,58,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-05-12,27,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-05-13,18,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-05-14,29,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-05-15,47,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-05-16,49,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-05-17,54,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-05-18,32,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-05-19,25,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-05-20,30,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-05-21,37,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-05-22,0,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-05-23,0,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-05-24,0,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-05-25,11,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-05-26,32,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-05-27,38,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-05-28,30,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-05-29,13,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-05-30,24,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-05-31,46,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-06-01,43,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-06-02,46,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-06-03,52,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-06-04,51,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-06-05,25,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-06-06,28,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-06-07,38,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-06-08,28,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-06-09,47,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-06-10,51,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-06-11,33,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-06-12,48,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-06-13,54,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-06-14,34,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-06-15,41,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-06-16,32,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-06-17,40,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-06-18,37,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-06-19,29,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-06-20,25,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-06-21,13,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-06-22,28,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-06-23,49,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-06-24,24,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-06-25,26,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-06-26,35,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-06-27,36,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-06-28,43,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-06-29,57,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-06-30,31,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-07-01,9,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-07-02,30,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-07-03,40,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-07-04,29,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-07-05,45,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-07-06,35,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-07-07,30,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-07-08,38,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-07-09,44,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-07-10,37,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-07-11,37,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-07-12,38,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-07-13,23,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-07-14,27,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-07-15,25,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-07-16,21,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-07-17,23,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-07-18,18,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-07-19,28,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-07-20,46,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-07-21,52,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-07-22,53,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-07-23,40,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-07-24,24,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-07-25,46,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-07-26,45,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-07-27,44,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-07-28,52,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-07-29,24,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-07-30,27,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-07-31,35,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-08-01,45,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-08-02,50,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-08-03,55,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-08-04,29,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-08-05,33,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-08-06,45,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-08-07,36,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-08-08,23,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-08-09,36,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-08-10,40,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-08-11,23,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-08-12,17,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-08-13,21,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-08-14,38,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-08-15,32,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-08-16,27,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-08-17,33,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-08-18,35,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-08-19,30,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-08-20,47,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-08-21,43,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-08-22,24,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-08-23,47,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-08-24,30,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-08-25,42,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-08-26,42,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-08-27,37,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-08-28,40,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-08-29,10,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-08-30,23,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-08-31,35,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-09-01,25,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-09-02,20,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-09-03,24,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-09-04,43,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-09-05,45,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-09-06,35,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-09-09,38,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-09-10,31,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-09-11,25,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-09-12,8,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-09-13,29,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-09-14,39,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-09-15,42,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-09-16,30,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-09-17,32,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-09-18,29,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-09-19,33,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-09-20,52,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-09-21,48,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-09-22,44,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-09-23,50,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-09-24,35,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-09-25,35,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-09-26,26,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-09-27,26,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-09-28,58,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-09-29,38,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-09-30,39,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-10-01,33,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-10-02,37,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-10-03,39,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-10-04,39,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-10-05,29,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-10-06,30,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-10-07,13,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-10-08,8,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-10-09,8,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-10-10,18,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-10-11,23,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-10-12,33,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-10-13,28,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-10-14,29,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-10-15,43,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-10-16,30,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-10-17,35,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-10-18,39,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-10-19,38,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-10-20,45,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-10-21,61,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-10-22,52,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-10-23,26,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-10-24,28,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-10-25,33,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-10-26,35,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-10-27,48,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-10-28,43,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-10-29,28,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-10-30,30,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-10-31,49,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-11-01,57,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-11-02,50,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-11-03,59,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-11-04,59,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-11-05,41,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-11-06,52,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-11-07,64,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-11-08,30,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-11-09,23,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-11-10,45,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-11-11,44,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-11-12,64,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-11-13,53,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-11-14,58,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-11-15,55,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-11-16,54,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-11-17,46,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-11-18,52,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-11-19,31,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-11-20,42,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-11-21,51,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-11-22,55,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-11-23,52,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-11-24,58,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-11-25,60,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-11-26,54,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-11-27,50,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-11-28,59,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-11-29,64,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-11-30,60,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-12-01,63,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-12-02,66,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-12-03,70,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-12-04,60,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-12-05,57,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-12-06,43,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-12-07,48,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-12-08,45,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-12-09,36,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-12-10,49,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-12-11,55,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-12-12,52,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-12-13,35,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-12-14,52,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-12-15,60,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-12-16,60,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-12-17,62,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-12-18,68,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-12-19,59,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-12-20,52,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-12-21,56,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-12-22,55,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-12-23,51,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-12-24,33,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-12-25,35,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-12-26,40,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-12-27,54,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-12-28,51,"Blackstone",NA,"Lee",35.4325,-79.2887
+2017-01-01,40,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-01-02,38,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-01-03,13,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-01-04,18,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-01-05,33,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-01-06,25,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-01-07,40,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-01-08,44,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-01-09,52,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-01-10,54,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-01-11,49,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-01-12,41,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-01-13,53,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-01-14,52,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-01-15,43,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-01-16,64,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-01-17,53,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-01-18,29,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-01-19,32,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-01-20,40,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-01-21,44,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-01-22,23,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-01-23,15,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-01-24,20,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-01-25,34,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-01-26,24,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-01-27,25,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-01-28,23,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-01-29,22,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-01-30,32,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-01-31,58,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-02-01,54,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-02-02,50,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-02-03,28,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-02-04,33,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-02-05,45,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-02-06,52,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-02-07,40,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-02-08,30,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-02-09,21,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-02-10,30,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-02-11,54,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-02-12,63,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-02-13,34,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-02-14,55,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-02-15,34,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-02-16,25,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-02-17,47,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-02-18,54,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-02-19,47,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-02-20,40,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-02-21,51,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-02-22,46,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-02-23,38,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-02-24,35,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-02-25,23,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-02-26,20,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-02-27,41,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-02-28,43,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-03-01,33,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-03-02,18,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-03-03,27,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-03-04,41,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-03-05,48,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-03-06,56,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-03-07,42,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-03-08,19,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-03-09,33,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-03-10,36,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-03-11,21,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-03-12,19,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-03-13,27,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-03-14,23,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-03-15,24,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-03-16,33,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-03-17,53,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-03-18,39,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-03-19,20,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-03-20,40,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-03-21,51,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-03-22,36,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-03-23,34,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-03-24,49,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-03-25,51,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-03-26,29,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-03-27,40,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-03-28,25,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-03-29,26,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-03-30,41,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-03-31,19,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-04-01,21,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-04-02,24,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-04-03,27,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-04-04,29,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-04-05,33,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-04-06,17,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-04-07,18,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-04-08,28,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-04-09,32,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-04-10,41,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-04-11,53,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-04-12,38,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-04-13,37,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-04-14,55,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-04-15,44,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-04-16,43,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-04-17,41,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-04-18,25,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-04-19,41,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-04-20,45,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-04-21,45,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-04-22,27,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-04-23,7,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-04-24,16,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-04-25,13,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-04-26,24,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-04-27,43,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-04-28,40,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-04-29,57,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-04-30,35,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-05-01,23,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-05-02,17,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-05-03,20,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-05-04,29,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-05-05,10,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-05-06,23,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-05-07,20,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-05-08,28,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-05-09,42,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-05-10,56,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-05-11,52,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-05-12,52,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-05-13,28,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-05-14,36,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-05-15,34,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-05-16,36,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-05-17,45,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-05-18,41,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-05-19,45,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-05-20,37,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-05-21,18,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-05-22,21,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-05-23,17,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-05-24,13,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-05-25,20,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-05-26,30,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-05-27,56,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-05-28,22,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-05-29,37,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-05-30,20,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-05-31,29,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-06-01,35,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-06-02,42,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-06-03,43,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-06-04,40,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-06-05,20,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-06-06,24,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-06-07,28,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-06-14,18,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-06-15,21,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-06-16,17,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-06-17,20,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-06-18,29,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-06-19,14,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-06-20,21,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-06-21,18,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-06-22,12,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-06-23,37,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-06-24,15,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-06-25,20,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-06-26,22,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-06-27,28,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-06-28,28,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-06-29,33,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-06-30,15,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-07-01,18,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-07-02,23,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-07-03,30,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-07-04,29,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-07-05,25,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-07-06,15,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-07-07,21,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-07-08,25,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-07-09,23,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-07-10,32,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-07-11,33,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-07-12,43,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-07-13,25,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-07-14,22,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-07-15,19,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-07-16,27,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-07-17,27,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-07-18,23,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-07-19,38,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-07-20,53,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-07-21,44,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-07-22,40,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-07-23,41,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-07-24,25,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-07-25,47,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-07-26,53,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-07-27,46,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-07-28,24,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-07-29,26,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-07-30,20,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-07-31,22,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-08-01,33,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-08-02,37,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-08-03,43,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-08-04,35,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-08-05,29,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-08-06,29,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-08-07,22,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-08-08,20,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-08-09,40,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-08-10,28,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-08-11,15,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-08-12,10,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-08-13,18,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-08-14,25,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-08-15,16,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-08-16,23,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-08-17,13,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-08-18,17,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-08-19,34,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-08-20,43,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-08-21,52,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-08-22,49,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-08-23,35,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-08-24,33,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-08-25,31,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-08-26,40,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-08-27,42,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-08-28,43,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-08-29,32,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-08-30,28,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-08-31,12,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-09-01,14,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-09-02,20,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-09-03,41,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-09-04,28,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-09-05,33,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-09-06,30,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-09-07,18,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-09-21,28,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-09-22,35,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-09-23,38,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-09-24,38,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-09-25,26,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-09-26,32,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-09-27,41,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-09-28,55,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-09-29,52,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-09-30,39,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-10-01,24,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-10-02,17,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-10-03,31,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-10-04,24,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-10-05,22,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-10-06,35,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-10-07,32,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-10-08,16,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-10-09,15,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-10-12,28,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-10-13,34,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-10-14,45,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-10-15,35,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-10-16,10,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-10-17,14,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-10-18,20,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-10-19,23,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-10-20,37,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-10-21,49,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-10-22,36,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-10-23,3,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-10-24,17,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-10-25,22,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-10-26,22,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-10-27,29,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-10-28,25,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-10-29,7,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-10-30,17,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-10-31,33,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-11-01,38,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-11-02,46,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-11-03,38,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-11-04,33,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-11-05,37,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-11-06,53,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-11-07,26,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-11-08,13,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-11-09,7,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-11-10,18,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-11-11,50,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-11-12,41,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-11-13,26,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-11-14,31,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-11-15,39,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-11-16,28,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-11-17,32,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-11-18,63,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-11-19,20,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-11-20,40,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-11-21,50,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-11-22,34,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-11-23,48,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-11-24,51,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-11-25,54,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-11-26,36,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-11-27,35,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-11-28,55,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-11-29,59,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-11-30,61,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-12-01,47,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-12-02,58,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-12-03,44,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-12-04,54,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-12-05,55,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-12-06,22,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-12-07,30,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-12-08,34,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-12-09,20,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-12-10,37,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-12-11,40,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-12-12,38,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-12-13,16,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-12-14,50,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-12-15,55,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-12-16,56,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-12-17,67,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-12-18,52,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-12-19,51,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-12-20,29,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-12-21,19,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-12-22,38,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-12-23,25,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-12-24,7,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-12-25,22,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-12-26,31,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-12-27,44,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-12-28,54,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-12-29,53,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-12-30,56,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-12-31,55,"Bryson City",NA,"Swain",35.434767,-83.442133
+2017-01-05,11,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-01-06,22,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-01-07,24,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-01-08,31,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-01-09,42,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-01-10,46,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-01-11,43,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-01-12,28,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-01-13,45,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-01-14,32,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-01-15,35,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-01-16,32,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-01-17,58,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-01-18,34,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-01-19,20,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-01-20,51,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-01-21,34,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-01-22,18,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-01-23,10,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-01-24,9,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-01-25,39,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-01-26,25,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-01-27,21,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-01-28,18,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-01-29,23,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-01-30,12,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-01-31,40,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-02-01,62,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-02-02,34,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-02-03,23,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-02-04,21,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-02-05,48,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-02-06,49,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-02-07,63,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-02-08,50,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-02-09,17,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-02-10,38,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-02-11,53,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-02-12,54,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-02-13,9,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-02-14,46,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-02-15,42,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-02-16,15,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-02-17,28,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-02-18,52,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-02-19,30,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-02-20,74,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-02-21,52,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-02-22,38,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-02-23,35,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-02-24,32,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-02-25,26,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-02-26,15,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-02-27,31,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-02-28,36,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-03-01,53,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-03-02,15,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-03-03,18,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-03-04,23,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-03-05,29,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-03-06,47,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-03-07,43,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-03-08,20,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-03-09,28,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-03-10,40,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-03-11,15,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-03-12,20,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-03-13,37,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-03-14,11,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-03-15,15,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-03-16,29,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-03-17,54,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-03-18,67,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-03-19,13,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-03-20,38,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-03-21,61,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-03-22,19,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-03-23,20,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-03-24,49,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-03-25,38,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-03-26,20,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-03-27,32,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-03-28,29,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-03-29,28,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-03-30,33,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-03-31,21,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-04-01,10,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-04-02,16,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-04-03,26,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-04-04,28,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-04-05,47,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-04-06,13,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-04-07,9,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-04-08,16,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-04-09,35,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-04-10,48,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-04-11,52,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-04-12,38,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-04-13,44,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-04-14,38,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-04-15,43,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-04-16,58,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-04-17,43,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-04-18,29,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-04-19,33,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-04-20,51,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-04-21,55,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-04-22,36,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-04-23,9,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-04-26,20,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-04-27,60,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-04-28,66,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-04-29,64,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-04-30,34,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-05-01,36,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-05-02,22,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-05-03,22,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-05-04,26,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-05-05,20,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-05-06,13,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-05-07,17,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-05-08,19,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-05-09,23,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-05-10,56,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-05-11,62,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-05-12,11,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-05-14,26,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-05-15,47,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-05-16,52,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-05-17,59,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-05-18,53,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-05-19,37,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-05-20,36,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-05-21,38,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-05-22,27,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-05-23,13,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-05-24,21,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-05-25,18,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-05-26,36,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-05-27,54,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-05-28,36,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-05-29,33,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-05-30,42,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-05-31,49,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-06-01,41,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-06-02,38,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-06-03,41,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-06-04,53,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-06-05,39,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-06-06,24,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-06-07,27,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-06-08,9,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-06-09,30,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-06-10,44,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-06-11,38,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-06-12,50,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-06-13,58,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-06-14,37,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-06-15,41,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-06-16,40,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-06-17,28,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-06-18,36,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-06-19,31,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-06-20,27,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-06-21,18,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-06-22,31,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-06-23,54,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-06-24,26,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-06-25,23,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-06-26,28,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-06-27,27,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-06-28,24,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-06-29,43,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-06-30,30,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-07-01,22,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-07-02,28,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-07-03,37,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-07-04,30,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-07-05,34,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-07-06,34,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-07-07,23,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-07-08,28,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-07-09,30,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-07-10,35,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-07-11,36,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-07-12,43,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-07-13,36,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-07-14,40,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-07-15,33,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-07-16,29,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-07-17,27,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-07-18,32,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-07-19,34,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-07-20,53,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-07-21,58,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-07-22,56,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-07-23,47,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-07-24,35,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-07-25,52,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-07-26,39,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-07-27,48,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-07-28,54,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-07-29,26,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-07-30,15,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-07-31,26,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-08-01,38,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-08-02,49,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-08-03,57,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-08-04,43,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-08-05,17,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-08-06,30,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-08-07,45,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-08-08,20,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-08-09,26,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-08-10,27,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-08-11,30,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-08-12,19,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-08-13,27,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-08-14,52,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-08-15,36,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-08-16,38,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-08-17,48,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-08-18,45,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-08-19,30,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-08-20,52,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-08-21,54,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-08-22,48,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-08-23,36,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-08-24,36,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-08-25,41,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-08-26,40,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-08-27,32,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-08-28,33,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-08-29,8,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-08-30,23,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-08-31,35,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-09-01,32,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-09-02,24,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-09-03,16,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-09-04,45,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-09-05,55,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-09-06,37,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-09-07,26,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-09-08,22,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-09-09,22,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-09-10,16,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-09-11,22,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-09-12,28,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-09-13,31,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-09-14,50,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-09-15,45,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-09-16,40,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-09-17,38,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-09-18,30,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-09-19,40,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-09-20,52,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-09-21,48,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-09-22,52,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-09-23,45,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-09-24,36,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-09-25,34,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-09-26,23,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-09-27,23,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-09-28,53,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-09-29,26,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-09-30,20,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-10-01,15,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-10-02,20,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-10-03,24,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-10-04,30,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-10-05,37,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-10-06,29,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-10-07,21,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-10-08,23,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-10-09,36,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-10-10,49,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-10-11,41,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-10-12,37,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-10-13,23,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-10-14,27,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-10-15,43,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-10-16,23,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-10-24,32,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-10-25,25,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-10-26,23,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-10-27,42,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-10-28,33,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-10-31,43,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-11-01,57,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-11-02,33,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-11-03,55,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-11-04,41,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-11-05,32,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-11-06,55,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-11-07,46,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-11-08,5,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-11-09,6,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-11-10,18,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-11-11,21,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-11-12,43,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-11-13,32,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-11-14,42,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-11-15,35,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-11-16,41,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-11-17,22,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-11-18,41,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-11-19,10,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-11-20,24,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-11-21,36,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-11-22,35,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-11-23,27,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-11-24,38,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-11-25,53,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-11-26,31,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-11-27,33,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-11-28,39,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-11-29,54,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-11-30,64,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-12-01,58,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-12-02,56,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-12-03,56,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-12-04,46,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-12-05,55,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-12-06,19,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-12-07,28,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-12-08,27,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-12-09,15,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-12-10,28,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-12-11,46,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-12-12,35,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-12-13,26,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-12-14,39,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-12-15,48,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-12-16,40,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-12-17,65,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-12-18,66,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-12-19,64,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-12-20,51,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-12-21,35,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-12-22,48,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-12-23,41,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-12-24,9,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-12-25,14,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-12-26,17,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-12-27,30,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-12-28,30,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-12-29,48,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-12-30,58,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2017-12-31,12,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-01-03,52,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-01-04,54,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-01-05,52,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-01-06,51,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-01-07,48,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-01-08,44,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-01-09,52,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-01-10,47,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-01-11,44,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-01-12,3,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-01-13,26,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-01-14,38,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-01-15,48,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-01-16,64,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-01-17,63,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-01-18,54,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-01-19,52,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-01-20,47,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-01-21,45,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-01-22,54,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-01-23,26,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-01-24,33,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-01-25,47,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-01-26,64,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-01-27,69,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-01-28,23,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-01-29,17,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-01-30,35,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-01-31,41,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-02-01,44,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-02-02,35,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-02-03,51,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-02-04,33,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-02-05,38,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-02-06,41,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-02-07,34,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-02-08,43,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-02-09,54,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-02-10,30,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-02-11,19,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-02-12,10,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-02-13,48,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-02-14,54,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-02-15,27,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-02-16,28,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-02-17,35,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-02-18,29,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-02-19,45,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-02-20,52,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-02-21,47,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-02-22,40,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-02-23,57,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-02-24,43,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-02-25,27,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-02-26,29,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-02-27,34,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-02-28,54,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-03-01,44,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-03-02,30,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-03-03,27,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-03-04,38,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-03-05,53,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-03-06,47,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-03-07,48,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-03-08,41,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-03-09,50,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-03-10,83,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-03-11,70,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-03-12,52,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-03-13,45,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-03-14,42,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-03-15,45,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-03-16,61,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-03-17,59,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-03-18,52,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-03-19,55,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-03-20,40,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-03-21,36,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-03-22,36,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-03-23,43,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-03-24,52,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-03-25,36,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-03-26,39,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-03-27,51,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-03-28,56,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-03-29,47,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-03-30,34,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-03-31,30,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-04-01,46,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-04-02,51,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-04-03,59,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-04-04,38,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-04-05,45,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-04-06,59,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-04-07,54,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-04-08,39,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-04-09,50,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-04-10,52,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-04-11,58,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-04-12,59,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-04-13,55,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-04-14,48,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-04-15,31,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-04-16,32,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-04-24,9,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-04-25,10,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-04-26,20,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-04-27,20,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-04-28,28,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-04-29,19,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-04-30,22,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-05-01,34,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-05-02,38,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-05-03,30,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-05-04,58,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-05-05,48,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-05-06,45,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-05-07,21,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-05-08,38,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-05-09,35,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-05-10,45,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-05-11,50,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-05-12,54,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-05-13,56,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-05-14,54,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-05-15,25,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-05-16,25,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-05-17,15,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-05-18,16,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-05-19,0,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-05-20,21,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-05-21,27,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-05-22,22,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-05-23,21,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-05-24,33,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-05-25,33,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-05-26,17,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-05-27,18,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-05-28,5,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-05-29,6,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-05-30,20,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-05-31,25,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-06-01,24,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-06-02,18,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-06-03,23,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-06-04,19,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-06-05,30,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-06-06,37,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-06-07,44,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-06-08,45,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-06-09,37,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-06-10,38,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-06-11,45,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-06-12,20,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-06-13,25,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-06-14,38,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-06-15,52,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-06-16,37,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-06-17,40,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-06-18,51,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-06-19,49,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-06-20,42,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-06-21,50,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-06-22,37,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-06-23,30,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-06-24,30,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-06-25,36,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-06-26,22,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-06-27,26,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-06-28,23,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-06-29,38,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-06-30,41,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-07-01,23,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-07-02,20,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-07-03,42,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-07-04,30,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-07-05,20,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-07-06,17,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-07-07,23,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-07-08,16,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-07-09,16,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-07-10,30,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-07-11,49,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-07-12,54,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-07-13,44,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-07-14,36,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-07-15,43,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-07-16,47,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-07-17,39,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-07-18,30,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-07-19,33,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-07-20,35,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-07-21,26,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-07-22,20,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-07-23,20,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-07-24,17,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-07-25,17,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-07-26,23,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-07-27,35,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-07-28,32,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-07-29,29,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-07-30,8,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-07-31,23,"Blackstone",NA,"Lee",35.4325,-79.2887
+2018-01-01,35,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-01-02,51,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-01-03,44,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-01-04,28,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-01-05,30,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-01-06,35,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-01-07,54,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-01-08,71,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-01-09,78,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-01-10,56,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-01-11,17,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-01-12,10,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-01-13,18,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-01-14,28,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-01-15,43,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-01-16,52,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-01-17,37,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-01-18,48,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-01-19,52,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-01-20,51,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-01-21,50,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-01-22,48,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-01-23,17,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-01-24,18,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-01-25,26,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-01-26,52,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-01-27,58,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-01-28,28,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-01-29,12,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-01-30,19,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-01-31,40,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-02-01,55,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-02-02,15,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-02-03,28,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-02-04,38,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-02-05,25,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-02-06,58,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-02-07,29,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-02-08,23,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-02-09,33,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-02-10,38,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-02-11,20,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-02-12,4,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-02-13,13,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-02-14,28,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-02-15,17,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-02-16,15,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-02-17,15,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-02-18,7,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-02-19,25,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-02-20,34,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-02-21,24,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-02-22,35,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-02-23,48,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-02-24,45,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-02-25,21,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-02-26,13,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-02-27,23,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-02-28,33,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-03-01,16,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-03-02,18,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-03-03,23,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-03-04,26,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-03-05,57,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-03-06,63,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-03-07,23,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-03-08,24,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-03-09,35,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-03-10,62,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-03-11,54,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-03-12,15,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-03-13,35,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-03-14,22,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-03-15,46,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-03-16,66,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-03-17,62,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-03-18,37,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-03-19,36,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-03-20,15,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-03-21,19,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-03-22,29,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-03-23,31,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-03-24,46,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-03-25,40,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-03-26,24,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-03-27,33,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-03-28,49,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-03-29,38,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-03-30,13,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-03-31,20,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-04-01,30,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-04-02,43,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-04-03,50,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-04-04,18,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-04-05,28,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-04-06,37,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-04-07,20,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-04-08,10,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-04-09,19,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-04-10,32,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-04-11,27,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-04-12,50,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-04-13,68,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-04-14,48,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-04-15,25,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-04-16,13,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-04-17,26,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-04-18,35,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-04-19,28,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-04-20,17,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-04-21,36,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-04-22,40,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-04-23,15,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-04-24,9,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-04-25,6,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-04-26,14,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-04-27,24,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-04-28,35,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-04-29,20,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-04-30,22,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-05-01,30,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-05-02,46,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-05-03,51,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-05-04,48,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-05-05,57,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-05-06,25,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-05-07,33,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-05-08,29,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-05-09,30,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-05-10,43,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-05-11,42,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-05-12,51,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-05-13,49,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-05-14,52,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-05-15,54,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-05-16,27,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-05-17,23,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-05-18,25,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-05-19,36,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-05-20,38,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-05-21,25,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-05-22,22,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-05-23,15,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-05-24,33,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-05-25,15,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-05-26,10,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-05-30,8,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-05-31,20,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-06-01,18,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-06-02,27,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-06-03,32,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-06-04,23,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-06-05,26,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-06-06,33,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-06-07,41,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-06-08,17,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-06-09,5,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-06-10,7,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-06-11,5,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-06-12,14,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-06-13,23,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-06-14,30,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-06-15,40,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-06-16,38,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-06-17,35,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-06-22,23,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-06-23,23,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-06-24,25,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-06-25,21,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-06-26,15,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-06-27,19,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-07-03,24,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-07-04,51,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-07-05,38,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-07-06,32,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-07-07,29,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-07-08,33,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-07-09,34,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-07-10,36,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-07-11,38,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-07-12,47,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-07-13,43,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-07-14,46,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-07-15,36,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-07-16,30,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-07-17,26,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-07-18,32,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-07-19,36,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-07-20,44,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-07-21,22,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-07-22,26,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-07-23,20,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-07-24,21,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-07-25,25,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-07-26,38,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-07-27,44,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-07-28,40,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-07-29,36,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-07-30,40,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-07-31,27,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-08-01,25,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-08-02,7,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-08-03,10,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-08-04,15,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-08-05,25,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-08-06,27,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-08-07,27,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-08-08,27,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-08-09,18,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-08-10,19,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-08-11,24,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-08-12,41,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-08-13,45,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-08-14,47,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-08-15,54,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-08-16,59,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-08-17,54,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-08-18,31,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-08-19,24,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-08-20,29,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-08-21,52,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-08-22,37,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-08-23,53,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-08-24,39,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-08-29,43,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-08-30,30,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-08-31,21,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-09-01,29,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-09-02,28,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-09-03,18,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-09-04,22,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-09-05,31,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-09-06,30,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-09-07,26,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-09-08,28,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-09-09,21,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-09-10,18,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-09-11,10,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-09-12,20,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-09-13,22,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-09-14,14,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-09-15,13,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-09-16,9,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-09-17,10,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-09-18,22,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-09-19,32,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-09-20,44,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-09-21,48,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-09-22,43,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-09-23,43,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-09-24,30,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-09-25,27,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-09-26,23,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-09-27,20,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-09-28,22,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-09-29,24,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-09-30,25,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-10-01,35,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-10-02,36,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-10-03,37,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-10-04,30,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-10-05,32,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-10-06,37,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-10-07,46,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-10-08,36,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-10-09,21,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-10-10,17,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-10-11,25,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-10-12,22,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-10-13,27,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-10-14,36,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-10-15,40,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-10-16,30,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-10-17,24,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-10-18,25,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-10-19,38,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-10-20,33,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-10-21,22,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-10-22,23,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-10-23,36,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-10-24,35,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-10-25,43,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-10-26,32,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-10-27,30,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-10-28,33,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-10-29,21,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-10-30,26,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-10-31,43,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-11-01,43,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-11-02,17,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-11-03,29,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-11-04,34,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-11-05,25,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-11-06,18,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-11-07,24,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-11-08,40,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-11-09,23,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-11-10,32,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-11-11,49,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-11-12,36,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-11-13,16,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-11-14,17,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-11-15,14,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-11-16,26,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-11-17,43,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-11-18,52,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-11-19,52,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-11-20,29,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-11-21,33,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-11-22,47,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-11-23,55,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-11-24,26,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-11-25,28,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-11-26,20,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-11-27,25,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-11-28,28,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-11-29,56,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-11-30,59,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-12-01,35,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-12-02,28,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-12-03,28,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-12-04,20,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-12-05,20,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-12-06,42,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-12-07,32,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-12-08,33,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-12-09,20,"Bryson City",NA,"Swain",35.434767,-83.442133
+2018-01-01,15,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-01-02,29,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-01-03,48,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-01-04,26,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-01-05,31,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-01-06,19,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-01-07,27,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-01-08,51,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-01-09,48,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-01-10,32,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-01-11,36,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-01-12,20,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-01-13,5,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-01-14,10,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-01-15,26,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-01-16,55,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-01-17,47,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-01-18,36,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-01-19,55,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-01-20,49,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-01-21,38,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-01-22,55,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-01-23,13,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-01-24,15,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-01-25,28,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-01-26,44,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-01-27,30,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-01-28,21,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-01-31,32,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-02-01,47,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-02-02,10,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-02-03,33,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-02-04,25,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-02-05,26,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-02-06,49,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-02-07,34,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-02-08,27,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-02-09,51,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-02-10,42,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-02-11,27,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-02-12,14,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-02-13,26,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-02-14,54,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-02-15,39,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-02-16,23,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-02-17,25,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-02-18,11,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-02-19,42,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-02-20,54,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-02-21,36,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-02-22,42,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-02-23,56,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-02-24,43,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-02-25,26,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-02-26,23,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-02-27,23,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-02-28,39,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-03-01,39,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-03-02,7,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-03-03,9,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-03-04,16,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-03-05,18,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-03-06,32,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-03-07,20,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-03-08,27,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-03-09,30,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-03-10,68,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-03-11,56,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-03-12,27,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-03-13,26,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-03-14,18,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-03-15,36,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-03-16,48,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-03-17,52,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-03-18,25,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-03-19,35,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-03-20,9,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-03-21,10,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-03-22,15,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-03-23,24,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-03-24,27,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-03-25,12,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-03-26,18,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-03-27,28,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-03-28,61,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-03-29,59,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-03-30,36,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-03-31,23,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-04-01,41,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-04-02,48,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-04-03,65,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-04-04,28,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-04-05,24,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-04-06,56,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-04-07,62,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-04-08,31,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-04-09,51,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-04-10,53,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-04-11,60,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-04-12,52,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-04-13,58,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-04-14,57,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-04-15,68,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-04-16,13,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-04-17,35,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-04-20,17,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-04-21,28,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-04-22,23,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-04-23,15,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-04-24,10,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-04-25,10,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-04-26,0,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-04-27,0,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-04-28,0,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-04-29,0,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-04-30,2,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-05-01,25,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-05-02,48,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-05-03,44,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-05-04,42,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-05-05,40,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-05-06,32,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-05-07,28,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-05-08,38,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-05-11,51,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-05-12,55,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-05-13,56,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-05-14,54,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-05-15,25,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-05-16,27,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-05-17,21,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-05-18,25,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-05-19,13,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-05-20,29,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-05-21,38,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-05-22,38,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-05-23,25,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-05-24,30,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-05-25,34,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-05-26,25,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-05-27,23,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-05-28,15,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-05-29,20,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-05-30,24,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-05-31,28,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-06-01,35,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-06-02,28,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-06-03,27,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-06-04,23,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-06-05,33,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-06-06,45,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-06-07,45,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-06-08,48,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-06-09,42,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-06-10,40,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-06-11,37,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-06-12,30,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-06-13,35,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-06-14,47,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-06-15,48,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-06-16,47,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-06-17,47,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-06-18,59,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-06-19,57,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-06-20,40,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-06-21,52,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-06-22,40,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-06-23,36,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-06-24,30,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-06-25,44,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-06-26,33,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-06-27,33,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-06-28,33,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-06-29,46,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-06-30,52,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-07-01,32,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-07-02,40,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-07-03,48,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-07-04,39,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-07-05,29,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-07-06,28,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-07-07,24,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-07-08,15,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-07-09,19,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-07-10,40,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-07-11,57,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-07-12,48,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-07-13,43,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-07-14,33,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-07-15,42,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-07-16,52,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-07-17,48,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-07-18,24,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-07-19,30,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-07-20,33,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-07-21,20,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-07-22,25,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-07-23,35,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-07-24,24,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-07-25,28,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-07-26,34,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-07-27,47,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-07-28,46,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-07-29,38,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-07-30,24,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-07-31,26,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-08-01,28,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-08-02,27,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-08-03,16,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-08-04,23,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-08-05,30,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-08-06,39,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-08-07,35,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-08-08,27,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-08-09,33,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-08-10,50,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-08-11,39,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-08-12,30,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-08-13,27,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-08-14,30,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-08-15,47,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-08-16,57,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-08-17,47,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-08-18,26,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-08-19,26,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-08-21,30,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-08-22,30,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-08-23,42,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-08-24,31,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-08-25,29,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-08-26,41,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-08-27,56,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-08-28,53,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-08-29,40,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-08-30,45,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-08-31,26,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-09-01,35,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-09-02,24,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-09-03,22,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-09-04,39,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-09-05,34,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-09-06,33,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-09-07,35,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-09-08,33,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-09-09,23,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-09-10,23,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-09-20,53,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-09-21,43,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-09-22,57,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-09-23,45,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-09-24,23,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-09-25,31,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-09-26,36,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-09-27,32,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-09-28,21,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-09-29,21,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-09-30,25,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-10-01,36,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-10-02,38,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-10-03,42,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-10-04,43,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-10-05,46,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-10-06,43,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-10-07,39,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-10-08,25,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-10-09,19,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-10-10,27,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-10-11,17,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-10-12,20,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-10-13,18,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-10-14,27,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-10-15,44,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-10-16,35,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-10-17,19,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-10-18,17,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-10-19,28,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-10-20,34,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-10-21,3,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-10-22,14,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-10-23,29,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-10-24,21,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-10-25,19,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-10-26,17,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-10-27,10,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-10-28,15,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-10-29,16,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-10-30,24,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-10-31,39,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-11-01,24,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-11-02,18,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-11-03,13,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-11-04,19,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-11-05,19,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-11-06,31,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-11-07,26,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-11-08,35,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-11-09,26,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-11-10,13,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-11-11,21,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-11-12,27,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-11-13,12,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-11-14,24,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-11-15,12,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-11-16,15,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-11-17,33,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-11-18,45,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-11-19,57,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-11-20,37,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-11-21,22,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-11-22,35,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-11-23,21,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-11-24,16,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-11-25,35,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-11-26,22,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-11-27,10,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-11-28,21,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-11-29,29,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-11-30,38,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-12-01,46,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-12-02,16,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-12-03,34,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-12-04,13,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-12-05,10,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-12-06,20,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-12-07,32,"Triple Oak",NA,"Wake",35.8652,-78.8197
+2018-12-08,35,"Triple Oak",NA,"Wake",35.8652,-78.8197
