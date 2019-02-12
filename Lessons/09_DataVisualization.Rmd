@@ -1,0 +1,280 @@
+---
+title: "9: Data Visualization"
+author: "Environmental Data Analytics | Kateri Salk"
+date: "Spring 2019"
+output: pdf_document
+geometry: margin=2.54cm
+editor_options: 
+  chunk_output_type: console
+---
+
+## LESSON OBJECTIVES
+1. Perform simple data visualizations in the R package `ggplot`
+2. Develop skills to adjust aesthetics and layers in graphs
+3. Apply a decision tree framework for appropriate graphing methods
+
+## SET UP YOUR DATA ANALYSIS SESSION
+
+```{r, message = FALSE, warning = FALSE}
+getwd()
+library(tidyverse)
+
+PeterPaul.chem.nutrients <- read.csv("./Data/Processed/NTL-LTER_Lake_Nutrient_Phys_PeterPaul_Processed.csv")
+PeterPaul.nutrients.gathered <- read.csv("./Data/Processed/NTL-LTER_Lake_Nutrients_PeterPaulGathered_Processed.csv")
+PeterPaul.chem.nutrients.summaries <- read.csv("./Data/Processed/NTL-LTER_Lake_Summaries_PeterPaul_Processed.csv")
+
+EPAair <- read.csv("./Data/Processed/RM_EPAair_O3_PM25_NC1718_Processed.csv") 
+
+#Taylor's fix for date
+EPAair <- EPAair %>%
+  unite(Date, Y, m, d)
+EPAair$Date <- ymd(EPAair$Date)
+
+EPAair$Date <- as.Date(EPAair$Date, format = "%Y-%m-%d")
+
+dim(EPAair)
+class(EPAair$Date)
+
+
+PeterPaul.chem.nutrients$sampledate <- as.Date(PeterPaul.chem.nutrients$sampledate, format = "%Y-%m-%d")
+View(PeterPaul.chem.nutrients)
+```
+
+## GGPLOT
+
+ggplot, called from the package `ggplot2`, is a graphing and image generation tool in R. This package is part of tidyverse. While base R has graphing capabilities, ggplot has the capacity for a wider range and more sophisticated options for graphing. 
+ggplot has only a few rules: 
+
+* The first line of ggplot code always starts with `ggplot()`
+* A data frame must be specified within the `ggplot()` function. Additional datasets can be specified in subsequent layers.
+* Aesthetics must be specified, most commonly x and y variables but including others. Aesthetics can be specified in the `ggplot()` function or in subsequent layers.
+* Additional layers must be specified to fill the plot. 
+
+### Geoms
+
+Here are some commonly used layers for plotting in ggplot: 
+
+* geom_bar
+* geom_histogram
+* geom_freqpoly
+* geom_boxplot
+* geom_violin
+* geom_dotplot
+* geom_point
+* geom_errorbar
+* geom_smooth
+* geom_line
+* geom_area
+* geom_abline (plus geom_hline and geom_vline)
+* geom_text
+
+### Aesthetics
+Here are some commonly used aesthetic types that can be manipulated in ggplot: 
+
+* color
+* fill
+* shape
+* size
+* transparency
+
+### Plotting continuous variables over time: Scatterplot
+```{r, fig.height = 3, fig.width = 4, warning = FALSE}
+# Scatterplot
+ggplot(EPAair, aes(x = Date, y = Ozone)) + 
+  geom_point()
+
+O3plot <- ggplot(EPAair) +
+  geom_point(aes(x = Date, y = Ozone))
+print(O3plot)
+
+# Fix this code
+O3plot2 <- ggplot(EPAair) +
+  geom_point(aes(x = Date, y = Ozone, color = Ozone)) #make color the Ozone
+print(O3plot2)
+
+# Add additional variables - I missed this
+PMplot <- 
+  ggplot(EPAair, aes(x = month, y = PM2.5, shape = as.factor(year), color = Site.Name)) +
+  geom_point()
+print(PMplot)
+
+# Separate plot with facets  - I missed this
+PMplot.faceted <-
+  ggplot(EPAair, aes(x = month, y = PM2.5, shape = as.factor(year))) +
+  geom_point() +
+  facet_wrap(vars(Site.Name), nrow = 3) 
+print(PMplot.faceted) #will have common legend
+
+# - I missed this
+PMplot.faceted2 <-
+  ggplot(EPAair, aes(x = month, y = PM2.5)) +
+  geom_point() +
+  facet_grid(Site.Name ~ year)
+print(PMplot.faceted2)
+
+# Filter dataset within plot building
+O3plot.Blackstone <- 
+  ggplot(subset(EPAair, Site.Name == "Blackstone"), aes(x = Date, y = Ozone)) + #subset can take name
+  geom_point() +
+  geom_line() #Added layer, line will only go from one entry to another - day 1 to 2 to 3 (but if it was an entry every month, that wouldn't be useful to)
+print(O3plot.Blackstone)
+
+# Exercise: build your own scatterplots of PeterPaul.chem.nutrients
+
+# 1. 
+# Plot surface temperatures by day of  year. 
+# Color your points by year, and facet by lake in two rows.
+
+tn_plot.PeterPaul <-
+  ggplot(subset(PeterPaul.chem.nutrients, depth = 0),
+         aes(x = daynum, y = temperature_C, color = year4))+
+  geom_point()+
+  facet_wrap(vars(lakename), nrow = 2) #put them into 2 rows vs. default of 2 columns
+
+
+#2. 
+# Plot temperature by date. Color your points by depth.
+# Change the size of your point to 0.5
+  ggplot(PeterPaul.chem.nutrients,
+         aes(x = sampledate, y = temperature_C, color = depth))+
+  geom_point(size = 0.5)
+
+```
+### Plotting the relationship between two continuous variables: Scatterplot
+
+```{r, fig.height = 3, fig.width = 4, warning = FALSE}
+# Scatterplot
+lightvsDO <- 
+  ggplot(PeterPaul.chem.nutrients, aes(x = irradianceWater, y = dissolvedOxygen)) +
+  geom_point()
+print(lightvsDO) #this makes no sense! there's a couple irrational (not true) outliers
+#zoom into area of interest
+
+# Adjust axes
+lightvsDOfixed <- 
+  ggplot(PeterPaul.chem.nutrients, aes(x = irradianceWater, y = dissolvedOxygen)) +
+  geom_point() +
+  xlim(0, 250) + #adding limits so we have a better view
+  ylim(0, 20)
+print(lightvsDOfixed) #shows lots of light at surface, less at depth; less DO at low irradiance levels, and more instances of higher DO at surface
+
+# Depth in the fields of limnology and oceanography is on a reverse scale, so we can see data differently
+tempvsdepth <- 
+  #ggplot(PeterPaul.chem.nutrients, aes(x = temperature_C, y = depth)) +
+  ggplot(PeterPaul.chem.nutrients, aes(x = temperature_C, y = depth, color = daynum)) +
+  geom_point() +
+  scale_y_reverse()
+print(tempvsdepth) #more fluctuation at surface, colder at depth
+ 
+##where we stopped 2/7/19
+NvsP <-
+  ggplot(PeterPaul.chem.nutrients, aes(x = tp_ug, y = tn_ug, color = depth)) +
+  geom_point() +
+  geom_smooth(method = lm) + #telling it to be a linear model method (otherwise it just uses smooth function for fit line); the line also includes a 95% confidence interval
+  geom_abline(aes(slope = 16, intercept = 0), lty = 2) #automatically will make it black straight line, line type has to go outside aes
+print(NvsP)
+#this shows ratio of 16:1; the line shows most points above; this is expected for great lakes
+
+# Exercise: Plot relationships between air quality measurements
+
+# 1. 
+# Plot AQI values for ozone by PM2.5, colored by site. 
+View(EPAair)
+EPA.O3.PM2.5.sites <- 
+  ggplot(EPAair, aes(x = PM2.5, y = Ozone)) +
+  geom_point(color = Site.Name) + #you can put aes in geom_point, but may need to repeat
+  geom_smooth(method = lm) #both include fit lines for each variable 
+print(EPA.O3.PM2.5.sites) #triple oak doesn't show up, but there's no ozone data, so it won't show up in graph
+#scale color discrete to specify colors, it's its own layer
+
+# Add a line of best fit for the linear regression of these variables.
+
+  
+```
+
+### Plotting continuous vs. categorical variables
+
+```{r, fig.height = 3, fig.width = 4, warning = FALSE}
+ # Barplot + error bars
+PeterPaul.nutrient.summaries <- PeterPaul.nutrients.gathered %>%
+  group_by(lakename, nutrient) %>% #if you want to group_by more than one column, they have to be in same fun
+  summarise(sd = sd(concentration), 
+            mean = mean(concentration)) 
+
+Nutrientplot <- 
+  ggplot(PeterPaul.nutrients.gathered) +
+  geom_bar(aes(x = lakename, y = concentration, fill = as.factor(nutrient)), # why did we use fill? color will only color outside of line
+          position = "dodge", stat = "summary", fun.y = "mean")             # what's happening here? #position = dodge computes mean for each nut, instead of making single bar for each lake; stat = summary & fun.y = mean telling it to do summary of the mean (though it does choose mean by default)
+print(Nutrientplot)
+
+class(PeterPaul.nutrients.gathered)
+
+Nutrientplot2 <- 
+  ggplot(PeterPaul.nutrient.summaries, aes(x = lakename, y = mean, fill = as.factor(nutrient))) + #splitting it up by nut
+  geom_bar(stat = "identity", position = "dodge") + # what does the stat command do? bar chart requires a command specifying stat; "dodged" out different bars
+  geom_errorbar(aes(ymin = mean-sd, ymax = mean+sd),
+                position = "dodge") # how do we specify error bars?
+                 #we are using these means that we've already computed
+print(Nutrientplot2) #but this is a crazy way to show nut concns: no error bars makes more sense; we're moving away from bar plots w/ error bars
+
+# Are there more effective ways to produce summary stats for categories?
+
+# Box and whiskers plot
+Nutrientplot3 <-
+  ggplot(PeterPaul.nutrients.gathered, aes(x = lakename, y = concentration)) +
+  geom_boxplot(aes(color = nutrient)) # Why didn't we use "fill"? fill only fills in the boxes, but makes all points black 
+print(Nutrientplot3)
+
+# Dot plot = wide spots are where there's more measurements / entries
+Nutrientplot4 <-
+  ggplot(PeterPaul.nutrients.gathered, aes(x = lakename, y = concentration)) +
+  geom_dotplot(aes(color = nutrient), binaxis = "y", binwidth = 1, #binwidth 
+               stackdir = "center", position = "dodge") #stack direction
+print(Nutrientplot4) #if the data weren't as widely distrib, we'd get better more informative graph
+
+# Violin plot looks more like a violin when points are closer together
+Nutrientplot5 <-
+  ggplot(PeterPaul.nutrients.gathered, aes(x = lakename, y = concentration)) +
+  geom_violin(aes(color = nutrient)) #
+print(Nutrientplot5)
+
+# Frequency polygons
+# Using a tidy dataset
+Nutrientplot6 <-
+  ggplot(PeterPaul.chem.nutrients) +
+  geom_freqpoly(aes(x = tn_ug), color = "black") + #if you don't specify colors, it'll just make black lines
+  geom_freqpoly(aes(x = tp_ug), color = "darkblue") +
+  geom_freqpoly(aes(x = nh34), color = "darkgray") +
+  geom_freqpoly(aes(x = no23), color = "gray") +
+  geom_freqpoly(aes(x = po4), color = "blue") #one layer for each nut
+print(Nutrientplot6)
+
+# Using a gathered dataset
+Nutrientplot7 <-   
+  ggplot(PeterPaul.nutrients.gathered) +
+  geom_freqpoly(aes(x = concentration, color = nutrient), binwidth = 1000)
+print(Nutrientplot7)
+
+# Exercise: Plot distributions of AQI values for EPAair
+
+# 1. 
+# Create a bar chart plus standard deviation error bars for PM2.5, divided by year. 
+class(EPAair$Date) #need to mutate this file to add month and year
+
+EPA.PM2.5.years <- EPAair %>%
+  group_by(Site.Name, year) %>%
+  summarise(sd = (sd(PM2.5, na.rm = TRUE)), 
+            mean = (mean(PM2.5, na.rm = TRUE)))
+
+  ggplot(EPA.PM2.5.years, aes( x = as.factor(year), y= mean, fill = Site.Name)) +
+  geom_bar(position = "dodge", stat = "identity") +
+    geom_errorbar(aes(ymin = mean - sd, ymax = mean +sd), position = "dodge") 
+  #geom_errorbar wants numbers, be careful
+  
+# Create separate bars for each site. 
+
+# 2. 
+# Create a new plot that better depicts the distribution of PM2.5 concentrations. 
+# Divide your graph by year and site.
+
+```
