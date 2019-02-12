@@ -168,4 +168,10 @@ EPA.NCAir.201718.Sites <-
 print(EPA.NCAir.201718.Sites)
 print(EPA.NCAir.201718.AQI)
 
+View(EPA.NCAir.201718.tidy) #won't knit if View is commanded
+
+###Quitting from lines 147-174 (MuzzyA04_DataWrangling_CORRECT.Rmd) Error in View(EPA.NCAir.201718.tidy) : X11 dataentry cannot be loaded, Calls: <Anonymous> ... withCallingHandlers -> withVisible -> eval -> eval -> View Execution halted
+
+
+
 ```
