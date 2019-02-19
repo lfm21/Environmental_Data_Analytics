@@ -130,7 +130,7 @@ tn_plot.PeterPaul <-
          aes(x = daynum, y = temperature_C, color = year4))+
   geom_point()+
   facet_wrap(vars(lakename), nrow = 2) #put them into 2 rows vs. default of 2 columns
-
+print(tn_plot.PeterPaul)
 
 #2. 
 # Plot temperature by date. Color your points by depth.

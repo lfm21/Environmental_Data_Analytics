@@ -109,6 +109,9 @@ USGS.flow.data$datetime <- create.early.dates(USGS.flow.data$datetime)
 #but it's character, so we have to change it back to date
 USGS.flow.data$datetime <- as.Date(USGS.flow.data$datetime, format = "%Y%m%d") 
 
+USGS.flow.data.complete <- na.omit(USGS.flow.data)
+USGS.flow.data.complete <- write.csv("./Data/Processed/USGS_Site02085000_Flow")
+
 ```
 
 ### Removing NAs

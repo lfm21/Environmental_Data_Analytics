@@ -1,6 +1,6 @@
 ---
 title: "Assignment 5: Data Visualization"
-author: "Student Name"
+author: "Laurie Muzzy"
 output: pdf_document
 geometry: margin=2.54cm
 editor_options: 
@@ -33,15 +33,60 @@ The completed exercise is due on Tuesday, 19 February, 2019 before class begins.
 2. Make sure R is reading dates as date format, not something else (hint: remember that dates were an issue for the USGS gauge data).
 
 ```{r}
-#1
+getwd()
+#not sure which datasets are wanted: nutrient data skinny? or both nutrient/chem summaries?
+
+#tidy Peter Paul
+PeterPaul.chem.nutrients <- read.csv("Data/Processed/NTL-LTER_Lake_Nutrient_Phys_PeterPaul_Processed.csv")
+View(PeterPaul.chem.nutrients) #23372 rows, 14 col
+
+#gathered Peter Paul
+PeterPaul.chem.nut.gathered <-   read_csv("Data/Processed/NTL-LTER_Lake_Nutrients_PeterPaulGathered_Processed.csv")
+View(PeterPaul.chem.nut.gathered) #7997 rows, 7 col
+
+#USGS stream gauge
+library(lubridate)
+USGS.flow.data <- read_csv("Data/Raw/USGS_Site02085000_Flow_Raw.csv")
+View(USGS.flow.data)
+
+#EPA Neonic
+ECOTOX_Neonic <- read_csv("Data/Raw/ECOTOX_Neonicotinoids_Mortality_raw.csv")
+View(ECOTOX_Neonic)
+class(ECOTOX_Neonic$Date)
 
 #2
+USGS.flow.data$datetime <- as.Date(USGS.flow.data$datetime, format = "%m/%d/%y") 
+#turned the dates in 1900s into 2000s
+class(USGS.stream.gauge$datetime) # character class
+colnames(USGS.flow.data) <- c("agency_cd", "site_no", "datetime", 
+                              "discharge.max", "discharge.max.approval", 
+                              "discharge.min", "discharge.min.approval", 
+                              "discharge.mean", "discharge.mean.approval", 
+                              "gage.height.max", "gage.height.max.approval", 
+                              "gage.height.min", "gage.height.min.approval", 
+                              "gage.height.mean", "gage.height.mean.approval")
+
+USGS.flow.data$datetime <- format(USGS.flow.data$datetime, format = "%y%m%d") 
+#turning datetime into 6character string 280101 for jan 1, 1928
+create.early.dates <- (function(d) {
+       paste0(ifelse(d > 181231,"19","20"),d)
+       })
+USGS.flow.data$datetime <- create.early.dates(USGS.flow.data$datetime)
+USGS.flow.data$datetime <- as.Date(USGS.flow.data$datetime, format = "%Y%m%d") 
+#this worked bc the character string was specified..?
+
+class(USGS.flow.data$datetime) #Date now
+
 ```
 ## Define your theme
 3. Build a theme and set it as your default theme.
 
 ```{r}
 #3
+LFMtheme <- theme_light(base_size = 13) + 
+  theme(axis.text = element_text(color = "black"), 
+        legend.position = "right")
+theme_set(LFMtheme)
 
 ```
 
@@ -53,7 +98,16 @@ Hint: a good way to build graphs is to make them ugly first and then create more
 4. [NTL-LTER] Plot total phosphorus by phosphate, with separate aesthetics for Peter and Paul lakes. Add a line of best fit and color it black.
 
 ```{r}
-#4
+#4 
+PeterPaul.P.PO4 <-
+ggplot(PeterPaul.chem.nutrients, aes(x = tp_ug, y = po4, color = lakename, shape = lakename)) +
+geom_point() +
+geom_smooth(method = lm, size = 0.5, color = "black") + #just supposed to be one line? how to specify? just for points and not for each lake?
+ylim(0,50) +
+xlab(expression("total phosphorus (\U003BCg/L)")) +
+ylab(expression("phosphate")) #+
+#scale_fill_discrete(name = "Phosphorus", labels = c("Paul Lake", "Peter Lake"))  #this didn't work as title
+print(PeterPaul.P.PO4)
 
 ```
 
@@ -61,8 +115,16 @@ Hint: a good way to build graphs is to make them ugly first and then create more
 5. [NTL-LTER] Plot nutrients by date for Peter Lake, with separate colors for each depth. Facet your graph by the nutrient type.
 
 ```{r}
-#5
+#5 Peter lake only, faceted by nutrients, depth has dif colors
+Peter.nutrients.by.date <- 
+ggplot(subset(PeterPaul.chem.nut.gathered, lakename = "Peter Lake"), aes(x = nutrient, y = concentration)) + #how to get just Peter Lake? not subset
+facet_grid(nutrient ~ sampledate)) +
+labs(x = "nutrients", y = "sample date", title = "Nutrients in Peter Lake, 1991 -2016") 
 
+#ggplot(subset(EPAair, Site.Name == "Blackstone"), aes(x = Date, y = Ozone))
+#t <- ggplot(mpg, aes(cty, hwy)) + geom_point()
+
+print(Peter.nutrients.by.date)
 ```
 
 

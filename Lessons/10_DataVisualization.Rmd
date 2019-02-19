@@ -1,7 +1,7 @@
 ---
 title: "10: Data Visualization"
 author: "Environmental Data Analytics | Kateri Salk"
-date: "Spring 2019"
+date: "Spring 2019" 14 Feb
 output: pdf_document
 geometry: margin=2.54cm
 editor_options: 
@@ -30,29 +30,29 @@ PeterPaul.chem.nutrients$sampledate <- as.Date(PeterPaul.chem.nutrients$sampleda
 ### Themes
 Often, we will want to change multiple visual aspects of a plot. Ggplot comes with pre-built themes that will adjust components of plots if you call that theme. 
 ```{r, fig.height = 3, fig.width = 4, warning = FALSE}
-O3plot <- ggplot(EPAair) +
+O3plot <- ggplot(EPAair) + #ggpplot theme changes w/in 1 line, don;t have to redefine a bunch for each graph
   geom_point(aes(x = Date, y = Ozone)) 
-print(O3plot)
+print(O3plot) #default
 
 O3plot1 <- ggplot(EPAair) +
   geom_point(aes(x = Date, y = Ozone)) +
-  theme_gray()
+  theme_gray() #add theme as if its a layer, this one is default
 print(O3plot1)
 
 O3plot2 <- ggplot(EPAair) +
   geom_point(aes(x = Date, y = Ozone)) +
-  theme_bw()
+  theme_bw() #has box and white bkgrd
 print(O3plot2)
 
 O3plot3 <- ggplot(EPAair) +
   geom_point(aes(x = Date, y = Ozone)) +
   theme_light()
-print(O3plot3)
+print(O3plot3) #all gray lines
 
 O3plot4 <- ggplot(EPAair) +
   geom_point(aes(x = Date, y = Ozone)) +
   theme_classic()
-print(O3plot4)
+print(O3plot4) #no grid, just black line for axes
 ```
 
 Notice that some aspects of your graph have not been adjusted, including: 
@@ -64,18 +64,19 @@ Notice that some aspects of your graph have not been adjusted, including:
 If you would like to set a common theme across all plots in your analysis session, you may define a theme and call up that theme for each graph. This eliminates the need to add multiple lines of code in each plot. 
 
 ```{r, fig.height = 3, fig.width = 4, warning = FALSE}
-mytheme <- theme_classic(base_size = 14) +
+mytheme <- theme_classic(base_size = 14) + #base font is 11 or 12
   theme(axis.text = element_text(color = "black"), 
-        legend.position = "top") #alternative: legend.position + legend.justification
+        legend.position = "top") #alternative: legend.position + legend.justification; can tell it to put legend in particular coord in graph 
+#legend.position = c(1,1), legend.justification = c(1,1)
 
 # options: call the theme in each plot or set the theme at the start. 
 
 O3plot5 <- ggplot(EPAair) +
   geom_point(aes(x = Date, y = Ozone)) +
-  mytheme
+  mytheme #add as a layer
 print(O3plot5)  
 
-theme_set(mytheme)
+theme_set(mytheme) #if you're making a lot of plots for your whole session, can be overridden by specifiying w/in a single ggplot
 
 O3plot6 <- ggplot(EPAair) +
   geom_point(aes(x = Date, y = Ozone))
@@ -89,17 +90,17 @@ While the theme allows us to set multiple aspects of plots, ggplot allows us to 
 
 ```{r, fig.height = 3, fig.width = 4, warning = FALSE}
 O3plot7 <- ggplot(EPAair, aes(x = Date, y = Ozone)) +
-  geom_rect(xmin = as.Date("2016-01-01"), xmax = as.Date("2020-01-01"), 
-            ymin = 0, ymax = 50, fill = "green") +
-  geom_rect(xmin = as.Date("2016-01-01"), xmax = as.Date("2020-01-01"), 
-            ymin = 50, ymax = 100, fill = "yellow") +
-  geom_point() +
-  geom_text(x = as.Date("2019-01-01"), y = 45, label = "good", hjust = 1, fontface = "bold") +
+  #geom_rect(xmin = as.Date("2016-01-01"), xmax = as.Date("2020-01-01"), #made background 0-50 green
+            #ymin = 0, ymax = 50, fill = "green") +
+  #geom_rect(xmin = as.Date("2016-01-01"), xmax = as.Date("2020-01-01"), 
+            #ymin = 50, ymax = 100, fill = "yellow") + #makes 51-100 yellow
+  geom_point() + #type of plot
+  geom_text(x = as.Date("2019-01-01"), y = 45, label = "good", hjust = 1, fontface = "bold") + #labeled good at y=45 BUT you have to tell it to look for a date
   geom_text(x = as.Date("2019-01-01"), y = 95, label = "moderate", hjust = 1, fontface = "bold") +
-  scale_x_date(limits = as.Date(c("2017-01-01", "2018-12-31")), 
-    date_breaks = "2 months", date_labels = "%b %y") +
-  ylab(expression("O"[3]* " AQI Value")) +
-  theme(axis.text.x = element_text(angle = 45,  hjust = 1))
+  scale_x_date(limits = as.Date(c("2017-01-01", "2018-12-31")), #told it only to use month names as label instead of number
+    date_breaks = "2 months", date_labels = "%b %y") + #broke up dates into every other month
+  ylab(expression("O"[3]* " AQI Value")) + #brackets give you subscript for O3, superscript is a carat
+  theme(axis.text.x = element_text(angle = 45,  hjust = 1)) #angles the text; hjust moves text horizontally; vjust for vertical
 print(O3plot7)  
 
 ```
@@ -115,11 +116,11 @@ There are several color palettes that are designed to be more effective than pal
 Perception is key! Choose palettes that are visually pleasing and will communicate what you are hoping your audience to perceive. Hint: base R palettes are not ideal.
 
 ```{r, warning = FALSE}
-#install.packages("viridis")
+install.packages("viridis")
 #install.packages("RColorBrewer")
-#install.packages("colormap")
-library(viridis)
-library(RColorBrewer)
+install.packages("colormap")
+library(viridis) #ff is last digits on hexcode
+library(RColorBrewer) #diverging to make colorblind safe
 library(colormap)
 
 scales::show_col(colormap(colormap = colormaps$viridis, nshades = 16))
@@ -136,17 +137,32 @@ print(NvsP)
 # change your axis labels to reflect TN and TP in micrograms per liter.
 # change your legend labels
 NvsP2 <-
-  ggplot(PeterPaul.chem.nutrients, aes(x = tp_ug, y = tn_ug, color = depth, shape = lakename)) +
-  geom_point(alpha = 0.8, size = 3) +
-  #xlab() +
-  #ylab() +
+  ggplot(PeterPaul.chem.nutrients, aes(x = tp_ug, y = tn_ug, fill = depth, shape = lakename)) +
+  geom_point(alpha = 0.8, size = 3,color = "magenta") +
+xlab(expression("total phosphorus (\U003BCg/L)")) +
+ylab(expression("total nitrogen (\U003BCg/L)")) +
+#labs(x = "Total P", y = "Total N", fill = "Depth, m", shape = lakename)
   # change your legend labels here
-  scale_shape_manual(values = c(15, 17)) +
-  #scale_color_distiller(palette = "Blues", direction = 1) + # use scale_color_brewer for discrete variables
-  scale_color_viridis(option = "magma", direction = -1) +
-  theme(legend.position = "right", 
+  guides(fill=guide_legend(title="depth")) +
+  scale_shape_manual(values = c(15, 17)) + #these are shape numbers; for other shapes you can define fill and outline
+scale_color_distiller(palette = "Blues", direction = 1) + # use scale_color_brewer for discrete variables
+#scale_color_viridis(option = "magma", direction = -1) +
+  theme(legend.position = "left", 
         legend.text = element_text(size = 12), legend.title = element_text(size = 12))
 print(NvsP2)
+
+#from Kateri
+NvsP2 <-
+ ggplot(PeterPaul.chem.nutrients, aes(x = tp_ug, y = tn_ug, fill = depth, shape = lakename)) +
+geom_point(alpha = 0.8, size = 3, color = “black”) +
+xlab(“Total P (\U003BCg/L)“) +
+ylab() +
+ # change your legend labels here
+ scale_shape_manual(values = c(21, 23)) +
+ #scale_fill_distiller(palette = “Blues”, direction = 1) + # use scale_color_brewer for discrete variables
+ scale_fill_viridis(option = “magma”, direction = -1) +
+ theme(legend.position = “right”,
+       legend.text = element_text(size = 12), legend.title = element_text(size = 12))
 
 # change your y axis label to list concentration in micrograms per liter
 # remove your x axis label
