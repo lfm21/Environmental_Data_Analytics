@@ -30,7 +30,8 @@ EPAair <- EPAair %>%
   unite(Date, Y, m, d)
 EPAair$Date <- ymd(EPAair$Date)
 
-EPAair$Date <- as.Date(EPAair$Date, format = "%Y-%m-%d")
+EPAair$Date <- as.Date(EPAair$Date, format = "%Y-%m-%d")%>%
+mutate(month = month(Date), year = year(Date))
 
 dim(EPAair)
 class(EPAair$Date)
@@ -94,27 +95,27 @@ print(O3plot2)
 
 # Add additional variables - I missed this
 PMplot <- 
-  ggplot(EPAair, aes(x = month, y = PM2.5, shape = as.factor(year), color = Site.Name)) +
+  ggplot(EPAair, aes(x = m, y = PM2.5, shape = as.factor(Y), color = Site.Name)) +
   geom_point()
 print(PMplot)
 
 # Separate plot with facets  - I missed this
 PMplot.faceted <-
-  ggplot(EPAair, aes(x = month, y = PM2.5, shape = as.factor(year))) +
+  ggplot(EPAair, aes(x = m, y = PM2.5, shape = as.factor(Y))) +
   geom_point() +
   facet_wrap(vars(Site.Name), nrow = 3) 
 print(PMplot.faceted) #will have common legend
 
 # - I missed this
 PMplot.faceted2 <-
-  ggplot(EPAair, aes(x = month, y = PM2.5)) +
+  ggplot(EPAair, aes(x = m, y = PM2.5)) +
   geom_point() +
-  facet_grid(Site.Name ~ year)
+  facet_grid(Site.Name ~ Y)
 print(PMplot.faceted2)
 
 # Filter dataset within plot building
 O3plot.Blackstone <- 
-  ggplot(subset(EPAair, Site.Name == "Blackstone"), aes(x = Date, y = Ozone)) + #subset can take name
+  ggplot(subset(EPAair, Site.Name == "Blackstone"), aes(x = d, y = Ozone)) + #subset can take name
   geom_point() +
   geom_line() #Added layer, line will only go from one entry to another - day 1 to 2 to 3 (but if it was an entry every month, that wouldn't be useful to)
 print(O3plot.Blackstone)
@@ -221,20 +222,20 @@ print(Nutrientplot2) #but this is a crazy way to show nut concns: no error bars 
 
 # Box and whiskers plot
 Nutrientplot3 <-
-  ggplot(PeterPaul.nutrients.gathered, aes(x = lakename, y = concentration)) +
+  ggplot(PeterPaul.chem.nut.gathered, aes(x = lakename, y = concentration)) +
   geom_boxplot(aes(color = nutrient)) # Why didn't we use "fill"? fill only fills in the boxes, but makes all points black 
 print(Nutrientplot3)
 
 # Dot plot = wide spots are where there's more measurements / entries
 Nutrientplot4 <-
-  ggplot(PeterPaul.nutrients.gathered, aes(x = lakename, y = concentration)) +
+  ggplot(PeterPaul.chem.nut.gathered, aes(x = lakename, y = concentration)) +
   geom_dotplot(aes(color = nutrient), binaxis = "y", binwidth = 1, #binwidth 
                stackdir = "center", position = "dodge") #stack direction
 print(Nutrientplot4) #if the data weren't as widely distrib, we'd get better more informative graph
 
 # Violin plot looks more like a violin when points are closer together
 Nutrientplot5 <-
-  ggplot(PeterPaul.nutrients.gathered, aes(x = lakename, y = concentration)) +
+  ggplot(PeterPaul.chem.nut.gathered, aes(x = lakename, y = concentration)) +
   geom_violin(aes(color = nutrient)) #
 print(Nutrientplot5)
 
@@ -251,7 +252,7 @@ print(Nutrientplot6)
 
 # Using a gathered dataset
 Nutrientplot7 <-   
-  ggplot(PeterPaul.nutrients.gathered) +
+  ggplot(PeterPaul.chem.nut.gathered) +
   geom_freqpoly(aes(x = concentration, color = nutrient), binwidth = 1000)
 print(Nutrientplot7)
 
@@ -264,11 +265,11 @@ class(EPAair$Date) #need to mutate this file to add month and year
 EPA.PM2.5.years <- EPAair %>%
   group_by(Site.Name, year) %>%
   summarise(sd = (sd(PM2.5, na.rm = TRUE)), 
-            mean = (mean(PM2.5, na.rm = TRUE)))
-
+            mean = (mean(PM2.5, na.rm = TRUE))) +
   ggplot(EPA.PM2.5.years, aes( x = as.factor(year), y= mean, fill = Site.Name)) +
   geom_bar(position = "dodge", stat = "identity") +
     geom_errorbar(aes(ymin = mean - sd, ymax = mean +sd), position = "dodge") 
+print(EPA.PM2.5.years)
   #geom_errorbar wants numbers, be careful
   
 # Create separate bars for each site. 
