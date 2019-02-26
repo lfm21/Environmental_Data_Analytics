@@ -169,7 +169,7 @@ To analyze specific pairs in the data, you must use a *post hoc* test. These inc
 
 ```{r}
 PM2.5.kw <- kruskal.test(EPAair$PM2.5 ~ EPAair$Site.Name)
-PM2.5.kw #not getting linear bc we're not suing parametric approach
+PM2.5.kw #not getting linear bc we're not using parametric approach
 
 # There are two functions to run the Dunn Test
 # dunn.test(EPAair$PM2.5, EPAair$Site.Name, kw = T, 
