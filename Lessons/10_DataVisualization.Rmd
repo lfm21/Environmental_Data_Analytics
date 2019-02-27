@@ -1,6 +1,5 @@
 ---
 title: "10: Data Visualization"
-author: "Environmental Data Analytics | Kateri Salk"
 date: "Spring 2019" 14 Feb
 output: pdf_document
 geometry: margin=2.54cm

@@ -1,0 +1,823 @@
+\documentclass[]{article}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+\else % if luatex or xelatex
+  \ifxetex
+    \usepackage{mathspec}
+  \else
+    \usepackage{fontspec}
+  \fi
+  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+\fi
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+% use microtype if available
+\IfFileExists{microtype.sty}{%
+\usepackage{microtype}
+\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\usepackage[margin=2.54cm]{geometry}
+\usepackage{hyperref}
+\hypersetup{unicode=true,
+            pdftitle={Assignment 6: Generalized Linear Models},
+            pdfauthor={Laurie Muzzy},
+            pdfborder={0 0 0},
+            breaklinks=true}
+\urlstyle{same}  % don't use monospace font for urls
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\usepackage{framed}
+\definecolor{shadecolor}{RGB}{248,248,248}
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\ImportTok}[1]{#1}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
+\newcommand{\BuiltInTok}[1]{#1}
+\newcommand{\ExtensionTok}[1]{#1}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.77,0.63,0.00}{#1}}
+\newcommand{\RegionMarkerTok}[1]{#1}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{#1}
+\usepackage{graphicx,grffile}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+\IfFileExists{parskip.sty}{%
+\usepackage{parskip}
+}{% else
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{0}
+% Redefines (sub)paragraphs to behave more like sections
+\ifx\paragraph\undefined\else
+\let\oldparagraph\paragraph
+\renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+\let\oldsubparagraph\subparagraph
+\renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+
+%%% Use protect on footnotes to avoid problems with footnotes in titles
+\let\rmarkdownfootnote\footnote%
+\def\footnote{\protect\rmarkdownfootnote}
+
+%%% Change title format to be more compact
+\usepackage{titling}
+
+% Create subtitle command for use in maketitle
+\newcommand{\subtitle}[1]{
+  \posttitle{
+    \begin{center}\large#1\end{center}
+    }
+}
+
+\setlength{\droptitle}{-2em}
+
+  \title{Assignment 6: Generalized Linear Models}
+    \pretitle{\vspace{\droptitle}\centering\huge}
+  \posttitle{\par}
+    \author{Laurie Muzzy}
+    \preauthor{\centering\large\emph}
+  \postauthor{\par}
+    \date{}
+    \predate{}\postdate{}
+  
+
+\begin{document}
+\maketitle
+
+\subsection{OVERVIEW}\label{overview}
+
+This exercise accompanies the lessons in Environmental Data Analytics
+(ENV872L) on generalized linear models.
+
+\subsection{Directions}\label{directions}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Change ``Student Name'' on line 3 (above) with your name.
+\item
+  Use the lesson as a guide. It contains code that can be modified to
+  complete the assignment.
+\item
+  Work through the steps, \textbf{creating code and output} that fulfill
+  each instruction.
+\item
+  Be sure to \textbf{answer the questions} in this assignment document.
+  Space for your answers is provided in this document and is indicated
+  by the ``\textgreater{}'' character. If you need a second paragraph be
+  sure to start the first line with ``\textgreater{}''. You should
+  notice that the answer is highlighted in green by RStudio.
+\item
+  When you have completed the assignment, \textbf{Knit} the text and
+  code into a single PDF file. You will need to have the correct
+  software installed to do this (see Software Installation Guide) Press
+  the \texttt{Knit} button in the RStudio scripting panel. This will
+  save the PDF output in your Assignments folder.
+\item
+  After Knitting, please submit the completed exercise (PDF file) to the
+  dropbox in Sakai. Please add your last name into the file name (e.g.,
+  ``Salk\_A06\_GLMs.pdf'') prior to submission.
+\end{enumerate}
+
+The completed exercise is due on Tuesday, 26 February, 2019 before class
+begins.
+
+\subsection{Set up your session}\label{set-up-your-session}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Set up your session. Upload the EPA Ecotox dataset for Neonicotinoids
+  and the NTL-LTER raw data file for chemistry/physics.
+\item
+  Build a ggplot theme and set it as your default theme.
+\end{enumerate}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{#1}
+\KeywordTok{library}\NormalTok{(tidyverse)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Warning: package 'tidyverse' was built under R version 3.4.2
+\end{verbatim}
+
+\begin{verbatim}
+## -- Attaching packages ----------------------------------- tidyverse 1.2.1 --
+\end{verbatim}
+
+\begin{verbatim}
+## v ggplot2 3.1.0       v purrr   0.3.0  
+## v tibble  2.0.1       v dplyr   0.8.0.1
+## v tidyr   0.8.2       v stringr 1.3.1  
+## v readr   1.3.1       v forcats 0.3.0
+\end{verbatim}
+
+\begin{verbatim}
+## Warning: package 'ggplot2' was built under R version 3.4.4
+\end{verbatim}
+
+\begin{verbatim}
+## Warning: package 'tibble' was built under R version 3.4.4
+\end{verbatim}
+
+\begin{verbatim}
+## Warning: package 'tidyr' was built under R version 3.4.4
+\end{verbatim}
+
+\begin{verbatim}
+## Warning: package 'readr' was built under R version 3.4.4
+\end{verbatim}
+
+\begin{verbatim}
+## Warning: package 'purrr' was built under R version 3.4.4
+\end{verbatim}
+
+\begin{verbatim}
+## Warning: package 'dplyr' was built under R version 3.4.4
+\end{verbatim}
+
+\begin{verbatim}
+## Warning: package 'stringr' was built under R version 3.4.4
+\end{verbatim}
+
+\begin{verbatim}
+## Warning: package 'forcats' was built under R version 3.4.3
+\end{verbatim}
+
+\begin{verbatim}
+## -- Conflicts -------------------------------------- tidyverse_conflicts() --
+## x dplyr::filter() masks stats::filter()
+## x dplyr::lag()    masks stats::lag()
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{getwd}\NormalTok{() }
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] "/Users/laurie/Desktop/Envtl_Data_Analytics/MuzzyGitFile"
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{ECOTOX_Neonic <-}\StringTok{ }\KeywordTok{read.csv}\NormalTok{(}\StringTok{"./Data/Raw/ECOTOX_Neonicotinoids_Mortality_raw.csv"}\NormalTok{, }\DataTypeTok{header =} \OtherTok{TRUE}\NormalTok{) }\CommentTok{#header = TRUE to make sure there's no spaces in column names}
+\KeywordTok{library}\NormalTok{(readr)}
+\NormalTok{NTL_LTER_Lake_ChemistryPhysics_Raw <-}\StringTok{ }\KeywordTok{read_csv}\NormalTok{(}\StringTok{"Data/Raw/NTL-LTER_Lake_ChemistryPhysics_Raw.csv"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Parsed with column specification:
+## cols(
+##   lakeid = col_character(),
+##   lakename = col_character(),
+##   year4 = col_double(),
+##   daynum = col_double(),
+##   sampledate = col_character(),
+##   depth = col_double(),
+##   temperature_C = col_double(),
+##   dissolvedOxygen = col_double(),
+##   irradianceWater = col_double(),
+##   irradianceDeck = col_double(),
+##   comments = col_logical()
+## )
+\end{verbatim}
+
+\begin{verbatim}
+## Warning: 368 parsing failures.
+##   row      col           expected                            actual                                              file
+## 36649 comments 1/0/T/F/TRUE/FALSE DO Probe bad - Doesn't go to zero 'Data/Raw/NTL-LTER_Lake_ChemistryPhysics_Raw.csv'
+## 36651 comments 1/0/T/F/TRUE/FALSE DO Probe bad - Doesn't go to zero 'Data/Raw/NTL-LTER_Lake_ChemistryPhysics_Raw.csv'
+## 36653 comments 1/0/T/F/TRUE/FALSE DO Probe bad - Doesn't go to zero 'Data/Raw/NTL-LTER_Lake_ChemistryPhysics_Raw.csv'
+## 36654 comments 1/0/T/F/TRUE/FALSE DO Probe bad - Doesn't go to zero 'Data/Raw/NTL-LTER_Lake_ChemistryPhysics_Raw.csv'
+## 36655 comments 1/0/T/F/TRUE/FALSE DO Probe bad - Doesn't go to zero 'Data/Raw/NTL-LTER_Lake_ChemistryPhysics_Raw.csv'
+## ..... ........ .................. ................................. .................................................
+## See problems(...) for more details.
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{#NTL-LTER_Lake_ChemistryPhysics_Raw <- read.csv("./Data/Raw/NTL-LTER_Lake_ChemistryPhysics_Raw.csv")}
+
+\CommentTok{#2}
+\NormalTok{A6theme <-}\StringTok{ }\KeywordTok{theme_gray}\NormalTok{(}\DataTypeTok{base_size =} \DecValTok{13}\NormalTok{)}
+\KeywordTok{theme}\NormalTok{(}\DataTypeTok{axis.text =} \KeywordTok{element_text}\NormalTok{(}\DataTypeTok{color =} \StringTok{"black"}\NormalTok{), }\DataTypeTok{legend.position =} \StringTok{"right"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## List of 2
+##  $ axis.text      :List of 11
+##   ..$ family       : NULL
+##   ..$ face         : NULL
+##   ..$ colour       : chr "black"
+##   ..$ size         : NULL
+##   ..$ hjust        : NULL
+##   ..$ vjust        : NULL
+##   ..$ angle        : NULL
+##   ..$ lineheight   : NULL
+##   ..$ margin       : NULL
+##   ..$ debug        : NULL
+##   ..$ inherit.blank: logi FALSE
+##   ..- attr(*, "class")= chr [1:2] "element_text" "element"
+##  $ legend.position: chr "right"
+##  - attr(*, "class")= chr [1:2] "theme" "gg"
+##  - attr(*, "complete")= logi FALSE
+##  - attr(*, "validate")= logi TRUE
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{theme_set}\NormalTok{(A6theme)}
+\end{Highlighting}
+\end{Shaded}
+
+\subsection{Neonicotinoids test}\label{neonicotinoids-test}
+
+Research question: Were studies on various neonicotinoid chemicals
+conducted in different years?
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{2}
+\item
+  Generate a line of code to determine how many different chemicals are
+  listed in the Chemical.Name column.
+\item
+  Are the publication years associated with each chemical
+  well-approximated by a normal distribution? Run the appropriate test
+  and also generate a frequency polygon to illustrate the distribution
+  of counts for each year, divided by chemical name. Bonus points if you
+  can generate the results of your test from a pipe function. No need to
+  make this graph pretty.
+\item
+  Is there equal variance among the publication years for each chemical?
+  Hint: var.test is not the correct function.
+\end{enumerate}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{#3 how many chemicals are listed }
+\KeywordTok{summary}\NormalTok{(ECOTOX_Neonic}\OperatorTok{$}\NormalTok{Chemical.Name) }\CommentTok{#(9 chemicals)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##  Acetamiprid Clothianidin  Dinotefuran Imidacloprid Imidaclothiz 
+##          136           74           59          695            9 
+##   Nitenpyram   Nithiazine  Thiacloprid Thiamethoxam 
+##           21           22          106          161
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{class}\NormalTok{(ECOTOX_Neonic}\OperatorTok{$}\NormalTok{Pub..Year) }\CommentTok{#integer}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] "integer"
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{#4  see if it's a normal distr }
+\CommentTok{#not numeric, so need other test like ANOVA}
+
+\NormalTok{Chem.Name <-}\StringTok{ }\ControlFlowTok{function}\NormalTok{(N) \{ECOTOX_Neonic }\OperatorTok{%>%}
+\StringTok{    }\KeywordTok{filter}\NormalTok{(Chemical.Name }\OperatorTok{==}\StringTok{ 'Acetamiprid'}\NormalTok{) }\OperatorTok{%>%}
+\StringTok{    }\KeywordTok{pull}\NormalTok{(Pub..Year) }\OperatorTok{%>%}
+\StringTok{    }\KeywordTok{shapiro.test}\NormalTok{()}
+\NormalTok{\}}
+
+\NormalTok{Chem.Name}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## function(N) {ECOTOX_Neonic %>%
+##     filter(Chemical.Name == 'Acetamiprid') %>%
+##     pull(Pub..Year) %>%
+##     shapiro.test()
+## }
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{Ecotox.PubYr.norm <-}\StringTok{ }\KeywordTok{ggplot}\NormalTok{(ECOTOX_Neonic) }\OperatorTok{+}
+\KeywordTok{geom_freqpoly}\NormalTok{(}\KeywordTok{aes}\NormalTok{(}\DataTypeTok{x =}\NormalTok{ Pub..Year, }\DataTypeTok{color =}\NormalTok{ Chemical.Name), }\DataTypeTok{stat =} \StringTok{"count"}\NormalTok{) }\OperatorTok{+}
+\StringTok{  }\KeywordTok{labs}\NormalTok{(}\DataTypeTok{x =} \StringTok{"year of publication"}\NormalTok{, }\DataTypeTok{y =} \StringTok{"number of publications"}\NormalTok{)}
+\KeywordTok{print}\NormalTok{(Ecotox.PubYr.norm)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{Muzzy_A06_GLMs_files/figure-latex/studies in different years-1.pdf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{#5 equal var in pub yrs for each chemical?}
+
+\KeywordTok{bartlett.test}\NormalTok{(ECOTOX_Neonic}\OperatorTok{$}\NormalTok{Pub..Year }\OperatorTok{~}\StringTok{ }\NormalTok{ECOTOX_Neonic}\OperatorTok{$}\NormalTok{Chemical.Name) }
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## 
+##  Bartlett test of homogeneity of variances
+## 
+## data:  ECOTOX_Neonic$Pub..Year by ECOTOX_Neonic$Chemical.Name
+## Bartlett's K-squared = 139.59, df = 8, p-value < 2.2e-16
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{#Bartlett's K-squared = 139.59, df = 8, p-value < 2.2e-16}
+
+\CommentTok{# p <0.0001, so we can reject the null; the variance is not the same for all the chemicals.}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{5}
+\tightlist
+\item
+  Based on your results, which test would you choose to run to answer
+  your research question?
+\end{enumerate}
+
+\begin{quote}
+ANSWER: ``Were studies on various neonicotinoid chemicals conducted in
+different years?'' Kruskal-Wallis test, because it compares multiple
+groups and it's nonparametric.
+\end{quote}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{6}
+\item
+  Run this test below.
+\item
+  Generate a boxplot representing the range of publication years for
+  each chemical. Adjust your graph to make it pretty.
+\end{enumerate}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{#7 test for studies of dif chemicals performed in dif years}
+\CommentTok{#response ~ explanatory}
+\KeywordTok{range}\NormalTok{(ECOTOX_Neonic}\OperatorTok{$}\NormalTok{Pub..Year)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 1982 2018
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{summary}\NormalTok{(ECOTOX_Neonic}\OperatorTok{$}\NormalTok{Chemical.Name)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##  Acetamiprid Clothianidin  Dinotefuran Imidacloprid Imidaclothiz 
+##          136           74           59          695            9 
+##   Nitenpyram   Nithiazine  Thiacloprid Thiamethoxam 
+##           21           22          106          161
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{Chem.PubYr.kruskal <-}\StringTok{ }\KeywordTok{kruskal.test}\NormalTok{(Pub..Year }\OperatorTok{~}\StringTok{ }\NormalTok{Chemical.Name, ECOTOX_Neonic)}
+\NormalTok{Chem.PubYr.kruskal }\CommentTok{#Kruskal-Wallis chi-squared = 134.15, df = 8, p-value < 2.2e-16}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## 
+##  Kruskal-Wallis rank sum test
+## 
+## data:  Pub..Year by Chemical.Name
+## Kruskal-Wallis chi-squared = 134.15, df = 8, p-value < 2.2e-16
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{#8 boxplot of range of pub years for each chemical}
+\CommentTok{#not informative enough: need better x axis, can't figure out units or numbers}
+\NormalTok{Ecotox.PubYr.Chemicals <-}\StringTok{ }\KeywordTok{ggplot}\NormalTok{(ECOTOX_Neonic, }\KeywordTok{aes}\NormalTok{(}\DataTypeTok{stat =} \StringTok{"count"}\NormalTok{, }\DataTypeTok{y =}\NormalTok{ Pub..Year )) }\OperatorTok{+}
+\KeywordTok{geom_boxplot}\NormalTok{(}\KeywordTok{aes}\NormalTok{(}\DataTypeTok{fill =}\NormalTok{ Chemical.Name), }\DataTypeTok{position =} \StringTok{"dodge"}\NormalTok{) }\OperatorTok{+}\StringTok{ }
+\CommentTok{#labs(x = "number of publications", y = "publication year", title = "Publications on Neonicotinoids, 1982-2018") +}
+\KeywordTok{theme}\NormalTok{(}\DataTypeTok{legend.position =} \StringTok{"right"}\NormalTok{)}
+\KeywordTok{print}\NormalTok{(Ecotox.PubYr.Chemicals)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{Muzzy_A06_GLMs_files/figure-latex/pub years for chemicals-1.pdf}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{8}
+\tightlist
+\item
+  How would you summarize the conclusion of your analysis? Include a
+  sentence summarizing your findings and include the results of your
+  test in parentheses at the end of the sentence.
+\end{enumerate}
+
+\begin{quote}
+ANSWER: Used Kruskal test, p-val \textless{}0.05, indicating significant
+difference between the amount of publications for the different
+chemicals. (results: Kruskal-Wallis chi-squared = 134.15, df = 8,
+p-value \textless{} 2.2e-16)
+\end{quote}
+
+\subsection{NTL-LTER test}\label{ntl-lter-test}
+
+Research question: What is the best set of predictors for lake
+temperatures in July across the monitoring period at the North Temperate
+Lakes LTER?
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{10}
+\tightlist
+\item
+  Wrangle your NTL-LTER dataset with a pipe function so that it contains
+  only the following criteria:
+\end{enumerate}
+
+\begin{itemize}
+\tightlist
+\item
+  Only dates in July (hint: use the daynum column). No need to consider
+  leap years.
+\item
+  Only the columns: lakename, year4, daynum, depth, temperature\_C
+\item
+  Only complete cases (i.e., remove NAs)
+\end{itemize}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{11}
+\tightlist
+\item
+  Run an AIC to determine what set of explanatory variables (year4,
+  daynum, depth) is best suited to predict temperature. Run a multiple
+  regression on the recommended set of variables.
+\end{enumerate}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{#11 : dates in July: lakename, year4, daynum, depth, temperature_C, remove NAs (na.omit but only after pipe)}
+\NormalTok{Lake.July.temps <-}\StringTok{ }\NormalTok{NTL_LTER_Lake_ChemistryPhysics_Raw }\OperatorTok{%>%}
+\KeywordTok{filter}\NormalTok{(daynum }\OperatorTok{>=}\StringTok{ }\DecValTok{182} \OperatorTok{&}\StringTok{ }\NormalTok{daynum }\OperatorTok{<=}\StringTok{ }\DecValTok{212}\NormalTok{) }\OperatorTok{%>%}
+\KeywordTok{select}\NormalTok{(lakename, year4, daynum, depth, temperature_C) }\OperatorTok{%>%}
+\KeywordTok{na.omit}\NormalTok{()}
+
+\CommentTok{#12 AIC}
+
+\CommentTok{#Correlations close to -1 represent strong negative correlations, correlations close to zero represent weak correlations, and correlations close to 1 represent strong positive correlations. The **R-squared value** is the correlation squared, becoming a number between 0 and 1. The R-squared value describes the percent of variance accounted for by the explanatory variables.}
+\NormalTok{Lake.July.temps.AIC <-}\StringTok{ }\KeywordTok{lm}\NormalTok{(}\DataTypeTok{data =}\NormalTok{ Lake.July.temps, temperature_C }\OperatorTok{~}\StringTok{ }\NormalTok{depth }\OperatorTok{+}\StringTok{ }\NormalTok{daynum }\OperatorTok{+}\StringTok{ }\NormalTok{year4)}
+\KeywordTok{step}\NormalTok{(Lake.July.temps.AIC)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Start:  AIC=26016.31
+## temperature_C ~ depth + daynum + year4
+## 
+##          Df Sum of Sq    RSS   AIC
+## <none>                141118 26016
+## - year4   1        80 141198 26020
+## - daynum  1      1333 142450 26106
+## - depth   1    403925 545042 39151
+\end{verbatim}
+
+\begin{verbatim}
+## 
+## Call:
+## lm(formula = temperature_C ~ depth + daynum + year4, data = Lake.July.temps)
+## 
+## Coefficients:
+## (Intercept)        depth       daynum        year4  
+##    -6.45556     -1.94726      0.04134      0.01013
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{Lake.July.temps.model <-}\StringTok{ }\KeywordTok{lm}\NormalTok{(}\DataTypeTok{data =}\NormalTok{ Lake.July.temps, temperature_C }\OperatorTok{~}\StringTok{ }\NormalTok{year4 }\OperatorTok{+}\StringTok{ }\NormalTok{daynum)}
+\KeywordTok{step}\NormalTok{(Lake.July.temps.model)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Start:  AIC=39151.36
+## temperature_C ~ year4 + daynum
+## 
+##          Df Sum of Sq    RSS   AIC
+## - year4   1      3.33 545046 39149
+## <none>                545042 39151
+## - daynum  1   1355.90 546398 39174
+## 
+## Step:  AIC=39149.42
+## temperature_C ~ daynum
+## 
+##          Df Sum of Sq    RSS   AIC
+## <none>                545046 39149
+## - daynum  1    1356.6 546402 39172
+\end{verbatim}
+
+\begin{verbatim}
+## 
+## Call:
+## lm(formula = temperature_C ~ daynum, data = Lake.July.temps)
+## 
+## Coefficients:
+## (Intercept)       daynum  
+##      4.4786       0.0417
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{summary}\NormalTok{(Lake.July.temps.model) }\CommentTok{#Residual standard error: 7.489 on 9719 degrees of freedom Multiple R-squared:  0.002489,    Adjusted R-squared:  0.002284 F-statistic: 12.13 on 2 and 9719 DF,  p-value: 5.503e-06}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## 
+## Call:
+## lm(formula = temperature_C ~ year4 + daynum, data = Lake.July.temps)
+## 
+## Residuals:
+##     Min      1Q  Median      3Q     Max 
+## -12.289  -7.138  -2.601   8.061  21.408 
+## 
+## Coefficients:
+##              Estimate Std. Error t value Pr(>|t|)    
+## (Intercept)  0.363637  16.976619   0.021    0.983    
+## year4        0.002060   0.008456   0.244    0.808    
+## daynum       0.041693   0.008479   4.917 8.93e-07 ***
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+## 
+## Residual standard error: 7.489 on 9719 degrees of freedom
+## Multiple R-squared:  0.002489,   Adjusted R-squared:  0.002284 
+## F-statistic: 12.13 on 2 and 9719 DF,  p-value: 5.503e-06
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{#weak correlation: only 0.2% of variance is accounted for by explan var}
+
+\NormalTok{Lake.July.temps.regression <-}\StringTok{ }\KeywordTok{lm}\NormalTok{(}\DataTypeTok{data =}\NormalTok{ Lake.July.temps, temperature_C }\OperatorTok{~}\StringTok{ }\NormalTok{year4 }\OperatorTok{+}\StringTok{ }\NormalTok{daynum)}
+\KeywordTok{summary}\NormalTok{(Lake.July.temps.regression)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## 
+## Call:
+## lm(formula = temperature_C ~ year4 + daynum, data = Lake.July.temps)
+## 
+## Residuals:
+##     Min      1Q  Median      3Q     Max 
+## -12.289  -7.138  -2.601   8.061  21.408 
+## 
+## Coefficients:
+##              Estimate Std. Error t value Pr(>|t|)    
+## (Intercept)  0.363637  16.976619   0.021    0.983    
+## year4        0.002060   0.008456   0.244    0.808    
+## daynum       0.041693   0.008479   4.917 8.93e-07 ***
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+## 
+## Residual standard error: 7.489 on 9719 degrees of freedom
+## Multiple R-squared:  0.002489,   Adjusted R-squared:  0.002284 
+## F-statistic: 12.13 on 2 and 9719 DF,  p-value: 5.503e-06
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{Lake.July.temps.plot1 <-}\StringTok{ }\KeywordTok{ggplot}\NormalTok{(Lake.July.temps, }
+                 \KeywordTok{aes}\NormalTok{(}\DataTypeTok{x =}\NormalTok{ temperature_C, }\DataTypeTok{y =}\NormalTok{ year4, }\DataTypeTok{color =}\NormalTok{ daynum)) }\OperatorTok{+}
+\StringTok{  }\KeywordTok{geom_point}\NormalTok{(}\DataTypeTok{size =} \DecValTok{1}\NormalTok{) }
+\KeywordTok{print}\NormalTok{(Lake.July.temps.plot1)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{Muzzy_A06_GLMs_files/figure-latex/unnamed-chunk-1-1.pdf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{Lake.July.temps.plot2 <-}\StringTok{ }\KeywordTok{ggplot}\NormalTok{(Lake.July.temps, }
+                 \KeywordTok{aes}\NormalTok{(}\DataTypeTok{x =}\NormalTok{ daynum, }\DataTypeTok{y =}\NormalTok{ temperature_C, }\DataTypeTok{color =}\NormalTok{ year4)) }\OperatorTok{+}
+\StringTok{  }\KeywordTok{geom_point}\NormalTok{(}\DataTypeTok{size =} \DecValTok{1}\NormalTok{)}
+\KeywordTok{print}\NormalTok{(Lake.July.temps.plot2)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{Muzzy_A06_GLMs_files/figure-latex/unnamed-chunk-1-2.pdf}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{12}
+\tightlist
+\item
+  What is the final linear equation to predict temperature from your
+  multiple regression? How much of the observed variance does this model
+  explain?
+\end{enumerate}
+
+\begin{quote}
+ANSWER: temperature\_C = 0.36 + 0.002(year4) + 0.04(daynum) + 16.9(E).
+This model only explains 0.2\% of the variance, which is terrible.
+\end{quote}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{13}
+\tightlist
+\item
+  Run an interaction effects ANCOVA to predict temperature based on
+  depth and lakename from the same wrangled dataset.
+\end{enumerate}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{#14 lm}
+
+\NormalTok{Lake.July.temps.ancova <-}\StringTok{ }\KeywordTok{lm}\NormalTok{(}\DataTypeTok{data =}\NormalTok{ Lake.July.temps, temperature_C }\OperatorTok{~}\StringTok{ }\NormalTok{lakename }\OperatorTok{+}\StringTok{ }\NormalTok{depth)}
+\KeywordTok{summary}\NormalTok{(Lake.July.temps.ancova)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## 
+## Call:
+## lm(formula = temperature_C ~ lakename + depth, data = Lake.July.temps)
+## 
+## Residuals:
+##     Min      1Q  Median      3Q     Max 
+## -8.1127 -3.0040 -0.2316  2.8312 15.1985 
+## 
+## Coefficients:
+##                          Estimate Std. Error  t value Pr(>|t|)    
+## (Intercept)              21.68826    0.32512   66.709  < 2e-16 ***
+## lakenameCrampton Lake     4.52447    0.38213   11.840  < 2e-16 ***
+## lakenameEast Long Lake   -1.45418    0.34530   -4.211 2.56e-05 ***
+## lakenameHummingbird Lake -4.88905    0.46179  -10.587  < 2e-16 ***
+## lakenamePaul Lake         0.91157    0.33264    2.740  0.00615 ** 
+## lakenamePeter Lake        1.37937    0.33250    4.148 3.38e-05 ***
+## lakenameTuesday Lake     -1.42651    0.33815   -4.219 2.48e-05 ***
+## lakenameWard Lake        -0.68248    0.46187   -1.478  0.13954    
+## lakenameWest Long Lake   -0.20353    0.34392   -0.592  0.55400    
+## depth                    -1.96627    0.01095 -179.552  < 2e-16 ***
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+## 
+## Residual standard error: 3.538 on 9712 degrees of freedom
+## Multiple R-squared:  0.7775, Adjusted R-squared:  0.7773 
+## F-statistic:  3770 on 9 and 9712 DF,  p-value: < 2.2e-16
+\end{verbatim}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{14}
+\tightlist
+\item
+  Is there an interaction between depth and lakename? How much variance
+  in the temperature observations does this explain?
+\end{enumerate}
+
+\begin{quote}
+ANSWER: There appears to be an interaction between depth and lakename
+(which makes sense: lakes are probably going to have different depths).
+It explains about 78\% of the variance.
+\end{quote}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{15}
+\tightlist
+\item
+  Create a graph that depicts temperature by depth, with a separate
+  color for each lake. Add a geom\_smooth (method = ``lm'', se = FALSE)
+  for each lake. Make your points 50 \% transparent. Adjust your y axis
+  limits to go from 0 to 35 degrees. Clean up your graph to make it
+  pretty.
+\end{enumerate}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{#16 x=depth y=temp ?}
+
+\NormalTok{Lakes.Temp.by.depth <-}\StringTok{ }\KeywordTok{ggplot}\NormalTok{(Lake.July.temps, }\KeywordTok{aes}\NormalTok{(}\DataTypeTok{x =}\NormalTok{ depth, }\DataTypeTok{y =}\NormalTok{ temperature_C), }\DataTypeTok{color =}\NormalTok{ depth) }\OperatorTok{+}
+\StringTok{  }\KeywordTok{theme_bw}\NormalTok{() }\OperatorTok{+}
+\StringTok{  }\KeywordTok{geom_point}\NormalTok{(}\DataTypeTok{alpha =} \FloatTok{0.5}\NormalTok{, }\DataTypeTok{size =} \FloatTok{0.2}\NormalTok{, }\DataTypeTok{color =} \StringTok{"gray"}\NormalTok{) }\OperatorTok{+}
+\StringTok{  }\KeywordTok{ylim}\NormalTok{(}\DecValTok{0}\NormalTok{,}\DecValTok{35}\NormalTok{) }\OperatorTok{+}
+\StringTok{  }\KeywordTok{geom_smooth}\NormalTok{(}\KeywordTok{aes}\NormalTok{(}\DataTypeTok{color =}\NormalTok{ lakename), }\DataTypeTok{method =} \StringTok{"lm"}\NormalTok{, }\DataTypeTok{se =} \OtherTok{FALSE}\NormalTok{, }\DataTypeTok{size =} \FloatTok{0.5}\NormalTok{) }\OperatorTok{+}
+\KeywordTok{labs}\NormalTok{(}\DataTypeTok{x =} \StringTok{"Depth"}\NormalTok{, }\DataTypeTok{y =} \StringTok{"Temperature"}\NormalTok{, }\DataTypeTok{title =} \StringTok{"Lake Temperatures by Depth"}\NormalTok{) }
+\KeywordTok{print}\NormalTok{(Lakes.Temp.by.depth)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Warning: Removed 73 rows containing missing values (geom_smooth).
+\end{verbatim}
+
+\includegraphics{Muzzy_A06_GLMs_files/figure-latex/unnamed-chunk-3-1.pdf}
+
+
+\end{document}

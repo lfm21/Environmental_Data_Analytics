@@ -1,0 +1,194 @@
+---
+title: 'Assignment 6: Generalized Linear Models'
+author: "Laurie Muzzy"
+geometry: margin=2.54cm
+output:
+  pdf_document: default
+  word_document: default
+editor_options:
+  chunk_output_type: console
+---
+
+## OVERVIEW
+
+This exercise accompanies the lessons in Environmental Data Analytics (ENV872L) on generalized linear models. 
+
+## Directions
+1. Change "Student Name" on line 3 (above) with your name.
+2. Use the lesson as a guide. It contains code that can be modified to complete the assignment.
+3. Work through the steps, **creating code and output** that fulfill each instruction.
+4. Be sure to **answer the questions** in this assignment document.
+Space for your answers is provided in this document and is indicated by the ">" character.
+If you need a second paragraph be sure to start the first line with ">".
+You should notice that the answer is highlighted in green by RStudio. 
+6. When you have completed the assignment, **Knit** the text and code into a single PDF file.
+You will need to have the correct software installed to do this (see Software Installation Guide)
+Press the `Knit` button in the RStudio scripting panel.
+This will save the PDF output in your Assignments folder.
+8. After Knitting, please submit the completed exercise (PDF file) to the dropbox in Sakai. Please add your last name into the file name (e.g., "Salk_A06_GLMs.pdf") prior to submission.
+
+The completed exercise is due on Tuesday, 26 February, 2019 before class begins.
+
+## Set up your session 
+1. Set up your session. Upload the EPA Ecotox dataset for Neonicotinoids and the NTL-LTER raw data file for chemistry/physics. 
+
+2. Build a ggplot theme and set it as your default theme.
+
+```{r setup}
+#1
+library(tidyverse)
+getwd() 
+ECOTOX_Neonic <- read.csv("./Data/Raw/ECOTOX_Neonicotinoids_Mortality_raw.csv", header = TRUE) #header = TRUE to make sure there's no spaces in column names
+library(readr)
+NTL_LTER_Lake_ChemistryPhysics_Raw <- read_csv("Data/Raw/NTL-LTER_Lake_ChemistryPhysics_Raw.csv")
+#NTL-LTER_Lake_ChemistryPhysics_Raw <- read.csv("./Data/Raw/NTL-LTER_Lake_ChemistryPhysics_Raw.csv")
+
+#2
+A6theme <- theme_gray(base_size = 13)
+theme(axis.text = element_text(color = "black"), legend.position = "right")
+theme_set(A6theme)
+```
+
+## Neonicotinoids test
+Research question: Were studies on various neonicotinoid chemicals conducted in different years? 
+
+3. Generate a line of code to determine how many different chemicals are listed in the Chemical.Name column.
+
+4. Are the publication years associated with each chemical well-approximated by a normal distribution? Run the appropriate test and also generate a frequency polygon to illustrate the distribution of counts for each year, divided by chemical name. Bonus points if you can generate the results of your test from a pipe function. No need to make this graph pretty.
+
+5. Is there equal variance among the publication years for each chemical? Hint: var.test is not the correct function.
+
+```{r studies in different years}
+#3 how many chemicals are listed 
+summary(ECOTOX_Neonic$Chemical.Name) #(9 chemicals)
+class(ECOTOX_Neonic$Pub..Year) #integer
+
+#4  see if it's a normal distr 
+#not numeric, so need other test like ANOVA
+
+Chem.Name <- function(N) {ECOTOX_Neonic %>%
+    filter(Chemical.Name == 'Acetamiprid') %>%
+    pull(Pub..Year) %>%
+    shapiro.test()
+}
+
+Chem.Name
+Ecotox.PubYr.norm <- ggplot(ECOTOX_Neonic) +
+geom_freqpoly(aes(x = Pub..Year, color = Chemical.Name), stat = "count") +
+  labs(x = "year of publication", y = "number of publications")
+print(Ecotox.PubYr.norm)
+
+#5 equal var in pub yrs for each chemical?
+
+bartlett.test(ECOTOX_Neonic$Pub..Year ~ ECOTOX_Neonic$Chemical.Name) 
+#Bartlett's K-squared = 139.59, df = 8, p-value < 2.2e-16
+
+# p <0.0001, so we can reject the null; the variance is not the same for all the chemicals.
+```
+
+6. Based on your results, which test would you choose to run to answer your research question?
+
+> ANSWER: "Were studies on various neonicotinoid chemicals conducted in different years?"
+Kruskal-Wallis test, because it compares multiple groups and it's nonparametric.
+
+7. Run this test below. 
+
+8. Generate a boxplot representing the range of publication years for each chemical. Adjust your graph to make it pretty.
+```{r pub years for chemicals}
+#7 test for studies of dif chemicals performed in dif years
+#response ~ explanatory
+range(ECOTOX_Neonic$Pub..Year)
+summary(ECOTOX_Neonic$Chemical.Name)
+Chem.PubYr.kruskal <- kruskal.test(Pub..Year ~ Chemical.Name, ECOTOX_Neonic)
+Chem.PubYr.kruskal #Kruskal-Wallis chi-squared = 134.15, df = 8, p-value < 2.2e-16
+
+#8 boxplot of range of pub years for each chemical
+#not informative enough: need better x axis, can't figure out units or numbers
+Ecotox.PubYr.Chemicals <- ggplot(ECOTOX_Neonic, aes(stat = "count", y = Pub..Year )) + # x = count just puts "count" on x-axis, not helpful
+geom_boxplot(aes(fill = Chemical.Name), position = "dodge") + 
+#labs(x = "number of publications", y = "publication year", title = "Publications on Neonicotinoids, 1982-2018") +
+theme(legend.position = "right")
+print(Ecotox.PubYr.Chemicals)
+
+```
+
+
+9. How would you summarize the conclusion of your analysis? Include a sentence summarizing your findings and include the results of your test in parentheses at the end of the sentence. 
+
+> ANSWER: Used Kruskal test, p-val <0.05, indicating significant difference between the amount of publications for the different chemicals. (results: Kruskal-Wallis chi-squared = 134.15, df = 8, p-value < 2.2e-16)
+
+## NTL-LTER test
+Research question: What is the best set of predictors for lake temperatures in July across the monitoring period at the North Temperate Lakes LTER? 
+
+11. Wrangle your NTL-LTER dataset with a pipe function so that it contains only the following criteria: 
+
+* Only dates in July (hint: use the daynum column). No need to consider leap years.
+* Only the columns: lakename, year4, daynum, depth, temperature_C
+* Only complete cases (i.e., remove NAs)
+
+12. Run an AIC to determine what set of explanatory variables (year4, daynum, depth) is best suited to predict temperature. Run a multiple regression on the recommended set of variables. 
+
+```{r}
+#11 : dates in July: lakename, year4, daynum, depth, temperature_C, remove NAs (na.omit but only after pipe)
+Lake.July.temps <- NTL_LTER_Lake_ChemistryPhysics_Raw %>%
+filter(daynum >= 182 & daynum <= 212) %>%
+select(lakename, year4, daynum, depth, temperature_C) %>%
+na.omit()
+
+#12 AIC
+
+#Correlations close to -1 represent strong negative correlations, correlations close to zero represent weak correlations, and correlations close to 1 represent strong positive correlations. The **R-squared value** is the correlation squared, becoming a number between 0 and 1. The R-squared value describes the percent of variance accounted for by the explanatory variables.
+Lake.July.temps.AIC <- lm(data = Lake.July.temps, temperature_C ~ depth + daynum + year4)
+step(Lake.July.temps.AIC)
+Lake.July.temps.model <- lm(data = Lake.July.temps, temperature_C ~ year4 + daynum)
+step(Lake.July.temps.model)
+summary(Lake.July.temps.model) #Residual standard error: 7.489 on 9719 degrees of freedom Multiple R-squared:  0.002489,	Adjusted R-squared:  0.002284 F-statistic: 12.13 on 2 and 9719 DF,  p-value: 5.503e-06
+#weak correlation: only 0.2% of variance is accounted for by explan var
+
+Lake.July.temps.regression <- lm(data = Lake.July.temps, temperature_C ~ year4 + daynum)
+summary(Lake.July.temps.regression)
+
+Lake.July.temps.plot1 <- ggplot(Lake.July.temps, 
+                 aes(x = temperature_C, y = year4, color = daynum)) +
+  geom_point(size = 1) 
+print(Lake.July.temps.plot1)
+
+Lake.July.temps.plot2 <- ggplot(Lake.July.temps, 
+                 aes(x = daynum, y = temperature_C, color = year4)) +
+  geom_point(size = 1)
+print(Lake.July.temps.plot2)
+```
+
+13. What is the final linear equation to predict temperature from your multiple regression? How much of the observed variance does this model explain?
+
+> ANSWER: temperature_C = 0.36 + 0.002(year4) + 0.04(daynum) + 16.9(E). This model only explains 0.2% of the variance, which is terrible.
+ 
+14. Run an interaction effects ANCOVA to predict temperature based on depth and lakename from the same wrangled dataset.
+
+```{r}
+#14 lm
+
+Lake.July.temps.ancova <- lm(data = Lake.July.temps, temperature_C ~ lakename + depth)
+summary(Lake.July.temps.ancova)
+
+```
+
+15. Is there an interaction between depth and lakename? How much variance in the temperature observations does this explain?
+
+> ANSWER: There appears to be an interaction between depth and lakename (which makes sense: lakes are probably going to have different depths). It explains about 78% of the variance.
+
+16. Create a graph that depicts temperature by depth, with a separate color for each lake. Add a geom_smooth (method = "lm", se = FALSE) for each lake. Make your points 50 % transparent. Adjust your y axis limits to go from 0 to 35 degrees. Clean up your graph to make it pretty. 
+
+```{r}
+#16 x=depth y=temp ?
+
+Lakes.Temp.by.depth <- ggplot(Lake.July.temps, aes(x = depth, y = temperature_C), color = depth) +
+  theme_bw() +
+  geom_point(alpha = 0.5, size = 0.2, color = "gray") +
+  ylim(0,35) +
+  geom_smooth(aes(color = lakename), method = "lm", se = FALSE, size = 0.5) +
+labs(x = "Depth", y = "Temperature", title = "Lake Temperatures by Depth") 
+print(Lakes.Temp.by.depth)
+
+```
+
