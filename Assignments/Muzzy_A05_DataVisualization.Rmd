@@ -25,36 +25,78 @@ Press the `Knit` button in the RStudio scripting panel.
 This will save the PDF output in your Assignments folder.
 8. After Knitting, please submit the completed exercise (PDF file) to the dropbox in Sakai. Please add your last name into the file name (e.g., "Salk_A04_DataWrangling.pdf") prior to submission.
 
-The completed exercise is due on Thursday, 14 February, 2019 before class begins.
+The completed exercise is due on Tuesday, 19 February, 2019 before class begins.
 
 ## Set up your session 
 1. Set up your session. Upload the NTL-LTER processed data files for chemistry/physics for Peter and Paul Lakes (tidy and gathered), the USGS stream gauge dataset, and the EPA Ecotox dataset for Neonicotinoids. 
 
 2. Make sure R is reading dates as date format, not something else (hint: remember that dates were an issue for the USGS gauge data).
 
-```{r}
-#1
+```{r set-up}
+
 getwd()
-#not sure which datasets are wanted: nutrient data skinny? or both nutrient/chem summaries?
+library(lubridate)
+library(dplyr)
+library(ggplot2)
+library(tidyverse)
+library(tidyr)
 
 #tidy Peter Paul
-#processed Peter Paul
-#USGS stream gauge
-USGS.stream.gauge <- read_csv("Data/Raw/USGS_Site02085000_Flow_Raw.csv")
-View(USGS_Site02085000_Flow_Raw)
-#EPA Neonic
-ECOTOX_Neonic <- read_csv("Data/Raw/ECOTOX_Neonicotinoids_Mortality_raw.csv")
-View(ECOTOX_Neonicotinoids_Mortality_raw)
+PeterPaul.chem.nutrients <- read.csv("../Data/Processed/NTL-LTER_Lake_Nutrient_Phys_PeterPaul_Processed.csv")
+#View(PeterPaul.chem.nutrients) #23372 rows, 14 col
 
+#gathered Peter Paul
+PeterPaul.chem.nut.gathered <-   read.csv("../Data/Processed/NTL-LTER_Lake_Nutrients_PeterPaulGathered_Processed.csv")
+#View(PeterPaul.chem.nut.gathered) #7997 rows, 7 col
+
+#USGS stream gauge
+USGS.flow.data <- 
+read.csv("../Data/Raw/USGS_Site02085000_Flow_Raw.csv")
+#View(USGS.flow.data) #33216 rows, 15 col, date is %m/%d/%y
+
+#EPA Neonic
+ECOTOX_Neonic <- 
+read.csv("../Data/Raw/ECOTOX_Neonicotinoids_Mortality_raw.csv", header = TRUE)
+#View(ECOTOX_Neonic) #1283 rows, 13 col
 
 #2
+USGS.flow.data$datetime <- as.Date(USGS.flow.data$datetime, format = "%m/%d/%y") 
+#turned the dates in 1900s into 2000s
+class(USGS.flow.data$datetime) # Date 
+colnames(USGS.flow.data) <- c("agency_cd", "site_no", "Date", 
+                              "discharge.max", "discharge.max.approval", 
+                              "discharge.min", "discharge.min.approval", 
+                              "discharge.mean", "discharge.mean.approval", 
+                              "gage.height.max", "gage.height.max.approval", 
+                              "gage.height.min", "gage.height.min.approval", 
+                              "gage.height.mean", "gage.height.mean.approval")
+
+USGS.flow.data$Date <- format(USGS.flow.data$Date, format = "%y%m%d") 
+#turning datetime into 6character string 280101 for jan 1, 1928
+create.early.dates <- (function(d) {
+       paste0(ifelse(d > 181231,"19","20"),d)
+       })
+USGS.flow.data$Date <- create.early.dates(USGS.flow.data$Date) #long character string
+USGS.flow.data$Date <- as.Date(USGS.flow.data$Date, format = "%Y%m%d")
+ 
+class(USGS.flow.data$Date) #Date
+
 ```
 ## Define your theme
 3. Build a theme and set it as your default theme.
 
-```{r}
+```{r theme}
 #3
+LFMtheme <- theme_light(base_size = 11) + 
+theme(axis.text = element_text(color = "dark gray"), legend.position = "right")
+theme_set(LFMtheme)
 
+#install.packages("viridis")
+#install.packages("colormap")
+#install.packages("RColorBrewer")
+library(viridis) 
+#library(RColorBrewer) 
+#library(colormap)
 ```
 
 ## Create graphs
@@ -65,34 +107,77 @@ Hint: a good way to build graphs is to make them ugly first and then create more
 4. [NTL-LTER] Plot total phosphorus by phosphate, with separate aesthetics for Peter and Paul lakes. Add a line of best fit and color it black.
 
 ```{r}
-#4
-
+#4 
+PeterPaul.P.PO4 <- ggplot(PeterPaul.chem.nutrients, aes(x = tp_ug, y = po4)) +
+geom_point(aes(color = lakename, shape = lakename)) +
+geom_smooth(method = lm, size = 0.5, color = "black") +
+ylim(0,50) +
+xlab(expression("total Phosphorus(micrograms/L)")) +
+ylab(expression("Phosphate(micrograms/L)")) +
+scale_color_brewer(palette = "Dark2", direction = 1) +
+theme(axis.text = element_text(color = "dark gray"), legend.position = "bottom")
+print(PeterPaul.P.PO4)
 ```
 
 
 5. [NTL-LTER] Plot nutrients by date for Peter Lake, with separate colors for each depth. Facet your graph by the nutrient type.
 
-```{r}
+```{r PeterLake nut}
 #5
 
+Peter.lake <- filter(PeterPaul.chem.nut.gathered, lakename == "Peter Lake") 
+
+Peter.nutrient <- ggplot(Peter.lake, aes(x = year4, y = concentration, color = depth)) +
+geom_point(aes(), size = 0.75) + 
+facet_wrap(vars(nutrient), scales = "free_y", ncol = 1, strip.position = "right") +
+scale_colour_viridis(option = "cividis") +
+labs(x = "year", y = "nutrient concentration (micrograms/L)", title = "Nutrient Concentration by Depth", size = 10) +
+theme(axis.line.x = element_line(color = "black"))
+print(Peter.nutrient)
+
+# can't figure out how to change facet wrap labels; levels = c("Ammonium", "Nitrate", "Phosphate", "Total N", "Total P") didn't work
 ```
 
 
-6. [USGS gauge] Plot discharge by date. Create two plots, one with the points connected with geom_line and one with the points connected with geom_smooth (hint: do not use method = "lm"). 
+6. [USGS gauge] Plot discharge by date. Create two plots, one with the points connected with geom_line and one with the points connected with geom_smooth (hint: do not use method = "lm"). Place these graphs on the same plot (hint: ggarrange or something similar)
 
-```{r}
+```{r discharge by date, 2 charts on grid}
 #6
 
+#discharge.max by datetime w/geom_line
+
+USGS.flow.discharge1 <- 
+ggplot(USGS.flow.data, aes(x = Date, y = discharge.max)) +
+geom_point(size = 0.5, alpha = 0.3) +
+geom_line(alpha = 0.3) +
+scale_y_log10()
+
+#discharge.max by datetime w/geom_smooth
+USGS.flow.discharge2 <-
+ggplot(USGS.flow.data, aes(x = Date, y = discharge.max)) +
+geom_point(size = 0.5, alpha = 0.3) +
+geom_smooth(color = "magenta") +
+scale_y_log10()
+
+#same grid
+#install.packages("gridExtra")
+library(gridExtra)
+
+grid.arrange(USGS.flow.discharge1, USGS.flow.discharge2, newpage = TRUE)
 ```
 Question: How do these two types of lines affect your interpretation of the data?
 
-> Answer:
+> Answer: The linear method shows seasonal differences in discharge, as would be expected; the smooth trend line just basically adds a line, though it is easier to see the outliers with no lines connecting points.(Also, there are many years of data are missing, from about 1970 to 1988.)
 
 7. [ECOTOX Neonicotinoids] Plot the concentration, divided by chemical name. Choose a geom that accurately portrays the distribution of data points.
 
-```{r}
+```{r Chemical concentrations}
 #7 
+Ecotox.chem.concn <- ggplot(subset(ECOTOX_Neonic, Conc..Units..Std. == "AI mg/L")) +
+geom_boxplot(aes(x = Chemical.Name, y = Conc..Mean..Std., fill = Chemical.Name)) +
+labs(x = "", y = "Mean Chemical Concentration", title = "Pesticide Concentrations") +
+theme(axis.text.x = element_text(angle = 45, hjust = 1, size = 8)) +
+scale_y_log10() 
+print(Ecotox.chem.concn)
 
 ```
-
-
