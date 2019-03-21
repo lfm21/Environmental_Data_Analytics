@@ -118,7 +118,7 @@ TempTest.mixed <- lme(data = PeterPaul.summertemp,  #linear MIXED EFFECTS MODEL
                      #define method as restricted maximum likelihood
                      method = "REML")
 summary(TempTest.mixed) #stdev = 1.6C
-#intercept is Paul lake (the 1st one) on 1st day of summer, predicitng we're going to increase temp by 0.00099 every day
+#intercept is Paul lake (the 1st one) on 1st day of summer, predicitng we're going to increase temp by 0.000099 every DAY 
 #pval is really high, so there's not sig interaction btwn lakes
 
 # Compare the random effects model with the fixed effects model here

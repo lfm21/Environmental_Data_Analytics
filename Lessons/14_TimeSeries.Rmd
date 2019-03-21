@@ -22,7 +22,6 @@ library(tidyverse)
 #install.packages("trend")
 library(trend)
 
-
 PeterPaul.nutrients <- read.csv("./Data/Processed/NTL-LTER_Lake_Nutrients_PeterPaul_Processed.csv")
 USGS.flow.data <- read.csv("./Data/Raw/USGS_Site02085000_Flow_Raw.csv")
 
@@ -72,12 +71,17 @@ ggplot(PeterPaul.nutrients.surface, aes(x = sampledate, y = tp_ug, color = laken
   geom_point() +
   scale_color_manual(values = c("#7fcdbb", "#253494"))
 
-# Split dataset by lake
+# Split dataset by lake`  
 Peter.nutrients.surface <- filter(PeterPaul.nutrients.surface, lakename == "Peter Lake")
 Paul.nutrients.surface <- filter(PeterPaul.nutrients.surface, lakename == "Paul Lake")
 
 # Run a Mann-Kendall test
 mk.test(Peter.nutrients.surface$tp_ug)
+# No date-associated info used here (like no seasonality accounted for)
+#low p-val, so we can reject the null hyp (the null is that there's no trend; SO we WILL see a trend)
+#z is both direction and magnitude of the trend, and positive, so we see a positive trend over time; z score gets closer to 0 the less confident we are that there's a trend
+
+#df ...?
 
 ```
 
@@ -87,28 +91,38 @@ However, it looks like there might be a breakpoint in our dataset. Further, we k
 Pettitt's test is also included in the `trend` package. This nonparametric test will determine whether there is a shift in the central tendency of the time series and will tell us at what point the changepoint occurs (if it detects one). Note: Pettitt's Test will only test for one changepoint, and further tests must be run if multiple change points are suspected.
 ```{r}
 # Test for change point
+#tells us shift in central tendency; similar to finding a break point in linear regression, it'll only give you one
 pettitt.test(Peter.nutrients.surface$tp_ug)
+#low p-val (<0.5, there is a sig change point -  it is at 35; >0.5 the test is not detecting a sig change point)
+#this makes 1-34 a group, then 35-132 a group
 
 # Run separate Mann-Kendall for each change point
-mk.test(Peter.nutrients.surface$tp_ug[1:34])
-mk.test(Peter.nutrients.surface$tp_ug[35:132])
+mk.test(Peter.nutrients.surface$tp_ug[1:34]) #p-val >0.5, no trend from 1992 to May 1993
+mk.test(Peter.nutrients.surface$tp_ug[35:132]) #
 
 # Is there a second change point?
-pettitt.test(Peter.nutrients.surface$tp_ug[35:132])
+pettitt.test(Peter.nutrients.surface$tp_ug[35:132]) #prob change point at 79 (so 35+79= it's at space 114)
+#now our dataset is split in 3 pieces
+
 
 # Run another Mann-Kendall for the second change point
-mk.test(Peter.nutrients.surface$tp_ug[35:113])
-mk.test(Peter.nutrients.surface$tp_ug[114:132])
+mk.test(Peter.nutrients.surface$tp_ug[35:113])#z-score is 2.7, low p-val
+mk.test(Peter.nutrients.surface$tp_ug[114:132]) #not sig trend btwn the 1998 and 1999 season    z is 0.6, still positive, but closer to zero, so there's prob less of a trend
+
 
 # Run the same test for Paul Lake. 
-mk.test(Paul.nutrients.surface$tp_ug)
+mk.test(Paul.nutrients.surface$tp_ug) #any climate-related trends? non-sig trend (p-val 0.15, -ve z)
 pettitt.test(Paul.nutrients.surface$tp_ug)
 
 # Add vertical lines to the original graph to represent change points
 ggplot(PeterPaul.nutrients.surface, aes(x = sampledate, y = tp_ug, color = lakename)) + 
   geom_point() +
-  scale_color_manual(values = c("#7fcdbb", "#253494"))
-
+  geom_vline(xintercept = as.Date("1993-5-20"), color = "#253494", lty =2) +
+  geom_vline(xintercept = as.Date("1998-01-01"), color = "#253494", lty =2) +
+  scale_color_manual(values = c("#7fcdbb", "#253494")) 
+print()
+#sometimes you need to supply origin 01-01-1970
+#to find slope: sen's slope in trend package 
 ```
 ### Seasonal Mann-Kendall
 
@@ -119,11 +133,12 @@ For instance, we might want to know whether there is a change in discharge of th
 # Wrangle the USGS dataset
 USGS.flow.data.trimmed <- USGS.flow.data %>%
   select(datetime, discharge.mean) %>%
-  filter(datetime > as.Date("2008-12-31") & datetime < as.Date("2019-01-01"))
+  filter(datetime > as.Date("2008-12-31") & datetime < as.Date("2019-01-01")) #just 2009 to 2018
 
 # Visualize the data
 ggplot(USGS.flow.data.trimmed, aes(x = datetime, y = discharge.mean)) +
   geom_point(size = 0.5, alpha = 0.5)
+#mostly baseflow, a few bigger events since 2012
 ```
 
 ### Interpolation
@@ -139,7 +154,7 @@ Some situations may require us to predict values for data points that fall withi
 
 Question: Under what circumstances would you consider each of these options for interpolation? 
 
-> ANSWER: 
+> ANSWER: spline when you want to show nuanced trends (what'd be best to use here); linear when you want to find out values of non-data points on a particular day; piecewise could be one way to visualize when we have fewer data points to show.
 
 Tip: Check your dataset to see if there is an NA value in the first row. You may need to add a value for that first row or trim the dataset so that the new first row corresponds to the first measurement.
 
@@ -149,20 +164,20 @@ USGS.flow.data.interpolated <- approx(USGS.flow.data.trimmed$datetime,
                                       USGS.flow.data.trimmed$discharge.mean, 
                                       method = "linear", n = 3630)
 
-# Turn the interpolated dataset into a proper dataframe
+# Turn the interpolated dataset into a proper dataframe so we can work with it
 USGS.flow.data.interpolated <- do.call(cbind.data.frame, USGS.flow.data.interpolated)
-names(USGS.flow.data.interpolated) <- c("Date", "Discharge")
+names(USGS.flow.data.interpolated) <- c("Date", "Discharge") #BUT date is integers so we have to as.Date
 USGS.flow.data.interpolated$Date <- as.Date(USGS.flow.data.interpolated$Date, 
                                             origin = "1970/01/01")
 
-# Create a time series object
+# Create a time series object (Seas MannKendal will only take time series)
 USGS.flow.data.timeseries <- ts(USGS.flow.data.interpolated$Discharge, 
-                                start = c(2009, 1) ,frequency = 12)
+                                start = c(2009, 1) ,frequency = 12) #monthly, not daily (frequency = 365)
 
 # Run a Seasonal Mann-Kendall test
 USGS.smktest <- smk.test(USGS.flow.data.timeseries)
-USGS.smktest
-summary(USGS.smktest)
+USGS.smktest # z is far from 0, so strong trend ; pval low, indicates trend ; S is lower than varS, so very variable dataset
+summary(USGS.smktest) #one or more stars is a sig trend! separate trend for each season you give it (so November is a 'season' that has showed tons of variability)
 ```
 
 Interpreting results of the Seasonal Mann-Kendall Test: 
@@ -175,4 +190,4 @@ Interpreting results of the Seasonal Mann-Kendall Test:
   
 Question: How would you interpret the results of the Seasonal Mann-Kendall test for this example?
 
-> ANSWER: 
+> ANSWER: discharge in extreme events seems to be increasing over the years; November, esecially, has had a lot of variability over the ten years
