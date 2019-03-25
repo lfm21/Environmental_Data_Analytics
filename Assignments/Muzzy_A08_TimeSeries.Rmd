@@ -170,6 +170,8 @@ PeterPaul.N.surface <- PeterPaul.chem %>%
   select(-lakeid, -depth_id, -comments) %>%
   filter(depth == 0) %>%
   filter(!is.na(tn_ug)) 
+View(PeterPaul.N.surface)
+View(PeterPaul.chem)
 
 ggplot(PeterPaul.N.surface, aes(x = sampledate,y = tn_ug, color = lakename)) +
   geom_point() +
