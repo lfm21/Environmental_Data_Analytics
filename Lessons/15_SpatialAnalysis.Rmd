@@ -299,15 +299,18 @@ counties_sf<- st_read('./Data/Spatial/cb_2017_us_county_20m.shp') %>%
 
 #CRS (Is this the same as the EPA Dataset?)
 st_crs(counties_sf)
+#Coordinate Reference System:
+  #EPSG: 4269 
+  #proj4string: "+proj=longlat +datum=NAD83 +no_defs" (the long way of saying the above)
 
 #Column names
-names(counties_sf)
+names(counties_sf) #the geometry is a list of list of coord pairs
 
 #Reveal the number of features in this dataset
 nrow(counties_sf)
 
 #Reveal the extent of this dataset via the st_bbox() function
-st_bbox(counties_sf)
+st_bbox(counties_sf) #boundary box
 
 #View the data
 head(counties_sf)
@@ -321,15 +324,17 @@ mapView(counties_sf)
 
 ```{r read HUCs shapefile}
 #Read the shapefile into an sf dataframe named "huc8_sf"
-huc8_sf <-   
+huc8_sf <- st_read("./Data/Spatial/huc_250k_nc.shp")
 
 #Check the CRS
+st_crs(huc8_sf)
+#there's not an EPSG code cuz it's a huge area
 
-
-#Exaimine the column names
-
+#Examine the column names
+names(huc8_sf)
 
 #View the data as a map
+mapview(huc8_sf)
 
 ```
 

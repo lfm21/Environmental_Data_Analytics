@@ -37,6 +37,7 @@ Spatial data are modeled in two formats: vector and raster. Today, we'll be conc
 With vector data, a spatial feature takes the form of a _point_, _line_, or a _polygon_, collectively referred to as its **geometry**. 
 
 > _Question_: Think of some features you might see on a map. Would they best be represented as a point, line, or polygon? Can some features be represented by more than one type? Can you think of any features that you couldn't map with a point/line/polygon? 
+
 >elevation or rainfall (these are often rasters, but contours can also rep elev)
 
 
@@ -357,7 +358,7 @@ mapview(upperNeuse_sf) #geojson is text based web app
 ```{r Dissolve all counties into a single feature}
 #Aggregate the data using group_by and summarize, just as you would a non-spatial dataframe
 state_sf <- counties_sf %>% 
-  #group_by(STATEFP) %>% unnecessary line
+  #group_by(STATEFP) %>% #this is apparently an unnecessary line
   summarize(ALAND = sum(ALAND))
 
 #View the data
@@ -367,6 +368,7 @@ mapview(state_sf)
 state_sf2 <- st_union(counties_sf) #geometric operation that unions all the results
 mapview(state_sf2)
 ```
+
 
 > Now you try it: Aggregate the HUC data on the SUB attribute, computing the sum of the "AREA" field and view the result. 
 
@@ -493,7 +495,8 @@ To add more attributes to our spatial features, we can merge records just as we 
 ```{r Join demographic data to county features}
 #Read in the demographic data
 demog_df <- read.csv('./Data/Spatial/NC_Demography.csv') %>% 
-  mutate(FIPS = as.factor(FIPS))                                 #Convert the FIPS variable from number to a factor
+  mutate(FIPS = as.factor(FIPS))                                 
+#Convert the FIPS variable from number to a factor
 
 #Join the two datasets using "GEOID" from the left dataset and "FIPS" from the right
 counties_sf_utm_join <- counties_sf_utm %>% 
