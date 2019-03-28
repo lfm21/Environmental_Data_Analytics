@@ -422,6 +422,7 @@ ggplot()  +
   geom_sf(data = counties_sf_utm, aes(fill = ALAND), color = 'white')  +
   geom_sf(data = state_sf_utm, color='red',size=2) + 
   scale_fill_gradient(low="yellow", high="darkgreen")
+#DOESN'T WORK
 
 #Right order
 ggplot() +
