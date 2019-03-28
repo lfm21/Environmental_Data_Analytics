@@ -1,0 +1,148 @@
+
+---
+title: "17: Crafting Reports"
+author: "Environmental Data Analytics | Kateri Salk"
+date: "Spring 2019"
+output: pdf_document
+geometry: margin=2.54cm
+editor_options: 
+  chunk_output_type: console
+---
+
+## LESSON OBJECTIVES
+1. Describe the purpose of using R Markdown as a communication and workflow tool
+2. Incorporate Markdown syntax into documents
+3. Communicate the process and findings of an analysis session in the style of a report
+
+## BASIC R MARKDOWN DOCUMENT STRUCTURE
+
+1. **YAML Header** surrounded by --- on top and bottom
+    + YAML templates include options for html, pdf, word, markdown, and interactive
+    + More information on formatting the YAML header can be found in the cheat sheet
+2. **R Code Chunks** surrounded by ``` on top and bottom
+    + Create using `Cmd/Ctrl` + `Alt` + `I`
+```{r a test}
+5*8
+```
+    
+    + Can be named {r name} to facilitate navigation and autoreferencing
+    + Chunk options allow for flexibility when the code runs and when the document is knitted
+    3. **Text** with formatting options for readability in knitted document
+
+A handy cheat sheet for R markdown can be found [here](https://www.rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf). Another one can be found [here](https://www.rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf).
+
+## WHY R MARKDOWN?
+
+<Fill in our discussion below with bullet points. Use italics and bold for emphasis>
+There's nothing there if it's surrounded by < and > <secretsssss>
+
++ to create a bullet 
+- to make another bullet
+* another way
+BUT gotta add another return or it'll just be on one line
+
+* code output and text in one doc
+- knit to useful formats like html or pdf
+- git friendly / version control
+- reproducible 
+- updating capabilities
+- your code is legible
+- can decide what kind of text we can display (like the reader may not need to know what the code looks like, but we could show them the data viz/output/conclusions, but not all the code)
+- flexible formatting
+- simple syntax and auto-referencing
+
+## TEXT EDITING CHALLENGE
+
+Create a table below that details the example datasets we have been using in class. The first column should contain the name of the dataset and the second column should include some relevant information about the dataset. 
+there needs to be something on every line to make it look like a table:
+
+Raw datasets                      | Processed 
+-------------                     | -------------
+ECOTOX_Neonicotinoids_Mortality   | Neonic
+NTL-LTER_Lake_Chemistry           | NTL-LTER_Lake_Chemistry_Nutrients
+EPAair_O3_NC2017                  | 
+EPAair_PM25_NC2018                | EPA_NCAir_2017_18_Processed
+
+## R CHUNK EDITING CHALLENGE
+### Installing packages
+Create an R chunk below that installs the package `knitr`. Instead of commenting out the code, customize the chunk options such that the code is not evaluated (i.e., not run). 
+
+
+```{r hidden installation, include=FALSE}
+install.packages("knitr")
+```
+
+### Setup
+Create an R chunk below called "setup" that checks your working directory, loads the packages `tidyverse` and `knitr`, and sets a ggplot theme. 
+
+```{r setup}
+getwd()
+library(knitr)
+library(tidyverse)
+
+bestever_theme <- theme_gray(base_size = 10) +
+  theme(axis.text = element_text(color = "dark gray"), legend.position = "right", 
+        legend.title = element_text(size = 12))
+theme_set(bestever_theme)
+```
+
+Load the NTL-LTER_Lake_Nutrients_Raw dataset, display the head of the dataset, and set the date column to a date format.
+
+Customize the chunk options such that the code is run but is not displayed in the final document.
+```{r hidden read csv, include=FALSE}
+Lake_nutrients <- read.csv("./Data/Raw/NTL-LTER_Lake_Nutrients_Raw.csv")
+```
+
+### Data Exploration, Wrangling, and Visualization
+Create an R chunk below to create a processed dataset do the following operations: 
+
+* Include all columns except lakeid, depth_id, and comments
+* Include only surface samples (depth = 0 m)
+```{r}
+Lake_gather <- Lake_nutrients %>%
+  select(-lakeid, -depth_id, -comments) %>%
+  filter(depth == 0)
+```
+
+Create a second R chunk to create a summary dataset with the mean, minimum, maximum, and standard deviation of total nitrogen concentrations for each lake. Create a second summary dataset that is identical except that it evaluates total phosphorus. Customize the chunk options such that the code is run but not displayed in the final document. 
+```{r tn_ug mean min max}
+Lake_sum <- Lake_gather %>%
+  group_by() %>%
+  
+  
+```
+
+
+Create a third R chunk that uses the function `kable` in the knitr package to display two tables: one for the summary dataframe for total N and one for the summary dataframe of total P. Use the `caption = " "` code within that function to title your tables. Customize the chunk options such that the final table is displayed but not the code used to generate the table. 
+
+
+Create a fourth and fifth R chunk that generates two plots (one in each chunk): one for total N over time with different colors for each lake, and one with the same setup but for total P. Decide which geom option will be appropriate for your purpose, and select a color palette that is visually pleasing and accessible. Customize the chunk options such that the final figures are displayed but not the code used to generate the figures. < delete : In addition, customize the chunk options such that the figures are aligned on the left side of the page.> Lastly, add a fig.cap chunk option to add a caption (title) to your plot that will display underneath the figure.
+
+
+### Other options
+What are the chunk options that will suppress the display of errors, warnings, and messages in the final document? 
+
+> ANSWER: 
+
+### Communicating results
+Write a paragraph describing your findings from the R coding challenge above. This should be geared toward an educated audience but one that is not necessarily familiar with the dataset. Then insert a horizontal rule below the paragraph. Below the horizontal rule, write another paragraph describing the next steps you might take in analyzing this dataset. What questions might you be able to answer, and what analyses would you conduct to answer those questions?
+
+## OTHER R MARKDOWN CUSTOMIZATION OPTIONS
+We have covered the basics in class today, but R Markdown offers many customization options. A word of caution: customizing templates will often require more interaction with LaTeX and installations on your computer, so be ready to troubleshoot issues.
+
+Customization options for pdf output include: 
+
+* Table of contents
+* Number sections
+* Control default size of figures
+* Citations
+* Template (more info [here](http://jianghao.wang/post/2017-12-08-rmarkdown-templates/))
+
+pdf_document:  
+    toc: true  
+    number_sections: true  
+    fig_height: 3  
+    fig_width: 4  
+    citation_package: natbib  
+    template:  
+
