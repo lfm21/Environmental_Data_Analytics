@@ -1,0 +1,844 @@
+\documentclass[]{article}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+\else % if luatex or xelatex
+  \ifxetex
+    \usepackage{mathspec}
+  \else
+    \usepackage{fontspec}
+  \fi
+  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+\fi
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+% use microtype if available
+\IfFileExists{microtype.sty}{%
+\usepackage{microtype}
+\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\usepackage[margin=2.54cm]{geometry}
+\usepackage{hyperref}
+\hypersetup{unicode=true,
+            pdftitle={Assignment: Spatial Analysis in R},
+            pdfauthor={Laurie Muzzy},
+            pdfborder={0 0 0},
+            breaklinks=true}
+\urlstyle{same}  % don't use monospace font for urls
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\usepackage{framed}
+\definecolor{shadecolor}{RGB}{248,248,248}
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\ImportTok}[1]{#1}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
+\newcommand{\BuiltInTok}[1]{#1}
+\newcommand{\ExtensionTok}[1]{#1}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.77,0.63,0.00}{#1}}
+\newcommand{\RegionMarkerTok}[1]{#1}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{#1}
+\usepackage{graphicx,grffile}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+\IfFileExists{parskip.sty}{%
+\usepackage{parskip}
+}{% else
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{0}
+% Redefines (sub)paragraphs to behave more like sections
+\ifx\paragraph\undefined\else
+\let\oldparagraph\paragraph
+\renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+\let\oldsubparagraph\subparagraph
+\renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+
+%%% Use protect on footnotes to avoid problems with footnotes in titles
+\let\rmarkdownfootnote\footnote%
+\def\footnote{\protect\rmarkdownfootnote}
+
+%%% Change title format to be more compact
+\usepackage{titling}
+
+% Create subtitle command for use in maketitle
+\newcommand{\subtitle}[1]{
+  \posttitle{
+    \begin{center}\large#1\end{center}
+    }
+}
+
+\setlength{\droptitle}{-2em}
+
+  \title{Assignment: Spatial Analysis in R}
+    \pretitle{\vspace{\droptitle}\centering\huge}
+  \posttitle{\par}
+    \author{Laurie Muzzy}
+    \preauthor{\centering\large\emph}
+  \postauthor{\par}
+    \date{}
+    \predate{}\postdate{}
+  
+
+\begin{document}
+\maketitle
+
+{
+\setcounter{tocdepth}{2}
+\tableofcontents
+}
+\subsection{OVERVIEW}\label{overview}
+
+This exercise accompanies the lessons in Environmental Data Analytics
+(ENV872L) on spatial analysis.
+
+\subsection{Directions}\label{directions}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Change ``Student Name'' on line 3 (above) with your name.
+\item
+  Use the lesson as a guide. It contains code that can be modified to
+  complete the assignment.
+\item
+  Work through the steps, \textbf{creating code and output} that fulfill
+  each instruction.
+\item
+  Be sure to \textbf{answer the questions} in this assignment document.
+  Space for your answers is provided in this document and is indicated
+  by the ``\textgreater{}'' character. If you need a second paragraph be
+  sure to start the first line with ``\textgreater{}''. You should
+  notice that the answer is highlighted in green by RStudio.
+\item
+  When you have completed the assignment, \textbf{Knit} the text and
+  code into a single HTML file.
+\item
+  After Knitting, please submit the completed exercise (HTML file) to
+  the dropbox in Sakai. Please add your last name into the file name
+  (e.g., ``Fay\_A09\_SpatialAnalysis.pdf'') prior to submission.
+\end{enumerate}
+
+\subsection{DATA WRANGLING}\label{data-wrangling}
+
+\subsubsection{1. Prepare the workspace}\label{prepare-the-workspace}
+
+\begin{itemize}
+\tightlist
+\item
+  Import: tidyverse, sf, and leaflet
+\end{itemize}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{library}\NormalTok{(tidyverse)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Warning: package 'tidyverse' was built under R version 3.4.2
+\end{verbatim}
+
+\begin{verbatim}
+## -- Attaching packages --------- tidyverse 1.2.1 --
+\end{verbatim}
+
+\begin{verbatim}
+## v ggplot2 3.1.0       v purrr   0.3.0  
+## v tibble  2.0.1       v dplyr   0.8.0.1
+## v tidyr   0.8.2       v stringr 1.3.1  
+## v readr   1.3.1       v forcats 0.3.0
+\end{verbatim}
+
+\begin{verbatim}
+## Warning: package 'ggplot2' was built under R version 3.4.4
+\end{verbatim}
+
+\begin{verbatim}
+## Warning: package 'tibble' was built under R version 3.4.4
+\end{verbatim}
+
+\begin{verbatim}
+## Warning: package 'tidyr' was built under R version 3.4.4
+\end{verbatim}
+
+\begin{verbatim}
+## Warning: package 'readr' was built under R version 3.4.4
+\end{verbatim}
+
+\begin{verbatim}
+## Warning: package 'purrr' was built under R version 3.4.4
+\end{verbatim}
+
+\begin{verbatim}
+## Warning: package 'dplyr' was built under R version 3.4.4
+\end{verbatim}
+
+\begin{verbatim}
+## Warning: package 'stringr' was built under R version 3.4.4
+\end{verbatim}
+
+\begin{verbatim}
+## Warning: package 'forcats' was built under R version 3.4.3
+\end{verbatim}
+
+\begin{verbatim}
+## -- Conflicts ------------ tidyverse_conflicts() --
+## x dplyr::filter() masks stats::filter()
+## x dplyr::lag()    masks stats::lag()
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{library}\NormalTok{(tidyr)}
+\KeywordTok{library}\NormalTok{(leaflet)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Warning: package 'leaflet' was built under R version 3.4.4
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{library}\NormalTok{(sf)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Warning: package 'sf' was built under R version 3.4.4
+\end{verbatim}
+
+\begin{verbatim}
+## Linking to GEOS 3.6.1, GDAL 2.1.3, PROJ 4.9.3
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{library}\NormalTok{(mapview)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Warning: package 'mapview' was built under R version 3.4.4
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{#install.packages("raster")}
+\KeywordTok{library}\NormalTok{(raster)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Warning: package 'raster' was built under R version 3.4.4
+\end{verbatim}
+
+\begin{verbatim}
+## Loading required package: sp
+\end{verbatim}
+
+\begin{verbatim}
+## Warning: package 'sp' was built under R version 3.4.4
+\end{verbatim}
+
+\begin{verbatim}
+## 
+## Attaching package: 'raster'
+\end{verbatim}
+
+\begin{verbatim}
+## The following object is masked from 'package:dplyr':
+## 
+##     select
+\end{verbatim}
+
+\begin{verbatim}
+## The following object is masked from 'package:tidyr':
+## 
+##     extract
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{getwd}\NormalTok{()}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] "/Users/laurie/Desktop/Envtl_Data_Analytics/MuzzyGitFile"
+\end{verbatim}
+
+\subsubsection{2. Read filtered county features into an sf dataframe and
+plot}\label{read-filtered-county-features-into-an-sf-dataframe-and-plot}
+
+In this exercise, we will be exploring stream gage height data in
+Nebraska, as there's been recent floods there. First, we will import
+from the US Counties\\
+shapefile we've used in lab lessons, filtering it this time for just
+Nebraska counties. Nebraska's state FIPS code is \texttt{31} (as North
+Carolina's was \texttt{37}).
+
+\begin{itemize}
+\tightlist
+\item
+  Read the cb\_2017\_us\_county\_20m.shp shapefile into an sf dataframe
+\item
+  Filter for Nebraska counties (State FIPS = 31)
+\item
+  Show the dataset's coordinate reference system
+\item
+  Plot the records as a map (in any format)
+\end{itemize}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{#Read in Counties shapefile into an sf dataframe, filtering for just NC counties}
+\NormalTok{NEcounties <-}\StringTok{ }\KeywordTok{st_read}\NormalTok{(}\StringTok{"./Data/Spatial/cb_2017_us_county_20m.shp"}\NormalTok{) }\OperatorTok{%>%}
+\StringTok{  }\KeywordTok{filter}\NormalTok{(STATEFP }\OperatorTok{==}\StringTok{ }\DecValTok{31}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Reading layer `cb_2017_us_county_20m' from data source `/Users/laurie/Desktop/Envtl_Data_Analytics/MuzzyGitFile/Data/Spatial/cb_2017_us_county_20m.shp' using driver `ESRI Shapefile'
+## Simple feature collection with 3220 features and 9 fields
+## geometry type:  MULTIPOLYGON
+## dimension:      XY
+## bbox:           xmin: -179.1743 ymin: 17.91377 xmax: 179.7739 ymax: 71.35256
+## epsg (SRID):    4269
+## proj4string:    +proj=longlat +datum=NAD83 +no_defs
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{#Reveal the CRS of the counties features}
+\KeywordTok{st_crs}\NormalTok{(NEcounties)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Coordinate Reference System:
+##   EPSG: 4269 
+##   proj4string: "+proj=longlat +datum=NAD83 +no_defs"
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{#Plot the data}
+
+\KeywordTok{plot}\NormalTok{(NEcounties[}\StringTok{"COUNTYFP"}\NormalTok{])}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{Muzzy_A09_SpatialAnalysis_files/figure-latex/Read the county data into an sf dataframe-1.pdf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{# could also use mapView(NEcounties)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{quote}
+QUESTION: What is the EPSG code of the Counties dataset? Using
+\url{http://spatialreference.org}, is this a geographic or a projected
+coordinate system? (Or, does this CRS use angular or planar coordinate
+units?) To what datum is this CRS associated?\\
+ANSWER: 4269 is the GCS, the datum is NAD83.
+\end{quote}
+
+\subsubsection{3. Read in gage locations csv as a dataframe, then
+display the column names it
+contains}\label{read-in-gage-locations-csv-as-a-dataframe-then-display-the-column-names-it-contains}
+
+Next we'll read in some USGS/NWIS gage location data I've added to the
+\texttt{Data/Raw} folder. These are in the
+\texttt{NWIS\_SiteInfo\_NE\_RAW.csv} file. (See
+\texttt{NWIS\_SiteInfo\_NE\_RAW.README.txt} for more info on this
+datset.) * Read the NWIS\_SiteInfo\_NE\_RAW.csv file into a standard
+dataframe * Display the column names of this dataset
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{#Read in gage locations csv as a dataframe}
+\NormalTok{NEgage <-}\StringTok{ }\KeywordTok{read.csv}\NormalTok{(}\StringTok{"./Data/Raw/NWIS_SiteInfo_NE_RAW.csv"}\NormalTok{)}
+
+\CommentTok{#Reveal the names of the columns}
+\KeywordTok{colnames}\NormalTok{(NEgage)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] "site_no"            "station_nm"         "site_tp_cd"        
+## [4] "dec_lat_va"         "dec_long_va"        "coord_acy_cd"      
+## [7] "dec_coord_datum_cd"
+\end{verbatim}
+
+\begin{quote}
+QUESTION: What columns in the dataset contain the x and y coordinate
+values, respectively? ANSWER: x = dec\_long\_va and y = dec\_lat\_va
+\end{quote}
+
+\subsubsection{4. Convert the gage locations dataframe to an sf
+dataframe of
+points}\label{convert-the-gage-locations-dataframe-to-an-sf-dataframe-of-points}
+
+\begin{itemize}
+\tightlist
+\item
+  These data use the same coordnate reference system as the counties
+  dataset
+\item
+  Display the column names of the resulting sf dataframe
+\end{itemize}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{#Convert to an sf object}
+\NormalTok{NEgagepoints <-}\StringTok{ }\KeywordTok{st_as_sf}\NormalTok{(NEgage, }\DataTypeTok{coords =} \KeywordTok{c}\NormalTok{(}\StringTok{"dec_long_va"}\NormalTok{,}\StringTok{"dec_lat_va"}\NormalTok{),}
+                         \DataTypeTok{crs =} \DecValTok{4269}\NormalTok{) }
+\CommentTok{#Reveal the structure}
+\KeywordTok{colnames}\NormalTok{(NEgagepoints) }
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] "site_no"            "station_nm"         "site_tp_cd"        
+## [4] "coord_acy_cd"       "dec_coord_datum_cd" "geometry"
+\end{verbatim}
+
+\begin{quote}
+QUESTION: What new field(s) appear in the sf dataframe created? What
+field(s), if any, disappeared? ANSWER: It added a geometry column, with
+x and y coordinates; the latitude and longitude columns disappeared/
+were transformed into geometry
+\end{quote}
+
+\subsubsection{\texorpdfstring{5. Use \texttt{ggplot} to plot the gage
+locations on top of the
+counties}{5. Use ggplot to plot the gage locations on top of the counties}}\label{use-ggplot-to-plot-the-gage-locations-on-top-of-the-counties}
+
+\begin{itemize}
+\tightlist
+\item
+  Plot the different datasets in different colors
+\end{itemize}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{NEgagemap <-}
+\StringTok{  }\KeywordTok{ggplot}\NormalTok{() }\OperatorTok{+}\StringTok{ }
+\StringTok{  }\KeywordTok{geom_sf}\NormalTok{(}\DataTypeTok{data =}\NormalTok{ NEcounties, }\DataTypeTok{col =} \StringTok{"red"}\NormalTok{) }\OperatorTok{+}\StringTok{ }
+\StringTok{  }\KeywordTok{geom_sf}\NormalTok{(}\DataTypeTok{data =}\NormalTok{ NEgagepoints, }\DataTypeTok{col =} \StringTok{"blue"}\NormalTok{) }\OperatorTok{+}
+\StringTok{  }\KeywordTok{plot}\NormalTok{(NEgagepoints}\OperatorTok{$}\NormalTok{geometry) }
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{Muzzy_A09_SpatialAnalysis_files/figure-latex/unnamed-chunk-2-1.pdf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+  \KeywordTok{plot}\NormalTok{(NEgagemap)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{Muzzy_A09_SpatialAnalysis_files/figure-latex/unnamed-chunk-2-2.pdf}
+
+\subsubsection{6. Read in the gage height data and join the site
+location data to
+it.}\label{read-in-the-gage-height-data-and-join-the-site-location-data-to-it.}
+
+And finally, we want to attach some gage height data to our site
+locations. I've constructed a csv file listing many of the Nebraska gage
+sites, by station name and site number along with stream gage heights
+(in meters) recorded during the recent flood event. This file is titled
+\texttt{NWIS\_SiteFlowData\_NE\_RAW.csv} and is found in the Data/Raw
+folder.
+
+\begin{itemize}
+\tightlist
+\item
+  Read this dataset in as a dataframe.
+\item
+  Join our site information (already imported above) to these gage
+  height data.
+\item
+  The \texttt{site\_no} and \texttt{station\_nm} can both serve as
+  joining attributes.
+\item
+  Construct this join so that the result only includes records where
+  both tables have data.
+\item
+  Show the column names in this resulting dataframe
+\item
+  Once joined, we will again have to convert this product (a dataframe)
+  into a spatial dataframe. Do that.
+\end{itemize}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{#Read in the data}
+\NormalTok{NWISgage_ht <-}\StringTok{ }\KeywordTok{read.csv}\NormalTok{(}\StringTok{"./Data/Raw/NWIS_SiteFlowData_NE_RAW.csv"}\NormalTok{)}
+
+\CommentTok{#Show the column names}
+\KeywordTok{colnames}\NormalTok{(NWISgage_ht)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] "site_no"    "station_nm" "date"       "gage_ht"
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{#colnames(NWISflow)}
+\CommentTok{#class(NWISflow$site_no)}
+\CommentTok{#class(NEgage$site_no)}
+
+\CommentTok{#Join location data to it}
+\NormalTok{NWISjoin <-}\StringTok{  }\NormalTok{NWISgage_ht }\OperatorTok{%>%}\StringTok{ }
+\StringTok{  }\KeywordTok{left_join}\NormalTok{(}\DataTypeTok{y =}\NormalTok{ NEgagepoints, }\DataTypeTok{by =} \KeywordTok{c}\NormalTok{(}\StringTok{'site_no'}\NormalTok{, }\StringTok{'station_nm'}\NormalTok{)) }\OperatorTok{%>%}\StringTok{ }
+\StringTok{  }\KeywordTok{na.omit}\NormalTok{() }\CommentTok{#if there's na in a row, it'll omit that (!is.na will work on col)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Warning: Column `station_nm` joining factors with different levels,
+## coercing to character vector
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{colnames}\NormalTok{(NWISjoin)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] "site_no"            "station_nm"         "date"              
+## [4] "gage_ht"            "site_tp_cd"         "coord_acy_cd"      
+## [7] "dec_coord_datum_cd" "geometry"
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{#[1] "site_no"            "station_nm"         "date"               "gage_ht"           }
+\CommentTok{#[5] "site_tp_cd"         "coord_acy_cd"       "dec_coord_datum_cd" "geometry"}
+
+\CommentTok{#Convert back to sf dataframe}
+
+\NormalTok{NWISjoin_sf <-}\StringTok{ }\KeywordTok{st_as_sf}\NormalTok{(NWISjoin, }\DataTypeTok{crs =} \DecValTok{4269}\NormalTok{)}
+\KeywordTok{class}\NormalTok{(NWISjoin_sf)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] "sf"         "data.frame"
+\end{verbatim}
+
+\subsubsection{7. Map the pattern of gage height
+data}\label{map-the-pattern-of-gage-height-data}
+
+Now we can examine where the flooding appears most acute by visualizing
+gage heights spatially. * Plot the gage sites on top of counties * Show
+the magnitude of gage height by color, shape, other visualization
+technique.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{#Plot the values}
+\NormalTok{legend_title_}\DecValTok{1}\NormalTok{ <-}\StringTok{ "Gage Height(ft)"}
+
+\NormalTok{NWISviz <-}\StringTok{ }\KeywordTok{ggplot}\NormalTok{() }\OperatorTok{+}
+\StringTok{  }\KeywordTok{geom_sf}\NormalTok{(}\DataTypeTok{data =}\NormalTok{ NEcounties, }\DataTypeTok{color =} \StringTok{"black"}\NormalTok{) }\OperatorTok{+}
+\StringTok{  }\KeywordTok{geom_sf}\NormalTok{(}\DataTypeTok{data =}\NormalTok{ NWISjoin_sf, }\KeywordTok{aes}\NormalTok{(}\DataTypeTok{color =}\NormalTok{ gage_ht)) }\OperatorTok{+}
+\StringTok{  }\KeywordTok{scale_color_gradient}\NormalTok{(legend_title_}\DecValTok{1}\NormalTok{, }\DataTypeTok{low =} \StringTok{"lightblue"}\NormalTok{, }\DataTypeTok{high =} \StringTok{"darkblue"}\NormalTok{) }\OperatorTok{+}
+\StringTok{  }\KeywordTok{ggtitle}\NormalTok{(}\StringTok{"Nebraska flooding site gage heights"}\NormalTok{) }\OperatorTok{+}
+\StringTok{  }\KeywordTok{theme}\NormalTok{(}\DataTypeTok{plot.title =} \KeywordTok{element_text}\NormalTok{(}\DataTypeTok{size =} \DecValTok{12}\NormalTok{, }\DataTypeTok{color =} \StringTok{"black"}\NormalTok{),}
+        \DataTypeTok{legend.position =} \StringTok{"bottom"}\NormalTok{,}
+        \DataTypeTok{legend.text =} \KeywordTok{element_text}\NormalTok{(}\DataTypeTok{size =} \DecValTok{10}\NormalTok{, }\DataTypeTok{color =} \StringTok{"black"}\NormalTok{))}
+ 
+\KeywordTok{plot}\NormalTok{(NWISviz)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{Muzzy_A09_SpatialAnalysis_files/figure-latex/unnamed-chunk-4-1.pdf}
+
+\subsection{SPATIAL ANALYSIS}\label{spatial-analysis}
+
+Up next we will do some spatial analysis with our data. To prepare for
+this, we should transform our data into a projected coordinate system.
+We'll choose UTM Zone 14N (EPGS = 32614).
+
+\subsubsection{8. Transform the counties and gage site datasets to UTM
+Zone
+14N}\label{transform-the-counties-and-gage-site-datasets-to-utm-zone-14n}
+
+\begin{itemize}
+\tightlist
+\item
+  Transform each dataset to crs 32614
+\item
+  Using ggplot, plot the data so that each can be seen as different
+  colors
+\end{itemize}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{#Transform the counties and gage location datasets to UTM Zone 14}
+
+\NormalTok{NEcounties_utm <-}\StringTok{ }\KeywordTok{st_transform}\NormalTok{(NEcounties, }\DataTypeTok{crs =} \DecValTok{32614}\NormalTok{)}
+\KeywordTok{st_crs}\NormalTok{(NEcounties_utm)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Coordinate Reference System:
+##   EPSG: 32614 
+##   proj4string: "+proj=utm +zone=14 +datum=WGS84 +units=m +no_defs"
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{class}\NormalTok{(NEcounties_utm)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] "sf"         "data.frame"
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{NWISjoin_utm <-}\StringTok{ }\KeywordTok{st_transform}\NormalTok{(NWISjoin_sf, }\DataTypeTok{c =} \DecValTok{32614}\NormalTok{)}
+\KeywordTok{st_crs}\NormalTok{(NWISjoin_utm)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Coordinate Reference System:
+##   EPSG: 32614 
+##   proj4string: "+proj=utm +zone=14 +datum=WGS84 +units=m +no_defs"
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{#Plot the data}
+\KeywordTok{ggplot}\NormalTok{() }\OperatorTok{+}
+\KeywordTok{geom_sf}\NormalTok{(}\DataTypeTok{data =}\NormalTok{ NEcounties_utm, }\DataTypeTok{col =} \StringTok{"black"}\NormalTok{) }\OperatorTok{+}
+\StringTok{  }\KeywordTok{geom_sf}\NormalTok{(}\DataTypeTok{data =}\NormalTok{ NWISjoin_utm, }\DataTypeTok{col =} \StringTok{"blue"}\NormalTok{) }\OperatorTok{+}
+\StringTok{  }\KeywordTok{ggtitle}\NormalTok{(}\StringTok{"Nebraska flooding sites"}\NormalTok{) }\OperatorTok{+}
+\StringTok{  }\KeywordTok{theme}\NormalTok{(}\DataTypeTok{plot.title =} \KeywordTok{element_text}\NormalTok{(}\DataTypeTok{size =} \DecValTok{12}\NormalTok{, }\DataTypeTok{color =} \StringTok{"black"}\NormalTok{, }\DataTypeTok{hjust =}\NormalTok{ .}\DecValTok{5}\NormalTok{))}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{Muzzy_A09_SpatialAnalysis_files/figure-latex/unnamed-chunk-5-1.pdf}
+\textgreater{} QUESTION: The shape of Nebraska should look a bit
+different than the one created in Step 5? Why? \textgreater{} ANSWER:
+The projection is applied to this map, so it's a bit cured, like the
+earth.
+
+\subsubsection{9. Select the gages falling within a given
+county}\label{select-the-gages-falling-within-a-given-county}
+
+Now let's zoom into a particular county and examine the gages located
+there.
+
+\begin{itemize}
+\tightlist
+\item
+  Select Lancaster county from your county sf dataframe
+\item
+  Select the gage sites falling \texttt{within} that county
+\item
+  Remember you'll have to create a mask and then apply that mask
+\item
+  Create a plot showing:
+\item
+  all Nebraska counties,
+\item
+  the selected county,
+\item
+  and the gage sites in that county
+\end{itemize}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{#Select the county Lancaster}
+\NormalTok{Lancaster <-}\StringTok{ }\NormalTok{NEcounties_utm }\OperatorTok{%>%}
+\StringTok{  }\KeywordTok{filter}\NormalTok{(NAME }\OperatorTok{==}\StringTok{ "Lancaster"}\NormalTok{)}
+  
+\CommentTok{#Select gages within }
+\NormalTok{gages_Lancaster_int <-}\StringTok{ }\KeywordTok{st_intersects}\NormalTok{(Lancaster, NWISjoin_utm, }\DataTypeTok{sparse =} \OtherTok{FALSE}\NormalTok{)}
+
+\NormalTok{gages_Lancaster <-}\StringTok{ }\NormalTok{NWISjoin_utm[gages_Lancaster_int,]}
+
+\CommentTok{#Plot}
+\KeywordTok{ggplot}\NormalTok{() }\OperatorTok{+}
+\StringTok{  }\KeywordTok{geom_sf}\NormalTok{(}\DataTypeTok{data =}\NormalTok{ NEcounties_utm, }\DataTypeTok{col =} \StringTok{"black"}\NormalTok{) }\OperatorTok{+}
+\StringTok{  }\KeywordTok{geom_sf}\NormalTok{(}\DataTypeTok{data =}\NormalTok{ Lancaster, }\DataTypeTok{col =} \StringTok{"red"}\NormalTok{) }\OperatorTok{+}
+\StringTok{  }\KeywordTok{geom_sf}\NormalTok{(}\DataTypeTok{data =}\NormalTok{ gages_Lancaster, }\DataTypeTok{col =} \StringTok{"darkblue"}\NormalTok{, }\DataTypeTok{alpha =} \FloatTok{0.5}\NormalTok{) }\OperatorTok{+}
+\StringTok{  }\KeywordTok{ggtitle}\NormalTok{(}\StringTok{"Gages in Lancaster County"}\NormalTok{) }\OperatorTok{+}
+\StringTok{  }\KeywordTok{theme}\NormalTok{(}\DataTypeTok{plot.title =} \KeywordTok{element_text}\NormalTok{(}\DataTypeTok{size =} \DecValTok{15}\NormalTok{, }\DataTypeTok{color =} \StringTok{"black"}\NormalTok{, }\DataTypeTok{hjust =} \FloatTok{0.5}\NormalTok{))}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{Muzzy_A09_SpatialAnalysis_files/figure-latex/unnamed-chunk-6-1.pdf}
+
+\subsubsection{10. Tag each gage site with the name of the county in
+which it
+falls}\label{tag-each-gage-site-with-the-name-of-the-county-in-which-it-falls}
+
+A spatial join (\texttt{st\_join}) allows us to assign the attributes of
+an overlapping feature onto a another feature. We will use to to assign
+each gage location the attributes of the county in which it is located.
+* Spatially join the county features to the gage height features *
+Display the list of fields in the resulting dataset * Map the gage
+locations, * Include county boundaries * Displaying each gage locations
+county ``NAME'' as a different color. * Display each gage size
+proportional to its ``gage\_ht'' value
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{#Join features}
+\NormalTok{counties_gages_join <-}\StringTok{ }\KeywordTok{st_join}\NormalTok{(NWISjoin_utm, NEcounties_utm)}
+\CommentTok{#Show column names}
+\KeywordTok{colnames}\NormalTok{(counties_gages_join)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##  [1] "site_no"            "station_nm"         "date"              
+##  [4] "gage_ht"            "site_tp_cd"         "coord_acy_cd"      
+##  [7] "dec_coord_datum_cd" "STATEFP"            "COUNTYFP"          
+## [10] "COUNTYNS"           "AFFGEOID"           "GEOID"             
+## [13] "NAME"               "LSAD"               "ALAND"             
+## [16] "AWATER"             "geometry"
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{#Plot}
+\KeywordTok{ggplot}\NormalTok{() }\OperatorTok{+}
+\StringTok{  }\KeywordTok{geom_sf}\NormalTok{(}\DataTypeTok{data =}\NormalTok{ NEcounties_utm, }\DataTypeTok{col =} \StringTok{"black"}\NormalTok{) }\OperatorTok{+}
+\StringTok{  }\KeywordTok{geom_sf}\NormalTok{(}\DataTypeTok{data =}\NormalTok{ counties_gages_join, }
+          \KeywordTok{aes}\NormalTok{(}\DataTypeTok{size =}\NormalTok{ gage_ht,}\DataTypeTok{fill =}\NormalTok{ NAME, }\DataTypeTok{color =}\NormalTok{ NAME), }\DataTypeTok{alpha =} \FloatTok{0.5}\NormalTok{) }\OperatorTok{+}
+\StringTok{  }\KeywordTok{theme}\NormalTok{(}\DataTypeTok{legend.position =} \StringTok{"right"}\NormalTok{,}
+        \DataTypeTok{legend.text =} \KeywordTok{element_text}\NormalTok{(}\DataTypeTok{size =} \DecValTok{7}\NormalTok{),}
+        \DataTypeTok{plot.title =} \KeywordTok{element_text}\NormalTok{(}\DataTypeTok{size =} \DecValTok{12}\NormalTok{, }\DataTypeTok{color =} \StringTok{"black"}\NormalTok{, }\DataTypeTok{hjust =}\NormalTok{ .}\DecValTok{5}\NormalTok{)) }\OperatorTok{+}
+\StringTok{  }\KeywordTok{ggtitle}\NormalTok{(}\StringTok{"Gage Locations and Heights in Nebraska Counties"}\NormalTok{) }\OperatorTok{+}
+\StringTok{  }\KeywordTok{labs}\NormalTok{(}\DataTypeTok{caption =} \StringTok{"Point sizes represent relative gage heights"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{Muzzy_A09_SpatialAnalysis_files/figure-latex/Spatial Join-1.pdf}
+
+\subsubsection{11. Summarize data by
+county}\label{summarize-data-by-county}
+
+Finally, we'll summarize our gage height data by county and then display
+each county by it's mean gage height. * Group the spatially joined gage
+location/county dataset on the county name * Compute mean gage height *
+Join (non-spatially) this result to our county sf dataframe * Prior to
+joining, you'll need to drop the geometry column from the gage locations
+* To do this, see the \texttt{st\_drop\_geometry} function * Plot the
+counties showing mean gage heights for each county * Not all counties
+will have data
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{#Group and summarize}
+\NormalTok{grp_counties_gages_join <-}\StringTok{ }\NormalTok{counties_gages_join }\OperatorTok{%>%}
+\KeywordTok{group_by}\NormalTok{(NAME) }\OperatorTok{%>%}
+\KeywordTok{summarize}\NormalTok{(}\DataTypeTok{mean_gage_ht =} \KeywordTok{mean}\NormalTok{(gage_ht))}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Warning: Factor `NAME` contains implicit NA, consider using
+## `forcats::fct_explicit_na`
+
+## Warning: Factor `NAME` contains implicit NA, consider using
+## `forcats::fct_explicit_na`
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{#Convert result to a simple dataframe}
+\NormalTok{samplegrp_counties_gages_join <-}\StringTok{ }\KeywordTok{st_as_sf}\NormalTok{(grp_counties_gages_join)}
+\KeywordTok{class}\NormalTok{(samplegrp_counties_gages_join)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] "sf"         "tbl_df"     "tbl"        "data.frame"
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{#Join summary to County fc}
+\NormalTok{drop_sample <-}\StringTok{ }\KeywordTok{st_drop_geometry}\NormalTok{(samplegrp_counties_gages_join)}
+\NormalTok{countyavg <-}\StringTok{ }\NormalTok{NEcounties_utm }\OperatorTok{%>%}
+\KeywordTok{inner_join}\NormalTok{(}\DataTypeTok{y =}\NormalTok{ drop_sample, }\DataTypeTok{by =} \KeywordTok{c}\NormalTok{(}\StringTok{"NAME"}\NormalTok{ =}\StringTok{ "NAME"}\NormalTok{))}
+
+\CommentTok{#Plot}
+\NormalTok{legend_title_}\DecValTok{2}\NormalTok{ <-}\StringTok{ "Mean Gage Height (ft)"}
+
+\KeywordTok{ggplot}\NormalTok{() }\OperatorTok{+}
+\StringTok{  }\KeywordTok{geom_sf}\NormalTok{(}\DataTypeTok{data =}\NormalTok{ NEcounties_utm, }\DataTypeTok{col =} \StringTok{"black"}\NormalTok{) }\OperatorTok{+}
+\StringTok{  }\KeywordTok{geom_sf}\NormalTok{(}\DataTypeTok{data =}\NormalTok{ countyavg, }\KeywordTok{aes}\NormalTok{ (}\DataTypeTok{fill =}\NormalTok{ mean_gage_ht)) }\OperatorTok{+}
+\StringTok{  }\KeywordTok{scale_fill_gradient}\NormalTok{(legend_title_}\DecValTok{2}\NormalTok{, }\DataTypeTok{low =} \StringTok{"white"}\NormalTok{, }\DataTypeTok{high =} \StringTok{"darkblue"}\NormalTok{) }\OperatorTok{+}
+\StringTok{  }\KeywordTok{theme}\NormalTok{(}\DataTypeTok{legend.position =} \StringTok{"bottom"}\NormalTok{, }
+        \DataTypeTok{legend.text =} \KeywordTok{element_text}\NormalTok{(}\DataTypeTok{size =} \DecValTok{9}\NormalTok{),}
+        \DataTypeTok{plot.title =} \KeywordTok{element_text}\NormalTok{(}\DataTypeTok{size =} \DecValTok{15}\NormalTok{, }\DataTypeTok{color =} \StringTok{"black"}\NormalTok{, }\DataTypeTok{hjust =}\NormalTok{ .}\DecValTok{5}\NormalTok{)) }\OperatorTok{+}
+\StringTok{  }\KeywordTok{ggtitle}\NormalTok{(}\StringTok{"Mean Gage Heights, in Nebraska Counties"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{Muzzy_A09_SpatialAnalysis_files/figure-latex/unnamed-chunk-7-1.pdf}
+
+
+\end{document}
