@@ -24,6 +24,7 @@ Environmental fields are experiencing massive changes related to data. Many new 
 * Interconnected networks
 * Verifying accuracy and integrity
 
+
 ## DATA MANAGEMENT
 
 Adapted from the [DataOne data management primer](https://www.dataone.org/sites/all/documents/DataONE_BP_Primer_020212.pdf) and the [University of Alabama Library guide on data management](http://www.lib.ua.edu/wiki/sura/index.php/A_Step-By-Step_Guide_to_Data_Management)
@@ -76,16 +77,20 @@ Search one or more of these databases to find a dataset that interests you. What
 * TidyCensus: U.S. Census data
 * FedData: Geospatial data from federal sources
 * dataRetrieval: USGS and EPA water quality, streamflow, and metadata
-* LAGOSNE: Multiscaled geospatial and temporal data for U.S. lakes
+* LAGOSNE: Multiscaled geospatial and temporal data for U.S. lakes 
+  *for hydro data class next semester
 
 ### Data scraping
 Sometimes, there may be data that we can access online but are not available in downloadable formats. Data scraping is a technique that allows us to convert unstructured data (e.g., those presented in a webpage) into a structured format (e.g., a csv file). 
 
 Methods for scraping data (from [Analytics Vidhya data scraping guide](https://www.analyticsvidhya.com/blog/2017/03/beginners-guide-on-web-scraping-in-r-using-rvest-with-hands-on-knowledge/)): 
 
-* Manual copy-paste
+* Manual copy-paste 
+  - too much human error
 * API (retrieve data from standard code; data must be in prescribed format) 
-* DOM parsing
+  - mgrast is metagenomics research
+  
+* DOM parsing Document Object Model
 
 We will be scraping today using DOM parsing. First, we need to install a tool on our web browser to be able to call the web text we need. The tool is called a Selector Gadget, which for Chrome can be found [here](https://chrome.google.com/webstore/detail/selectorgadget/mhjhnkcfbdhnjickkkdbjoemdmbfginb?hl=en). 
 
@@ -97,29 +102,32 @@ library(tidyverse)
 library(rvest)
 
 # Specify website to be scraped
-url <- "https://en.wikipedia.org/wiki/List_of_rivers_by_length"
+url <- "https://en.wikipedia.org/wiki/List_of_rivers_by_length"  #providing a path to this url
 
 # Reading the HTML code from the website
 webpage <- read_html(url)
+#OR we could read_html("whateverwebsite.com")
 
 # Grab specific components of the website
-Name = webpage %>% html_nodes("td:nth-child(2)") %>% html_text()
-Length.km = webpage %>% html_nodes("td:nth-child(3)") %>% html_text()
-DrainageArea.km2 = webpage %>% html_nodes("td:nth-child(5)") %>% html_text()
-Discharge.m3s = webpage %>% html_nodes("td:nth-child(6)") %>% html_text()
-Outflow = webpage %>% html_nodes("td:nth-child(7)") %>% html_text()
+Name <- webpage %>% html_nodes("td:nth-child(2)") %>% html_text()
+Length.km <- webpage %>% html_nodes("td:nth-child(3)") %>% html_text()
+DrainageArea.km2 <- webpage %>% html_nodes("td:nth-child(5)") %>% html_text()
+Discharge.m3s <- webpage %>% html_nodes("td:nth-child(6)") %>% html_text()
+Outflow <- webpage %>% html_nodes("td:nth-child(7)") %>% html_text() 
+Outflow #to view in console
 
 # Coerce into a data frame, ensure consistent lengths
-riverdata <- data_frame(Name = Name[7:189], 
+riverdata <- data_frame(Name = Name[6:188], 
                         Length.km = Length.km[2:184], 
                         DrainageArea.km2 = DrainageArea.km2[2:184], 
                         Discharge.m3s = Discharge.m3s[2:184], 
                         Outflow = Outflow)
+#problems: commas in numbers, asterisks, blank cells, brackets, parentheses
 
 # Remove unnecessary text from within cells
-riverdata$Name <- str_replace(riverdata$Name, "\\[.*\\]", "")
-riverdata$Name <- str_replace(riverdata$Name, "\n", "")
-
+riverdata$Name <- str_replace(riverdata$Name, "\\[.*\\]", "") #\\ means remove all spaces before brackets, and all things in brackets; then all citations and things in brackets are now gone
+riverdata$Name <- str_replace(riverdata$Name, "\n", "") #removed \n from Name column and 
+riverdata$Name #just regular names
 
 riverdata$Length.km <- str_replace(riverdata$Length.km, "\\*", "")
 riverdata$Length.km <- str_replace(riverdata$Length.km, "\\(.*\\)", "")
@@ -132,21 +140,26 @@ riverdata$DrainageArea.km2 <- str_replace(riverdata$DrainageArea.km2, " \\[.*\\]
 riverdata$Discharge.m3s <- str_replace(riverdata$Discharge.m3s, " \\(.*\\)", "")
 riverdata$Discharge.m3s <- str_replace(riverdata$Discharge.m3s, "\\[.*\\]", "")
 
+#BUT look at the class
+class(riverdata$Length.km) #it's all still character
+
 # Turn numeric values from character to numeric
-riverdata$Length.km <- as.numeric( sub(",", "", riverdata$Length.km))
-riverdata$DrainageArea.km2 <- as.numeric( sub(",", "", riverdata$DrainageArea.km2))
+riverdata$Length.km <- as.numeric( sub(",", "", riverdata$Length.km)) #replacing the comma with a nothing
+riverdata$DrainageArea.km2 <- as.numeric( sub(",", "", riverdata$DrainageArea.km2)) #Warning message: NAs introduced by coercion
 riverdata$Discharge.m3s <- as.numeric( sub(",", "", riverdata$Discharge.m3s))
   
-# Plot the relationships
+# Plot the relationships just to see
 ggplot(riverdata, aes(x = Length.km, y = Discharge.m3s, fill = DrainageArea.km2)) + 
-  #geom_label(data = subset(riverdata, Name == "Yukon" | Name == "Lower Tunguska"), 
-            # aes(label = Name), alpha = 0.8, nudge_x = 100, nudge_y = 0.15) +
   geom_point(shape = 21, size = 3, alpha = 0.8) + 
   scale_fill_viridis_c(option = "inferno", begin = 0.2, end = 0.9, direction = -1) +
   theme_classic() + 
-  #scale_y_log10() +
+  scale_y_log10() +
   labs(x = "Length (km)", y = expression("Discharge (m"^"3"*" s"^"-1"*")"), 
        fill = expression("Drainage Area (km"^"2"*")")) +
-  theme(legend.position = "top", legend.key.width = unit(1, "cm"))
+  theme(legend.position = "top", legend.key.width = unit(1, "cm")) +
+  geom_label(data = subset(riverdata, Name == "Flinders River" | Name == "Amazon–Ucayali–Tambo–Ene–Mantaro"), 
+            aes(label = Name), 
+            alpha = 0.8, nudge_x = 100, nudge_y = 0.15)
+
 ```
 
