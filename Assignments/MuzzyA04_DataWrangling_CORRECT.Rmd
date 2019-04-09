@@ -35,14 +35,13 @@ The completed exercise is due on Thursday, 7 February, 2019 before class begins.
 2. Generate a few lines of code to get to know your datasets (basic data summaries, etc.).
 
 ```{r}
-
 #1
 getwd() 
 library(tidyverse)
-EPA.NCAir.O3.2017 <- read.csv("./Data/Raw/EPAair_O3_NC2017_raw.csv")
-EPA.NCAir.O3.2018 <- read.csv("./Data/Raw/EPAair_O3_NC2018_raw.csv")
-EPA.NCAir.PM25.2017 <- read.csv("./Data/Raw/EPAair_PM25_NC2017_raw.csv")
-EPA.NCAir.PM25.2018 <- read.csv("./Data/Raw/EPAair_PM25_NC2018_raw.csv")
+EPA.NCAir.O3.2017 <- read.csv("Data/Raw/EPAair_O3_NC2017_raw.csv")
+EPA.NCAir.O3.2018 <- read.csv("Data/Raw/EPAair_O3_NC2018_raw.csv")
+EPA.NCAir.PM25.2017 <- read.csv("Data/Raw/EPAair_PM25_NC2017_raw.csv")
+EPA.NCAir.PM25.2018 <- read.csv("Data/Raw/EPAair_PM25_NC2018_raw.csv")
 
 #2
 dim(EPA.NCAir.O3.2017)
@@ -66,17 +65,27 @@ class(EPA.NCAir.O3.2017$Date)
 
 EPA.NCAir.O3.2017$Date <- as.Date(EPA.NCAir.O3.2017$Date, format = "%m/%d/%y")
 EPA.NCAir.O3.2018$Date <- as.Date(EPA.NCAir.O3.2018$Date, format = "%m/%d/%y")
-EPA.NCAir.PM25.2017$Date <- as.Date(EPA.NCAir.PM25.2017$Date, format = "%m/%d/%y")
-EPA.NCAir.PM25.2018$Date <- as.Date(EPA.NCAir.PM25.2018$Date, format = "%m/%d/%y")
+EPA.NCAir.PM25.2017$Date <- as.Date(EPA.NCAir.PM25.2017$Date,
+                                    format = "%m/%d/%y")
+EPA.NCAir.PM25.2018$Date <- as.Date(EPA.NCAir.PM25.2018$Date,
+                                    format = "%m/%d/%y")
 
 #4
-EPA.NCAir.O3.2017.sitespecific <- select(EPA.NCAir.O3.2017, Date, DAILY_AQI_VALUE, Site.Name, AQS_PARAMETER_DESC, COUNTY, SITE_LATITUDE, SITE_LONGITUDE)
+EPA.NCAir.O3.2017.sitespecific <- 
+  select(EPA.NCAir.O3.2017, Date, DAILY_AQI_VALUE, Site.Name,
+         AQS_PARAMETER_DESC, COUNTY, SITE_LATITUDE, SITE_LONGITUDE)
 
-EPA.NCAir.O3.2018.sitespecific <- select(EPA.NCAir.O3.2018, Date, DAILY_AQI_VALUE, Site.Name, AQS_PARAMETER_DESC, COUNTY, SITE_LATITUDE, SITE_LONGITUDE)
+EPA.NCAir.O3.2018.sitespecific <- 
+  select(EPA.NCAir.O3.2018, Date, DAILY_AQI_VALUE, Site.Name,
+         AQS_PARAMETER_DESC, COUNTY, SITE_LATITUDE, SITE_LONGITUDE)
 
-EPA.NCAir.PM25.2017.sitespecific <- select(EPA.NCAir.PM25.2017, Date, DAILY_AQI_VALUE, Site.Name, AQS_PARAMETER_DESC, COUNTY, SITE_LATITUDE, SITE_LONGITUDE)
+EPA.NCAir.PM25.2017.sitespecific <- 
+  select(EPA.NCAir.PM25.2017, Date, DAILY_AQI_VALUE, Site.Name,
+         AQS_PARAMETER_DESC, COUNTY, SITE_LATITUDE, SITE_LONGITUDE)
 
-EPA.NCAir.PM25.2018.sitespecific <- select(EPA.NCAir.PM25.2018, Date, DAILY_AQI_VALUE, Site.Name, AQS_PARAMETER_DESC, COUNTY, SITE_LATITUDE, SITE_LONGITUDE)
+EPA.NCAir.PM25.2018.sitespecific <- 
+  select(EPA.NCAir.PM25.2018, Date, DAILY_AQI_VALUE, Site.Name,
+         AQS_PARAMETER_DESC, COUNTY, SITE_LATITUDE, SITE_LONGITUDE)
 
 #5
 
@@ -86,13 +95,17 @@ EPA.NCAir.PM25.2018.sitespecific$AQS_PARAMETER_DESC <- "PM2.5"
 #6 
 
   
-write.csv(EPA.NCAir.O3.2017.sitespecific, row.names = FALSE, file = "./Data/Processed/EPAair_O3_NC2017_Processed.csv")
+write.csv(EPA.NCAir.O3.2017.sitespecific, 
+          row.names = FALSE, file = "./Data/Processed/EPAair_O3_NC2017_Processed.csv")
 
-write.csv(EPA.NCAir.O3.2018.sitespecific, row.names = FALSE, file = "./Data/Processed/EPAair_O3_NC2018_Processed.csv")
+write.csv(EPA.NCAir.O3.2018.sitespecific, 
+          row.names = FALSE, file = "./Data/Processed/EPAair_O3_NC2018_Processed.csv")
   
-write.csv(EPA.NCAir.PM25.2017.sitespecific, row.names = FALSE, file = "./Data/Processed/EPAair_PM25_NC2017_Processed.csv")
+write.csv(EPA.NCAir.PM25.2017.sitespecific, 
+          row.names = FALSE, file = "./Data/Processed/EPAair_PM25_NC2017_Processed.csv")
 
-write.csv(EPA.NCAir.PM25.2018.sitespecific, row.names = FALSE, file = "./Data/Processed/EPAair_PM25_NC2018_Processed.csv")
+write.csv(EPA.NCAir.PM25.2018.sitespecific, 
+          row.names = FALSE, file = "./Data/Processed/EPAair_PM25_NC2018_Processed.csv")
 
 ```
 
@@ -112,20 +125,26 @@ write.csv(EPA.NCAir.PM25.2018.sitespecific, row.names = FALSE, file = "./Data/Pr
 library(lubridate)
 
 #7
-EPA.NCAir.O3.PM25.2017to18 <- rbind(EPA.NCAir.O3.2017.sitespecific, EPA.NCAir.O3.2018.sitespecific, EPA.NCAir.PM25.2017.sitespecific, EPA.NCAir.PM25.2018.sitespecific)
+EPA.NCAir.O3.PM25.2017to18 <- rbind(EPA.NCAir.O3.2017.sitespecific,
+                                    EPA.NCAir.O3.2018.sitespecific,
+                                    EPA.NCAir.PM25.2017.sitespecific,
+                                    EPA.NCAir.PM25.2018.sitespecific)
 dim(EPA.NCAir.O3.PM25.2017to18) #38105 rows, 7 columns
 
 #8
 
-EPA.NCAir.O3.PM25.2017to18.B.BC.TO <- EPA.NCAir.O3.PM25.2017to18 %>%
-filter(Site.Name %in% c("Blackstone", "Bryson City", "Triple Oak")) %>%
-mutate(month = month(Date), year = year(Date))
+EPA.NCAir.O3.PM25.2017to18.B.BC.TO <- 
+  EPA.NCAir.O3.PM25.2017to18 %>%
+  filter(Site.Name %in% c("Blackstone", "Bryson City", "Triple Oak")) %>%
+  mutate(month = month(Date), year = year(Date))
  #added month and year, while keeping Date; this is why lubridate is cool
 
 dim(EPA.NCAir.O3.PM25.2017to18.B.BC.TO) #[1] 2986    9
 
 #9
-EPA.NCAir.201718.tidy <- spread(EPA.NCAir.O3.PM25.2017to18.B.BC.TO, AQS_PARAMETER_DESC, DAILY_AQI_VALUE)
+EPA.NCAir.201718.tidy <- 
+  spread(EPA.NCAir.O3.PM25.2017to18.B.BC.TO, 
+         AQS_PARAMETER_DESC, DAILY_AQI_VALUE)
 
 #10 
 
@@ -133,7 +152,8 @@ dim(EPA.NCAir.201718.tidy) #[1] 1953    8
 
 #11
 
-write.csv(EPA.NCAir.201718.tidy, row.names = FALSE, file = "./Data/Processed/EPA_NCAir_2017_18_Processed.csv")
+write.csv(EPA.NCAir.201718.tidy, 
+          row.names = FALSE, file = "./Data/Processed/EPA_NCAir_2017_18_Processed.csv")
 ```
 
 
@@ -168,10 +188,6 @@ EPA.NCAir.201718.Sites <-
 print(EPA.NCAir.201718.Sites)
 print(EPA.NCAir.201718.AQI)
 
-View(EPA.NCAir.201718.tidy) #won't knit if View is commanded
-
-###Quitting from lines 147-174 (MuzzyA04_DataWrangling_CORRECT.Rmd) Error in View(EPA.NCAir.201718.tidy) : X11 dataentry cannot be loaded, Calls: <Anonymous> ... withCallingHandlers -> withVisible -> eval -> eval -> View Execution halted
-
-
+#View(EPA.NCAir.201718.tidy)
 
 ```
